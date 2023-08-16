@@ -18,6 +18,6 @@ notify:
   mail_user: "<%= ENV['MAIL_USER'] %>"     # 用于发送播报信息的邮箱账号
   mail_pass: "<%= ENV['MAIL_PASS'] %>"
   mail_recv: "<%= ENV['MAIL_RECV'] %>"
-  qq_user: ''                    # 用于向 QQ 群发送播报信息的 QQ 账号
+  qq_user: "<%= ENV['QQ_USER'] %>"         # 用于向 QQ 群发送播报信息的 QQ 账号
   qq_pass: "<%= ENV['QQ_PASS'] %>"
 
