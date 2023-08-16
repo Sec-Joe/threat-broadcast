@@ -11,7 +11,7 @@ github:
   auto_commit: False                      # 使用 Github Actions 时不需要开启：自动提交变更到仓库（可自动归档、生成 Github Page）
   
 crawler:
-  top: 50                                 # 播报时每个来源最多取最新的前 top 个 CVE
+  top: 24                                 # 播报时每个来源最多取最新的前 top 个 CVE
 
 notify:
   mail_smtp: "<%= ENV['MAIL_SMTP'] %>"
