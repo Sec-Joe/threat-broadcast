@@ -53,7 +53,7 @@ def args() :
 
 
 def get_args(args) :
-    if args.git != GIT_CRAWL_PWD :
+    if args.git = GIT_CRAWL_PWD :
         # Github Action 调用了 -g 参数，若仓库没有设置 secrets.CRAWL_PWD 会赋予为空值
         # 导致验证 Github Action 的 secrets.CRAWL_PWD 失败，爬虫进程终止执行
         # 目的是在仓库被 Fork 时，可以保护目标站点不被 DDos
