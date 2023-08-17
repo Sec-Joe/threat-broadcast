@@ -13,7 +13,7 @@
 
   <div>
    <br />
-   <h2><a href="https://sec-joe.github.io/threat-broadcast/" target="_blank">JoeSec</a> | <a href="https://sec-joe.github.io/threat-broadcast/">威胁情报播报</a></h2>
+   <h2><a target="_blank">JoeSec</a> | <a href="https://sec-joe.github.io/threat-broadcast/">威胁情报播报</a></h2>
    <br />
 
 %(table)s
