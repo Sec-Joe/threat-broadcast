@@ -52,10 +52,10 @@
 爬取到的 CVE 情报会作如下处理：
 
 - 【邮件播报】 接收播报信息的邮箱配置： [recv/mail_*.dat](recv/mail.dat)
-- 【邮件播报】 对所有 open 状态的 <a href="https://github.com/lyy289065406/threat-broadcast/issues/new?title=Your+Email&amp;body=Just+push+%27Submit+new+issue%27.+You+don%27t+need+to+do+anything+else.">Issues</a> 标题中的邮箱地址发送播报信息
+- 【邮件播报】 对所有 open 状态的 <a href="https://github.com/sec-joe/threat-broadcast/issues/new?title=Your+Email&amp;body=Just+push+%27Submit+new+issue%27.+You+don%27t+need+to+do+anything+else.">Issues</a> 标题中的邮箱地址发送播报信息
 - 【~~实时播报~~】 接收播报信息的 QQ 群： `283212984`
 - 【~~实时播报~~】 接收播报信息的 WeChat 公众号： [\[名称\]`EXP技术` \[微信号\]`exp-blog`](imgs/wechat.png)
-- 【页面播报】 最新的 TOP30 威胁情报会更新到 [Github Page](https://lyy289065406.github.io/threat-broadcast/)
+- 【页面播报】 最新的 TOP30 威胁情报会更新到 [Github Page](https://sec-joe.github.io/threat-broadcast/)
 - 【情报归档】 所有威胁情报会归档到 [sqlite](data/cves.db)
 
 
@@ -67,7 +67,7 @@
 <summary>播报效果</summary>
 <br/>
 
-![](https://github.com/lyy289065406/threat-broadcast/blob/master/imgs/email.png)
+![](https://github.com/sec-joe/threat-broadcast/blob/master/imgs/email.png)
 
 </details>
 
@@ -75,12 +75,12 @@
 ## 订阅方式
 
 - 【开发者订阅】 可自行 Fork 项目，通过配置定时任务向自己的邮箱推送即可
-- 【个人订阅】 在 <a href="https://github.com/lyy289065406/threat-broadcast/issues/new?title=Your+Email&amp;body=Just+push+%27Submit+new+issue%27.+You+don%27t+need+to+do+anything+else.">Issues</a> 标题留下你的邮箱即可接收播报信息（若希望取消订阅，请 close issue）
+- 【个人订阅】 在 <a href="https://github.com/sec-joe/threat-broadcast/issues/new?title=Your+Email&amp;body=Just+push+%27Submit+new+issue%27.+You+don%27t+need+to+do+anything+else.">Issues</a> 标题留下你的邮箱即可接收播报信息（若希望取消订阅，请 close issue）
 - 【~~个人订阅~~】 加入 QQ 群： 283212984
 - 【~~个人订阅~~】 关注 WeChat 公众号：
 <br/>　　**名称**： EXP技术
 <br/>　　**微信号**： exp-blog
-<br/>![](https://github.com/lyy289065406/threat-broadcast/blob/master/imgs/wechat.png)
+<br/>![](https://github.com/sec-joe/threat-broadcast/blob/master/imgs/wechat.png)
 
 
 ## 威胁情报推送源
@@ -105,7 +105,7 @@
 
 本项目已配置 [Github Actions](https://docs.github.com/cn/actions/configuring-and-managing-workflows/configuring-a-workflow)，因此你只需轻松几步即可实现部署：
 
-- [Fork 本项目](https://github.com/lyy289065406/threat-broadcast) 到你的代码仓库
+- [Fork 本项目](https://github.com/sec-joe/threat-broadcast) 到你的代码仓库
 - 通过 Settings --> Secrets 配置用于 **发送** 威胁情报邮件的 3 个环境变量：
     - `MAIL_SMTP`： SMTP 服务器（国内推荐 QQ），如 `smtp.qq.com`
     - `MAIL_USER`： 邮箱账号，如 `threatbroadcast@qq.com`
@@ -113,7 +113,7 @@
     - `GRAPAQL_TOKEN`： 用于调用 Github GraphQL 接口加载收件人，可于个人 `Settings` 生成
 - 启用 Settings --> Actions 功能
 
-> 尔后程序便会每小时执行一次，并自动生成 [Github Page](https://lyy289065406.github.io/threat-broadcast/) 播报页面（若要调整执行频率，可修改 [`autorun.yml`](.github/workflows/autorun.yml) 的 `schedule` 触发时点）
+> 尔后程序便会每小时执行一次，并自动生成 [Github Page](https://sec-joe.github.io/threat-broadcast/) 播报页面（若要调整执行频率，可修改 [`autorun.yml`](.github/workflows/autorun.yml) 的 `schedule` 触发时点）
 
 ![](imgs/secrets.png)
 
@@ -155,7 +155,7 @@
 - 在 [`main.py`](main.py) 添加运行参数 `-ac` 可自动提交变更到仓库
 
 
-> 只要爬取到新的威胁情报则会刷新 [`docs/index.html`](docs/index.html)，将其提交到仓库会自动更新 [Github Page](https://lyy289065406.github.io/threat-broadcast/)
+> 只要爬取到新的威胁情报则会刷新 [`docs/index.html`](docs/index.html)，将其提交到仓库会自动更新 [Github Page](https://sec-joe.github.io/threat-broadcast/)
 
 </details>
 
