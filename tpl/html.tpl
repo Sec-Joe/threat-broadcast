@@ -5,7 +5,6 @@
   <meta charset="UTF-8" />
   <meta name="robots" content="noarchive" />
   <link rel="shortcut icon" href=""/>
-  <meta name="author" content="EXP: sec-joe.github.io/threat-broadcast/" />
   <link rel="stylesheet" type="text/css" href="./css/page.css" />
   <title>Threat-Broadcast</title>
  </head>
