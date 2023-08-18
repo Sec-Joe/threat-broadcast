@@ -22,9 +22,9 @@ class QiAnXin(BaseCrawler):
         self.name_ch = '奇安信'
         self.name_en = 'QiAnXin'
         # self.home_page = 'https://ti.qianxin.com/advisory/'
-        self.home_page = 'https://nox.qianxin.com/vulnerability/detail/'
+        self.home_page = 'https://nox.qianxin.com/'
         # self.url = 'https://ti.qianxin.com/advisory/'
-        self.url = 'https://nox.qianxin.com/vulnerability/detail/'
+        self.url = 'https://nox.qianxin.com/article/'
 
 
     def NAME_CH(self):
