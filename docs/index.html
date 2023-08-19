@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-08-19 06:29:36 -->
+<!-- RELEASE TIME : 2023-08-19 12:39:22 -->
 <html lang="zh-cn">
 
  <head>
@@ -235,6 +235,46 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>b52046a2e9d4c444a0a533bdef905f4e</td>
+       <td>CVE-2023-2971</td>
+       <td>2023-08-19 06:15:00 <img src="imgs/new.gif" /></td>
+       <td>Improper path handling in Typora before 1.7.0-dev on Windows and Linux allows a crafted webpage to access local files and exfiltrate them to remote web servers via "typora://app/typemark/". This vulnerability can be exploited if a user opens a malicious markdown file in Typora, or copies text from a malicious webpage and paste it into Typora.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2971">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>169bd015c5ca63abc6afc3639bccad43</td>
+       <td>CVE-2023-2318</td>
+       <td>2023-08-19 06:15:00 <img src="imgs/new.gif" /></td>
+       <td>DOM-based XSS in src/muya/lib/contentState/pasteCtrl.js in MarkText 0.17.1 and before on Windows, Linux and macOS allows arbitrary JavaScript code to run in the context of MarkText main window. This vulnerability can be exploited if a user copies text from a malicious webpage and paste it into MarkText.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2318">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>97f7d25d43a5a74b11bedf6cd530872f</td>
+       <td>CVE-2023-2317</td>
+       <td>2023-08-19 06:15:00 <img src="imgs/new.gif" /></td>
+       <td>DOM-based XSS in updater/update.html in Typora before 1.6.7 on Windows and Linux allows a crafted markdown file to run arbitrary JavaScript code in the context of Typora main window via loading typora://app/typemark/updater/update.html in <embed> tag. This vulnerability can be exploited if a user opens a malicious markdown file in Typora, or copies text from a malicious webpage and paste it into Typora.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2317">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>29e04800a75c44e458c307112676f7fd</td>
+       <td>CVE-2023-2316</td>
+       <td>2023-08-19 06:15:00 <img src="imgs/new.gif" /></td>
+       <td>Improper path handling in Typora before 1.6.7 on Windows and Linux allows a crafted webpage to access local files and exfiltrate them to remote web servers via "typora://app/<absolute-path>". This vulnerability can be exploited if a user opens a malicious markdown file in Typora, or copies text from a malicious webpage and paste it into Typora.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2316">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bf31cfea86afdbb420af4bd5aa3be4d5</td>
+       <td>CVE-2023-2110</td>
+       <td>2023-08-19 06:15:00 <img src="imgs/new.gif" /></td>
+       <td>Improper path handling in Obsidian desktop before 1.2.8 on Windows, Linux and macOS allows a crafted webpage to access local files and exfiltrate them to remote web servers via "app://local/<absolute-path>". This vulnerability can be exploited if a user opens a malicious markdown file in Obsidian, or copies text from a malicious webpage and paste it into Obsidian.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2110">详情</a></td>
+      </tr>
+
+      <tr>
        <td>ddf89979db0e9f0242633996f90baaa2</td>
        <td>CVE-2023-4433</td>
        <td>2023-08-19 01:15:00 <img src="imgs/new.gif" /></td>
@@ -384,46 +424,6 @@
        <td>2023-08-18 15:15:00 <img src="imgs/new.gif" /></td>
        <td>A vulnerability was found in rkhunter Rootkit Hunter 1.4.4/1.4.6. It has been classified as problematic. Affected is an unknown function of the file /var/log/rkhunter.log. The manipulation leads to sensitive information in log files. An attack has to be approached locally. The complexity of an attack is rather high. The exploitability is told to be difficult. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-237516.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4413">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4693313db2665c550ab0a9c4c0d2034d</td>
-       <td>CVE-2023-4412</td>
-       <td>2023-08-18 15:15:00 <img src="imgs/new.gif" /></td>
-       <td>A vulnerability was found in TOTOLINK EX1200L EN_V9.3.5u.6146_B20201023 and classified as critical. This issue affects the function setWanCfg. The manipulation leads to os command injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-237515. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4412">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ef00cb1f751ec02b09aa715fec301203</td>
-       <td>CVE-2023-32109</td>
-       <td>2023-08-18 15:15:00 <img src="imgs/new.gif" /></td>
-       <td>Unauth. Reflected Cross-Site Scripting (XSS) vulnerability in Ignazio Scimone Albo Pretorio On line plugin <= 4.6.3 versions.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-32109">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7f955667933a595bfbd2a04585a13924</td>
-       <td>CVE-2023-32108</td>
-       <td>2023-08-18 15:15:00 <img src="imgs/new.gif" /></td>
-       <td>Unauth. Reflected Cross-Site Scripting (XSS) vulnerability in Ignazio Scimone Albo Pretorio On line plugin <= 4.6.3 versions.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-32108">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>02dd348636877dcaed9477c54ee17be3</td>
-       <td>CVE-2023-30499</td>
-       <td>2023-08-18 15:15:00 <img src="imgs/new.gif" /></td>
-       <td>Unauth. Reflected Cross-Site Scripting (XSS) vulnerability in FolioVision FV Flowplayer Video Player plugin <= 7.5.32.7212 versions.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-30499">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ad1c582d4ea0f491fcfff3f871932e0a</td>
-       <td>CVE-2023-29387</td>
-       <td>2023-08-18 15:15:00 <img src="imgs/new.gif" /></td>
-       <td>Auth. (contributor+) Stored Cross-Site Scripting (XSS) vulnerability in Julien Crego Manager for Icomoon plugin <= 2.0 versions.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-29387">详情</a></td>
       </tr>
 
      </tbody>
