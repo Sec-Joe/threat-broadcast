@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-08-20 06:29:29 -->
+<!-- RELEASE TIME : 2023-08-20 12:39:56 -->
 <html lang="zh-cn">
 
  <head>
@@ -235,6 +235,22 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>2ae2ea8477f995554f74bc38691e4e89</td>
+       <td>CVE-2023-37250</td>
+       <td>2023-08-20 08:15:00 <img src="imgs/new.gif" /></td>
+       <td>Unity Parsec before 8 has a TOCTOU race condition that permits local attackers to escalate privileges to SYSTEM if Parsec was installed in "Per User" mode. The application intentionally launches DLLs from a user-owned directory but intended to always perform integrity verification of those DLLs.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-37250">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>55b2e43dbe0e99883835963f04e59976</td>
+       <td>CVE-2023-37369</td>
+       <td>2023-08-20 07:15:00 <img src="imgs/new.gif" /></td>
+       <td>In Qt before 5.15.15, 6.x before 6.2.9, and 6.3.x through 6.5.x before 6.5.2, there can be an application crash in QXmlStreamReader via a crafted XML string that triggers a situation in which a prefix is greater than a length.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-37369">详情</a></td>
+      </tr>
+
+      <tr>
        <td>68d687b3498b0d4ca9ea38d97334cb82</td>
        <td>CVE-2023-4435</td>
        <td>2023-08-20 01:15:00 <img src="imgs/new.gif" /></td>
@@ -408,22 +424,6 @@
        <td>2023-08-18 19:15:00</td>
        <td>An issue was discovered in Insyde InsydeH2O with kernel 5.0 through 5.5. UEFI implementations do not correctly protect and validate information contained in the 'MeSetup' UEFI variable. On some systems, this variable can be overwritten using operating system APIs. Exploitation of this vulnerability could potentially lead to denial of service for the platform.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-27471">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>50f16fc887b17afb7ae2b3497bc40d1f</td>
-       <td>CVE-2023-4415</td>
-       <td>2023-08-18 16:15:00</td>
-       <td>A vulnerability was found in Ruijie RG-EW1200G 07161417 r483. It has been rated as critical. Affected by this issue is some unknown functionality of the file /api/sys/login. The manipulation leads to improper authentication. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. VDB-237518 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4415">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ab47f28c477078be1f0f5ac7f79961df</td>
-       <td>CVE-2023-4414</td>
-       <td>2023-08-18 16:15:00</td>
-       <td>A vulnerability was found in Beijing Baichuo Smart S85F Management Platform up to 20230807. It has been declared as critical. Affected by this vulnerability is an unknown functionality of the file /log/decodmail.php. The manipulation of the argument file leads to command injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-237517 was assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4414">详情</a></td>
       </tr>
 
      </tbody>
