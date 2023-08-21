@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-08-21 09:25:27 -->
+<!-- RELEASE TIME : 2023-08-21 11:24:51 -->
 <html lang="zh-cn">
 
  <head>
@@ -235,6 +235,38 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>1f3b2f3fce14515cb634cf8f552188c3</td>
+       <td>CVE-2023-40068</td>
+       <td>2023-08-21 09:15:00 <img src="imgs/new.gif" /></td>
+       <td>Cross-site scripting vulnerability in Advanced Custom Fields versions 6.1.0 to 6.1.7 and Advanced Custom Fields Pro versions 6.1.0 to 6.1.7 allows a remote authenticated attacker to execute an arbitrary script on the web browser of the user who is logging in to the product with the administrative privilege.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40068">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4084c491bdffda04d118b44a0dd704ac</td>
+       <td>CVE-2023-39939</td>
+       <td>2023-08-21 09:15:00 <img src="imgs/new.gif" /></td>
+       <td>SQL injection vulnerability in LuxCal Web Calendar prior to 5.2.3M (MySQL version) and LuxCal Web Calendar prior to 5.2.3L (SQLite version) allows a remote unauthenticated attacker to execute arbitrary queries against the database and obtain or alter the information in it.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39939">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4358a4f23829699cde55e9956e78c349</td>
+       <td>CVE-2023-39543</td>
+       <td>2023-08-21 09:15:00 <img src="imgs/new.gif" /></td>
+       <td>Cross-site scripting vulnerability in LuxCal Web Calendar prior to 5.2.3M (MySQL version) and LuxCal Web Calendar prior to 5.2.3L (SQLite version) allows a remote unauthenticated attacker to execute an arbitrary script on the web browser of the user who is using the product.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39543">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a40cd6034ddf798c5cf125999210ffda</td>
+       <td>CVE-2022-46751</td>
+       <td>2023-08-21 07:15:00 <img src="imgs/new.gif" /></td>
+       <td>Improper Restriction of XML External Entity Reference, XML Injection (aka Blind XPath Injection) vulnerability in Apache Software Foundation Apache Ivy.This issue affects any version of Apache Ivy prior to 2.5.2.When Apache Ivy prior to 2.5.2 parses XML files - either its own configuration, Ivy files or Apache Maven POMs - it will allow downloading external document type definitions and expand any entity references contained therein when used.This can be used to exfiltrate data, access resources only the machine running Ivy has access to or disturb the execution of Ivy in different ways.Starting with Ivy 2.5.2 DTD processing is disabled by default except when parsing Maven POMs where the default is to allow DTD processing but only to include a DTD snippet shipping with Ivy that is needed to deal with existing Maven POMs that are not valid XML files but are nevertheless accepted by Maven. Access can be be made more lenient via newly introduced system properties where needed.Users of Ivy prior to version 2.5.2 can use Java system properties to restrict processing of external DTDs, see the section about "JAXP Properties for External Access restrictions" inside Oracle's "Java API for XML Processing (JAXP) Security Guide".</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-46751">详情</a></td>
+      </tr>
+
+      <tr>
        <td>20a0978343b8530f1f7ce28f4293500e</td>
        <td>CVE-2023-4450</td>
        <td>2023-08-21 03:15:00 <img src="imgs/new.gif" /></td>
@@ -392,38 +424,6 @@
        <td>2023-08-20 07:15:00 <img src="imgs/new.gif" /></td>
        <td>In Qt before 5.15.15, 6.x before 6.2.9, and 6.3.x through 6.5.x before 6.5.2, there can be an application crash in QXmlStreamReader via a crafted XML string that triggers a situation in which a prefix is greater than a length.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-37369">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>68d687b3498b0d4ca9ea38d97334cb82</td>
-       <td>CVE-2023-4435</td>
-       <td>2023-08-20 01:15:00 <img src="imgs/new.gif" /></td>
-       <td>Improper Input Validation in GitHub repository hamza417/inure prior to build88.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4435">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cecd7952bec1a92e03ad5473d5825f78</td>
-       <td>CVE-2023-4434</td>
-       <td>2023-08-20 01:15:00 <img src="imgs/new.gif" /></td>
-       <td>Missing Authorization in GitHub repository hamza417/inure prior to build88.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4434">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5f231d76bdc59bb46bacdcc4fb5a5eb9</td>
-       <td>CVE-2023-40711</td>
-       <td>2023-08-20 01:15:00 <img src="imgs/new.gif" /></td>
-       <td>Veilid before 0.1.9 does not check the size of uncompressed data during decompression upon an envelope receipt, which allows remote attackers to cause a denial of service (out-of-memory abort) via crafted packet data, as exploited in the wild in August 2023.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40711">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b52046a2e9d4c444a0a533bdef905f4e</td>
-       <td>CVE-2023-2971</td>
-       <td>2023-08-19 06:15:00</td>
-       <td>Improper path handling in Typora before 1.7.0-dev on Windows and Linux allows a crafted webpage to access local files and exfiltrate them to remote web servers via "typora://app/typemark/". This vulnerability can be exploited if a user opens a malicious markdown file in Typora, or copies text from a malicious webpage and paste it into Typora.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2971">详情</a></td>
       </tr>
 
      </tbody>
