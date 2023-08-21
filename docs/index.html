@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-08-21 20:26:30 -->
+<!-- RELEASE TIME : 2023-08-21 22:28:52 -->
 <html lang="zh-cn">
 
  <head>
@@ -235,6 +235,38 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>4cb964b5de42d4f3410fdbfe79d35cbf</td>
+       <td>CVE-2023-4459</td>
+       <td>2023-08-21 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>A NULL pointer dereference flaw was found in vmxnet3_rq_cleanup in drivers/net/vmxnet3/vmxnet3_drv.c in the networking sub-component in vmxnet3 in the Linux Kernel. This issue may allow a local attacker with normal user privilege to cause a denial of service due to a missing sanity check during cleanup.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4459">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8bedc5e15e2f986314bf752dad1ec697</td>
+       <td>CVE-2023-4417</td>
+       <td>2023-08-21 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>Improper access controls in the entry duplication component in Devolutions Remote Desktop Manager 2023.2.19 and earlier versions on Windows allows an authenticated user, under specific circumstances, to inadvertently share their personal vault entry with shared vaults via an incorrect vault in the duplication write process.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4417">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>847c06502b904c4e49003edaa28d70cb</td>
+       <td>CVE-2023-4373</td>
+       <td>2023-08-21 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>Inadequate validation of permissions when employing remote tools and macros within Devolutions Remote Desktop Manager versions 2023.2.19 and earlier permits a user to initiate a connection without proper execution rights via the remote tools feature.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4373">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bb9e5d4716c87a69852a66ade0809602</td>
+       <td>CVE-2023-40352</td>
+       <td>2023-08-21 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>McAfee Safe Connect before 2.16.1.126 may allow an adversary with system privileges to achieve privilege escalation by loading arbitrary DLLs.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40352">详情</a></td>
+      </tr>
+
+      <tr>
        <td>95651b50d67daa82e1a37d015fe42c2f</td>
        <td>CVE-2023-4456</td>
        <td>2023-08-21 17:15:00 <img src="imgs/new.gif" /></td>
@@ -392,38 +424,6 @@
        <td>2023-08-21 09:15:00 <img src="imgs/new.gif" /></td>
        <td>Cross-site scripting vulnerability in LuxCal Web Calendar prior to 5.2.3M (MySQL version) and LuxCal Web Calendar prior to 5.2.3L (SQLite version) allows a remote unauthenticated attacker to execute an arbitrary script on the web browser of the user who is using the product.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39543">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a40cd6034ddf798c5cf125999210ffda</td>
-       <td>CVE-2022-46751</td>
-       <td>2023-08-21 07:15:00 <img src="imgs/new.gif" /></td>
-       <td>Improper Restriction of XML External Entity Reference, XML Injection (aka Blind XPath Injection) vulnerability in Apache Software Foundation Apache Ivy.This issue affects any version of Apache Ivy prior to 2.5.2.When Apache Ivy prior to 2.5.2 parses XML files - either its own configuration, Ivy files or Apache Maven POMs - it will allow downloading external document type definitions and expand any entity references contained therein when used.This can be used to exfiltrate data, access resources only the machine running Ivy has access to or disturb the execution of Ivy in different ways.Starting with Ivy 2.5.2 DTD processing is disabled by default except when parsing Maven POMs where the default is to allow DTD processing but only to include a DTD snippet shipping with Ivy that is needed to deal with existing Maven POMs that are not valid XML files but are nevertheless accepted by Maven. Access can be be made more lenient via newly introduced system properties where needed.Users of Ivy prior to version 2.5.2 can use Java system properties to restrict processing of external DTDs, see the section about "JAXP Properties for External Access restrictions" inside Oracle's "Java API for XML Processing (JAXP) Security Guide".</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-46751">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>20a0978343b8530f1f7ce28f4293500e</td>
-       <td>CVE-2023-4450</td>
-       <td>2023-08-21 03:15:00 <img src="imgs/new.gif" /></td>
-       <td>A vulnerability was found in jeecgboot JimuReport up to 1.6.0. It has been declared as critical. Affected by this vulnerability is an unknown functionality of the component Template Handler. The manipulation leads to injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. Upgrading to version 1.6.1 is able to address this issue. It is recommended to upgrade the affected component. The associated identifier of this vulnerability is VDB-237571.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4450">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>db2aab82ed963bc5f4259e39b4cc44cb</td>
-       <td>CVE-2023-39751</td>
-       <td>2023-08-21 03:15:00 <img src="imgs/new.gif" /></td>
-       <td>TP-Link TL-WR941ND V6 were discovered to contain a buffer overflow via the pSize parameter at /userRpm/PingIframeRpm.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39751">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a7978074438c67552ae7b7848d7492eb</td>
-       <td>CVE-2023-39750</td>
-       <td>2023-08-21 03:15:00 <img src="imgs/new.gif" /></td>
-       <td>D-Link DAP-2660 v1.13 was discovered to contain a buffer overflow via the f_ipv6_enable parameter at /bsc_ipv6. This vulnerability is exploited via a crafted POST request.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39750">详情</a></td>
       </tr>
 
      </tbody>
