@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-08-23 06:30:56 -->
+<!-- RELEASE TIME : 2023-08-23 12:44:52 -->
 <html lang="zh-cn">
 
  <head>
@@ -235,6 +235,46 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>bc6c0e075f86c61ee15916e9ab40743c</td>
+       <td>CVE-2023-41105</td>
+       <td>2023-08-23 07:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in Python 3.11 through 3.11.4. If a path containing '\0' bytes is passed to os.path.normpath(), the path will be truncated unexpectedly at the first '\0' byte. There are plausible cases in which an application would have rejected a filename for security reasons in Python 3.10.x or earlier, but that filename is no longer rejected in Python 3.11.x.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-41105">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c8ccb2658f7568e616b6692f7722f241</td>
+       <td>CVE-2023-41104</td>
+       <td>2023-08-23 07:15:00 <img src="imgs/new.gif" /></td>
+       <td>libvmod-digest before 1.0.3, as used in Varnish Enterprise 6.0.x before 6.0.11r5, has an out-of-bounds memory access during base64 decoding, leading to both authentication bypass and information disclosure; however, the exact attack surface will depend on the particular VCL (Varnish Configuration Language) configuration in use.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-41104">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>43922bc1453ef25169180ac050d8023f</td>
+       <td>CVE-2023-41100</td>
+       <td>2023-08-23 06:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in the hcaptcha (aka hCaptcha for EXT:form) extension before 2.1.2 for TYPO3. It fails to check that the required captcha field is submitted in the form data. allowing a remote user to bypass the CAPTCHA check.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-41100">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>32e4dede56da190cbae09b12bb57eb59</td>
+       <td>CVE-2023-41098</td>
+       <td>2023-08-23 06:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in MISP 2.4.174. In app/Controller/DashboardsController.php, a reflected XSS issue exists via the id parameter upon a dashboard edit.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-41098">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5ec450a443295858e1a7e52355794311</td>
+       <td>CVE-2023-4041</td>
+       <td>2023-08-23 05:15:00 <img src="imgs/new.gif" /></td>
+       <td>Buffer Copy without Checking Size of Input ('Classic Buffer Overflow'), Out-of-bounds Write, Download of Code Without Integrity Check vulnerability in Silicon Labs Gecko Bootloader on ARM (Firmware Update File Parser modules) allows Code Injection, Authentication Bypass.This issue affects "Standalone" and "Application" versions of Gecko Bootloader.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4041">详情</a></td>
+      </tr>
+
+      <tr>
        <td>aed022269b1a19e022752cc4daaec0f0</td>
        <td>CVE-2023-40282</td>
        <td>2023-08-23 04:15:00 <img src="imgs/new.gif" /></td>
@@ -384,46 +424,6 @@
        <td>2023-08-22 19:16:00 <img src="imgs/new.gif" /></td>
        <td>Cross-Site Scripting (XSS) vulnerability in CSZ CMS v.1.3.0 allows attackers to execute arbitrary code via a crafted payload to the Social Settings parameter.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39599">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6069f7b8ba0d62ba0a990c07115597f1</td>
-       <td>CVE-2023-39141</td>
-       <td>2023-08-22 19:16:00 <img src="imgs/new.gif" /></td>
-       <td>webui-aria2 commit 4fe2e was discovered to contain a path traversal vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39141">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8a5edbebe20077582cd3b71006dc065b</td>
-       <td>CVE-2023-38996</td>
-       <td>2023-08-22 19:16:00 <img src="imgs/new.gif" /></td>
-       <td>An issue in all versions of Douran DSGate allows a local authenticated privileged attacker to execute arbitrary code via the debug command.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-38996">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b1229ba6b1a8f9d7974b5b0ee41fb82b</td>
-       <td>CVE-2023-38732</td>
-       <td>2023-08-22 19:16:00 <img src="imgs/new.gif" /></td>
-       <td>IBM Robotic Process Automation 21.0.0 through 21.0.7 server could allow an authenticated user to view sensitive information from application logs. IBM X-Force ID: 262289.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-38732">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ec6080ca49cf67cdef9e866880f16d68</td>
-       <td>CVE-2023-38668</td>
-       <td>2023-08-22 19:16:00 <img src="imgs/new.gif" /></td>
-       <td>Stack-based buffer over-read in disasm in nasm 2.16 allows attackers to cause a denial of service (crash).</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-38668">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8f403db15647d828885ad95eb03c12d4</td>
-       <td>CVE-2023-38667</td>
-       <td>2023-08-22 19:16:00 <img src="imgs/new.gif" /></td>
-       <td>Stack-based buffer over-read in function disasm in nasm 2.16 allows attackers to cause a denial of service.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-38667">详情</a></td>
       </tr>
 
      </tbody>
