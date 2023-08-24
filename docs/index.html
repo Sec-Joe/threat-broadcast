@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-08-24 17:27:29 -->
+<!-- RELEASE TIME : 2023-08-24 18:29:15 -->
 <html lang="zh-cn">
 
  <head>
@@ -235,6 +235,78 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>a004b085e3272b748bedfc580424ff3b</td>
+       <td>CVE-2023-40710</td>
+       <td>2023-08-24 17:15:00 <img src="imgs/new.gif" /></td>
+       <td>An adversary could cause a continuous restart loop to the entire device by sending a large quantity of HTTP GET requests if the controller has the built-in web server enabled but does not have the built-in web server completely set up and configured for the SNAP PAC S1 Firmware version R10.3b</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40710">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f433166dc81192afc591f9ee6ce5dfcf</td>
+       <td>CVE-2023-40709</td>
+       <td>2023-08-24 17:15:00 <img src="imgs/new.gif" /></td>
+       <td>An adversary could crash the entire device by sending a large quantity of ICMP requests if the controller has the built-in web server enabled but does not have the built-in web server completely set up and configured for the SNAP PAC S1 Firmware version R10.3b</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40709">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>753dfe2aaedf7e7e674b41120ac37a0f</td>
+       <td>CVE-2023-40708</td>
+       <td>2023-08-24 17:15:00 <img src="imgs/new.gif" /></td>
+       <td>The File Transfer Protocol (FTP) port is open by default in the SNAP PAC S1 Firmware version R10.3b. This could allow an adversary to access some device files.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40708">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2cdd1091fcd561545d8905b3cda229d4</td>
+       <td>CVE-2023-40707</td>
+       <td>2023-08-24 17:15:00 <img src="imgs/new.gif" /></td>
+       <td>There are no requirements for setting a complex password in the built-in web server of the SNAP PAC S1 Firmware version R10.3b, which could allow for a successful brute force attack if users don't set up complex credentials.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40707">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1807644b36d39d45be5d86faaa3748f9</td>
+       <td>CVE-2023-40706</td>
+       <td>2023-08-24 17:15:00 <img src="imgs/new.gif" /></td>
+       <td>There is no limit on the number of login attempts in the web server for the SNAP PAC S1 Firmware version R10.3b. This could allow for a brute-force attack on the built-in web server login.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40706">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>37f46a4618ae5e6a25d9a196d3b111cd</td>
+       <td>CVE-2023-34973</td>
+       <td>2023-08-24 17:15:00 <img src="imgs/new.gif" /></td>
+       <td>An insufficient entropy vulnerability has been reported to affect QNAP operating systems. If exploited, the vulnerability possibly allows remote users to predict secret via unspecified vectors.We have already fixed the vulnerability in the following versions:QTS 5.0.1.2425 build 20230609 and laterQTS 5.1.0.2444 build 20230629 and laterQuTS hero h5.1.0.2424 build 20230609 and later</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-34973">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b9784ff19c7002c2d75a5f363977b849</td>
+       <td>CVE-2023-34972</td>
+       <td>2023-08-24 17:15:00 <img src="imgs/new.gif" /></td>
+       <td>A cleartext transmission of sensitive information vulnerability has been reported to affect QNAP operating systems. If exploited, the vulnerability possibly allows local network clients to read the contents of unexpected sensitive data via unspecified vectors.We have already fixed the vulnerability in the following versions:QTS 5.0.1.2425 build 20230609 and laterQTS 5.1.0.2444 build 20230629 and laterQuTS hero h5.1.0.2424 build 20230609 and later</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-34972">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2d5798dfb7f6e0543dd6fef89dfc1214</td>
+       <td>CVE-2023-34971</td>
+       <td>2023-08-24 17:15:00 <img src="imgs/new.gif" /></td>
+       <td>An inadequate encryption strength vulnerability has been reported to affect QNAP operating systems. If exploited, the vulnerability possibly allows local network clients to decrypt the data using brute force attacks via unspecified vectors.We have already fixed the vulnerability in the following versions:QTS 5.0.1.2425 build 20230609 and laterQTS 5.1.0.2444 build 20230629 and laterQTS 4.5.4.2467 build 20230718 and laterQuTS hero h5.1.0.2424 build 20230609 and laterQuTS hero h4.5.4.2476 build 20230728 and later</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-34971">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7274cd707a6dd31d931a4e5721325c26</td>
+       <td>CVE-2022-46884</td>
+       <td>2023-08-24 17:15:00 <img src="imgs/new.gif" /></td>
+       <td>A potential use-after-free vulnerability existed in SVG Images if the Refresh Driver was destroyed at an inopportune time.  This could have lead to memory corruption or a potentially exploitable crash.*Note*: This advisory was added on December 13th, 2022 after discovering it was inadvertently left out of the original advisory. The fix was included in the original release of Firefox 106. This vulnerability affects Firefox < 106.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-46884">详情</a></td>
+      </tr>
+
+      <tr>
        <td>cec0bf77cfcfded5f10cbf728b3a6864</td>
        <td>CVE-2023-40877</td>
        <td>2023-08-24 15:15:00 <img src="imgs/new.gif" /></td>
@@ -352,78 +424,6 @@
        <td>2023-08-24 07:15:00 <img src="imgs/new.gif" /></td>
        <td>BT SDP dissector infinite loop in Wireshark 4.0.0 to 4.0.7 and 3.6.0 to 3.6.15 allows denial of service via packet injection or crafted capture file</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4511">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>246cc57ea3104d2032fa3e651221d9b7</td>
-       <td>CVE-2023-4230</td>
-       <td>2023-08-24 07:15:00 <img src="imgs/new.gif" /></td>
-       <td>A vulnerability has been identified in ioLogik 4000 Series (ioLogik E4200) firmware versions v1.6 and prior, which has the potential to facilitate the collection of information on ioLogik 4000 Series devices. This vulnerability may enable attackers to gather information for the purpose of assessing vulnerabilities and potential attack vectors.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4230">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>03cacd6ee3cc0d2a8255abd5eddcad9a</td>
-       <td>CVE-2023-4229</td>
-       <td>2023-08-24 07:15:00 <img src="imgs/new.gif" /></td>
-       <td>A vulnerability has been identified in ioLogik 4000 Series (ioLogik E4200) firmware versions v1.6 and prior, potentially exposing users to security risks. This vulnerability may allow attackers to trick users into interacting with malicious content, leading to unintended actions or unauthorized data disclosures.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4229">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>bdf34dae19e7c6cf39b36ea11a1eb429</td>
-       <td>CVE-2023-4228</td>
-       <td>2023-08-24 07:15:00 <img src="imgs/new.gif" /></td>
-       <td>A vulnerability has been identified in ioLogik 4000 Series (ioLogik E4200) firmware versions v1.6 and prior, where the session cookies attribute is not set properly in the affected application. The vulnerability may lead to security risks, potentially exposing user session data to unauthorized access and manipulation.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4228">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c4d06b2de38ce718e41b0d66e7392056</td>
-       <td>CVE-2023-3704</td>
-       <td>2023-08-24 07:15:00 <img src="imgs/new.gif" /></td>
-       <td>The vulnerability exists in CP-Plus DVR due to an improper input validation within the web-based management interface of the affected products. An unauthenticated remote attacker could exploit this vulnerability by sending specially crafted HTTP requests to the vulnerable device.Successful exploitation of this vulnerability could allow the remote attacker to change system time of the targeted device.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-3704">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>38482170eee4079cd60ce0362e4ac3d7</td>
-       <td>CVE-2023-40573</td>
-       <td>2023-08-24 02:15:00 <img src="imgs/new.gif" /></td>
-       <td>XWiki Platform is a generic wiki platform offering runtime services for applications built on top of it. XWiki supports scheduled jobs that contain Groovy scripts. Currently, the job checks the content author of the job for programming right. However, modifying or adding a job script to a document doesn't modify the content author. Together with a CSRF vulnerability in the job scheduler, this can be exploited for remote code execution by an attacker with edit right on the wiki. If the attack is successful, an error log entry with "Job content executed" will be produced. This vulnerability has been patched in XWiki 14.10.9 and 15.4RC1.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40573">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e9dc1af8cfbb45dbf8a00c4421c36f53</td>
-       <td>CVE-2023-40572</td>
-       <td>2023-08-24 02:15:00 <img src="imgs/new.gif" /></td>
-       <td>XWiki Platform is a generic wiki platform offering runtime services for applications built on top of it. The create action is vulnerable to a CSRF attack, allowing script and thus remote code execution when targeting a user with script/programming right, thus compromising the confidentiality, integrity and availability of the whole XWiki installation. When a user with script right views this image and a log message `ERROR foo - Script executed!` appears in the log, the XWiki installation is vulnerable. This has been patched in XWiki 14.10.9 and 15.4RC1 by requiring a CSRF token for the actual page creation.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40572">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>56da05b6db63527752c65719d71f3332</td>
-       <td>CVE-2023-32559</td>
-       <td>2023-08-24 02:15:00 <img src="imgs/new.gif" /></td>
-       <td>A privilege escalation vulnerability exists in the experimental policy mechanism in all active release lines: 16.x, 18.x and, 20.x. The use of the deprecated API `process.binding()` can bypass the policy mechanism by requiring internal modules and eventually take advantage of `process.binding('spawn_sync')` run arbitrary code, outside of the limits defined in a `policy.json` file. Please note that at the time this CVE was issued, the policy is an experimental feature of Node.js.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-32559">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>11beeee0648ade58261516d6462ce99b</td>
-       <td>CVE-2023-41028</td>
-       <td>2023-08-23 22:15:00 <img src="imgs/new.gif" /></td>
-       <td>A stack-based buffer overflow exists in Juplink RX4-1500, a WiFi router, in versions 1.0.2 through 1.0.5. An authenticated attacker can exploit this vulnerability to achieve code execution as root.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-41028">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6153e351aa1ac26b73487f02eb2ddb55</td>
-       <td>CVE-2023-38422</td>
-       <td>2023-08-23 22:15:00 <img src="imgs/new.gif" /></td>
-       <td>Walchem Intuition 9 firmware versions prior to v4.21 are missing authentication for some of the API routes of the management web server. This could allow an attacker to download and export sensitive data.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-38422">详情</a></td>
       </tr>
 
      </tbody>
