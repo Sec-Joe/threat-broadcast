@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-08-23 23:25:24 -->
+<!-- RELEASE TIME : 2023-08-24 01:22:45 -->
 <html lang="zh-cn">
 
  <head>
@@ -235,6 +235,46 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>11beeee0648ade58261516d6462ce99b</td>
+       <td>CVE-2023-41028</td>
+       <td>2023-08-23 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>A stack-based buffer overflow exists in Juplink RX4-1500, a WiFi router, in versions 1.0.2 through 1.0.5. An authenticated attacker can exploit this vulnerability to achieve code execution as root.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-41028">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6153e351aa1ac26b73487f02eb2ddb55</td>
+       <td>CVE-2023-38422</td>
+       <td>2023-08-23 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>Walchem Intuition 9 firmware versions prior to v4.21 are missing authentication for some of the API routes of the management web server. This could allow an attacker to download and export sensitive data.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-38422">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>22c82b61130246f8aef9f48ecd5eb70f</td>
+       <td>CVE-2023-36317</td>
+       <td>2023-08-23 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>Cross Site Scripting (XSS) vulnerability in sourcecodester Student Study Center Desk Management System 1.0 allows attackers to run arbitrary code via crafted GET request to web application URL.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-36317">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e9a5463cf8fa1c89a609dae8d2a7ad0b</td>
+       <td>CVE-2023-3453</td>
+       <td>2023-08-23 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>ETIC Telecom RAS versions 4.7.0 and prior the web management portal authentication disabled by default. This could allow an attacker with adjacent network access to alter the configuration of the device or cause a denial-of-service condition.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-3453">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d184d48e9f37493b95d0cd579c06275a</td>
+       <td>CVE-2023-32202</td>
+       <td>2023-08-23 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>Walchem Intuition 9 firmware versions prior to v4.21 are vulnerable to improper authentication. Login credentials are stored in a format that could allow an attacker to use them as-is to login and gain access to the device.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-32202">详情</a></td>
+      </tr>
+
+      <tr>
        <td>cb493597bd0bc5222caae61299ed0269</td>
        <td>CVE-2023-40185</td>
        <td>2023-08-23 21:15:00 <img src="imgs/new.gif" /></td>
@@ -384,46 +424,6 @@
        <td>2023-08-23 17:15:00 <img src="imgs/new.gif" /></td>
        <td>** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: CVE-2023-38831. Reason: This candidate is a reservation duplicate of CVE-2023-38831. Notes: All CVE users should reference CVE-2023-38831 instead of this candidate. All references and descriptions in this candidate have been removed to prevent accidental usage.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39583">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c9d1432c167373f0e84c5420ede5b442</td>
-       <td>CVE-2023-38831</td>
-       <td>2023-08-23 17:15:00 <img src="imgs/new.gif" /></td>
-       <td>RARLabs WinRAR before 6.23 allows attackers to execute arbitrary code when a user attempts to view a benign file within a ZIP archive. The issue occurs because a ZIP archive may include a benign file (such as an ordinary .JPG file) and also a folder that has the same name as the benign file, and the contents of the folder (which may include executable content) are processed during an attempt to access only the benign file. This was exploited in the wild in April through August 2023.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-38831">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>54e2494af79ffd5989f8e2179d919c3d</td>
-       <td>CVE-2023-40273</td>
-       <td>2023-08-23 16:15:00 <img src="imgs/new.gif" /></td>
-       <td>The session fixation vulnerability allowed the authenticated user to continue accessing Airflow webserver even after the password of the user has been reset by the admin - up until the expiry of the session of the user. Other than manually cleaning the session database (for database session backend), or changing the secure_key and restarting the webserver, there were no mechanisms to force-logout the user (and all other users with that).With this fix implemented, when using the database session backend, the existing sessions of the user are invalidated when the password of the user is reset. When using the securecookie session backend, the sessions are NOT invalidated and still require changing the secure key and restarting the webserver (and logging out all other users), but the user resetting the password is informed about it with a flash message warning displayed in the UI. Documentation is also updated explaining this behaviour.Users of Apache Airflow are advised to upgrade to version 2.7.0 or newer to mitigate the risk associated with this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40273">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>391a8390e21cde84e57d2610e3116451</td>
-       <td>CVE-2023-39441</td>
-       <td>2023-08-23 16:15:00 <img src="imgs/new.gif" /></td>
-       <td>Apache Airflow SMTP Provider before 1.3.0, Apache Airflow IMAP Provider before 3.3.0, and Apache Airflow before 2.7.0 are affected by the Validation of OpenSSL Certificate vulnerability.The default SSL context with SSL library did not check a server's X.509 certificate.  Instead, the code accepted any certificate, which could result in the disclosure of mail server credentials or mail contents when the client connects to an attacker in a MITM position.Users are strongly advised to upgrade to Apache Airflow version 2.7.0 or newer, Apache Airflow IMAP Provider version 3.3.0 or newer, and Apache Airflow SMTP Provider version 1.3.0 or newer to mitigate the risk associated with this vulnerability</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39441">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b3fcb54d7c5b61731fd0cfaa0b3f8200</td>
-       <td>CVE-2023-37379</td>
-       <td>2023-08-23 16:15:00 <img src="imgs/new.gif" /></td>
-       <td>Apache Airflow, in versions prior to 2.7.0, contains a security vulnerability that can be exploited by an authenticated user possessing Connection edit privileges. This vulnerability allows the user to access connection information and exploit the test connection feature by sending many requests, leading to a denial of service (DoS) condition on the server. Furthermore, malicious actors can leverage this vulnerability to establish harmful connections with the server.Users of Apache Airflow are strongly advised to upgrade to version 2.7.0 or newer to mitigate the risk associated with this vulnerability. Additionally, administrators are encouraged to review and adjust user permissions to restrict access to sensitive functionalities, reducing the attack surface.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-37379">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>39e7fe9a399ea5bae3d0eed209607765</td>
-       <td>CVE-2023-1409</td>
-       <td>2023-08-23 16:15:00 <img src="imgs/new.gif" /></td>
-       <td>If the MongoDB Server running on Windows or macOS is configured to use TLS with a specific set of configuration options that are already known to work securely in other platforms (e.g. Linux), it is possible that client certificate validation may not be in effect, potentially allowing client to establish a TLS connection with the server that supplies any certificate.This issue affect all MongoDB Server v6.3 versions, MongoDB Server v5.0 versions v5.0.0 to v5.0.14 and all MongoDB Server v4.4 versions.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1409">详情</a></td>
       </tr>
 
      </tbody>
@@ -1445,7 +1445,7 @@
       <tr>
        <td>040eea420ebd7dc55fafdad0c9ba002e</td>
        <td>CVE-2023-39400</td>
-       <td>2023-08-22 20:07:01 <img src="imgs/new.gif" /></td>
+       <td>2023-08-22 20:07:01</td>
        <td>HUAWEI Multiple product Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=1d37c989cd244111b51585b713159d67">详情</a></td>
       </tr>
@@ -1453,7 +1453,7 @@
       <tr>
        <td>5374b46df6f083359c699677ff808372</td>
        <td>CVE-2023-39389</td>
-       <td>2023-08-22 20:07:00 <img src="imgs/new.gif" /></td>
+       <td>2023-08-22 20:07:00</td>
        <td>HUAWEI Multiple product Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=706c0090936642ea945f1feb4ff3f133">详情</a></td>
       </tr>
@@ -1461,7 +1461,7 @@
       <tr>
        <td>31d8dd31a68492bc98b687492dcdb34c</td>
        <td>CVE-2023-39391</td>
-       <td>2023-08-22 20:07:00 <img src="imgs/new.gif" /></td>
+       <td>2023-08-22 20:07:00</td>
        <td>HUAWEI Multiple product Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=455eafc80aaa4142a495717862dda0e1">详情</a></td>
       </tr>
@@ -1469,7 +1469,7 @@
       <tr>
        <td>fec95743cf989e37ba1cffaeff278893</td>
        <td>CVE-2020-36023</td>
-       <td>2023-08-22 20:06:37 <img src="imgs/new.gif" /></td>
+       <td>2023-08-22 20:06:37</td>
        <td>FREEDESKTOP POPPLER Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ba93fb474e3c4b49b0dc732229e20580">详情</a></td>
       </tr>
