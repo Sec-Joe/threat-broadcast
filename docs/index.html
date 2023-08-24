@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-08-24 02:29:18 -->
+<!-- RELEASE TIME : 2023-08-24 06:30:32 -->
 <html lang="zh-cn">
 
  <head>
@@ -235,6 +235,30 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>38482170eee4079cd60ce0362e4ac3d7</td>
+       <td>CVE-2023-40573</td>
+       <td>2023-08-24 02:15:00 <img src="imgs/new.gif" /></td>
+       <td>XWiki Platform is a generic wiki platform offering runtime services for applications built on top of it. XWiki supports scheduled jobs that contain Groovy scripts. Currently, the job checks the content author of the job for programming right. However, modifying or adding a job script to a document doesn't modify the content author. Together with a CSRF vulnerability in the job scheduler, this can be exploited for remote code execution by an attacker with edit right on the wiki. If the attack is successful, an error log entry with "Job content executed" will be produced. This vulnerability has been patched in XWiki 14.10.9 and 15.4RC1.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40573">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e9dc1af8cfbb45dbf8a00c4421c36f53</td>
+       <td>CVE-2023-40572</td>
+       <td>2023-08-24 02:15:00 <img src="imgs/new.gif" /></td>
+       <td>XWiki Platform is a generic wiki platform offering runtime services for applications built on top of it. The create action is vulnerable to a CSRF attack, allowing script and thus remote code execution when targeting a user with script/programming right, thus compromising the confidentiality, integrity and availability of the whole XWiki installation. When a user with script right views this image and a log message `ERROR foo - Script executed!` appears in the log, the XWiki installation is vulnerable. This has been patched in XWiki 14.10.9 and 15.4RC1 by requiring a CSRF token for the actual page creation.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40572">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>56da05b6db63527752c65719d71f3332</td>
+       <td>CVE-2023-32559</td>
+       <td>2023-08-24 02:15:00 <img src="imgs/new.gif" /></td>
+       <td>A privilege escalation vulnerability exists in the experimental policy mechanism in all active release lines: 16.x, 18.x and, 20.x. The use of the deprecated API `process.binding()` can bypass the policy mechanism by requiring internal modules and eventually take advantage of `process.binding('spawn_sync')` run arbitrary code, outside of the limits defined in a `policy.json` file. Please note that at the time this CVE was issued, the policy is an experimental feature of Node.js.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-32559">详情</a></td>
+      </tr>
+
+      <tr>
        <td>11beeee0648ade58261516d6462ce99b</td>
        <td>CVE-2023-41028</td>
        <td>2023-08-23 22:15:00 <img src="imgs/new.gif" /></td>
@@ -400,30 +424,6 @@
        <td>2023-08-23 19:15:00 <img src="imgs/new.gif" /></td>
        <td>A vulnerability in TACACS+ and RADIUS remote authentication for Cisco NX-OS Software could allow an unauthenticated, local attacker to cause an affected device to unexpectedly reload. This vulnerability is due to incorrect input validation when processing an authentication attempt if the directed request option is enabled for TACACS+ or RADIUS. An attacker could exploit this vulnerability by entering a crafted string at the login prompt of an affected device. A successful exploit could allow the attacker to cause the affected device to unexpectedly reload, resulting in a denial of service (DoS) condition.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-20168">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0c25366d0968ae4582de99140a6ad176</td>
-       <td>CVE-2023-20115</td>
-       <td>2023-08-23 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>A vulnerability in the SFTP server implementation for Cisco Nexus 3000 Series Switches and 9000 Series Switches in standalone NX-OS mode could allow an authenticated, remote attacker to download or overwrite files from the underlying operating system of an affected device.  This vulnerability is due to a logic error when verifying the user role when an SFTP connection is opened to an affected device. An attacker could exploit this vulnerability by connecting and authenticating via SFTP as a valid, non-administrator user. A successful exploit could allow the attacker to read or overwrite files from the underlying operating system with the privileges of the authenticated user.   There are workarounds that address this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-20115">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f9056b1a945c6f8af6cc2ce478f2baae</td>
-       <td>CVE-2023-40270</td>
-       <td>2023-08-23 18:15:00 <img src="imgs/new.gif" /></td>
-       <td>** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: CVE-2023-38831. Reason: This candidate is a reservation duplicate of CVE-2023-38831. Notes: All CVE users should reference CVE-2023-38831 instead of this candidate. All references and descriptions in this candidate have been removed to prevent accidental usage.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40270">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c9fa024bca6d48c4d4b28fc0cb97238e</td>
-       <td>CVE-2023-39583</td>
-       <td>2023-08-23 17:15:00 <img src="imgs/new.gif" /></td>
-       <td>** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: CVE-2023-38831. Reason: This candidate is a reservation duplicate of CVE-2023-38831. Notes: All CVE users should reference CVE-2023-38831 instead of this candidate. All references and descriptions in this candidate have been removed to prevent accidental usage.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39583">详情</a></td>
       </tr>
 
      </tbody>
