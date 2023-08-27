@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-08-27 06:29:07 -->
+<!-- RELEASE TIME : 2023-08-27 11:23:37 -->
 <html lang="zh-cn">
 
  <head>
@@ -235,6 +235,22 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>ca4b8cee70f082910801e3821f8cfa02</td>
+       <td>CVE-2023-4556</td>
+       <td>2023-08-27 07:15:00 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability was found in SourceCodester Online Graduate Tracer System 1.0 and classified as critical. Affected by this issue is the function mysqli_query of the file sexit.php. The manipulation of the argument id leads to sql injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. VDB-238154 is the identifier assigned to this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4556">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>deaca0f72fc9a64e4cc9c5f2f0e7aadd</td>
+       <td>CVE-2023-4555</td>
+       <td>2023-08-27 07:15:00 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability has been found in SourceCodester Inventory Management System 1.0 and classified as problematic. Affected by this vulnerability is an unknown functionality of the file suppliar_data.php. The manipulation of the argument name/company leads to cross site scripting. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-238153 was assigned to this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4555">详情</a></td>
+      </tr>
+
+      <tr>
        <td>5424ada402cdd213bb70c79062ab39bf</td>
        <td>CVE-2023-4548</td>
        <td>2023-08-26 10:15:00 <img src="imgs/new.gif" /></td>
@@ -408,22 +424,6 @@
        <td>2023-08-25 21:15:00</td>
        <td>weblogic-framework is a tool for detecting weblogic vulnerabilities. Versions 0.2.3 and prior do not verify the returned data packets, and there is a deserialization vulnerability which may lead to remote code execution. When weblogic-framework gets the command echo, it directly deserializes the data returned by the server without verifying it. At the same time, the classloader loads a lot of deserialization calls. In this case, the malicious serialized data returned by the server will cause remote code execution. Version 0.2.4 contains a patch for this issue.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40571">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ba44a97ff5d6a41c96698aa5c7e21f7c</td>
-       <td>CVE-2023-40166</td>
-       <td>2023-08-25 21:15:00</td>
-       <td>Notepad++ is a free and open-source source code editor. Versions 8.5.6 and prior are vulnerable to heap buffer read overflow in `FileManager::detectLanguageFromTextBegining `. The exploitability of this issue is not clear. Potentially, it may be used to leak internal memory allocation information. As of time of publication, no known patches are available in existing versions of Notepad++.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40166">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>974a83f50b21d595eca348c5e0e575bd</td>
-       <td>CVE-2023-40164</td>
-       <td>2023-08-25 21:15:00</td>
-       <td>Notepad++ is a free and open-source source code editor. Versions 8.5.6 and prior are vulnerable to global buffer read overflow in `nsCodingStateMachine::NextStater`. The exploitability of this issue is not clear. Potentially, it may be used to leak internal memory allocation information. As of time of publication, no known patches are available in existing versions of Notepad++.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40164">详情</a></td>
       </tr>
 
      </tbody>
