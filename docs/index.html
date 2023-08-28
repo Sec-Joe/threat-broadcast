@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-08-28 19:23:27 -->
+<!-- RELEASE TIME : 2023-08-28 21:23:40 -->
 <html lang="zh-cn">
 
  <head>
@@ -235,6 +235,54 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>8755b982ac39d2ba7203f077d5225a1a</td>
+       <td>CVE-2023-39810</td>
+       <td>2023-08-28 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue in the CPIO command of Busybox v1.33.2 allows attackers to execute a directory traversal.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39810">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>71dbf13b6577d31744f418a486dc062d</td>
+       <td>CVE-2023-39709</td>
+       <td>2023-08-28 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>Multiple cross-site scripting (XSS) vulnerabilities in Free and Open Source Inventory Management System v1.0 allows attackers to execute arbitrary web scripts or HTML via injecting a crafted payload into the Name, Address, and Company parameters under the Add Member section.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39709">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>59e122ba98bcceb1b5a76971cf3b0856</td>
+       <td>CVE-2023-39562</td>
+       <td>2023-08-28 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>GPAC v2.3-DEV-rev449-g5948e4f70-master was discovered to contain a heap-use-after-free via the gf_bs_align function at bitstream.c. This vulnerability allows attackers to cause a Denial of Service (DoS) via supplying a crafted file.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39562">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5c54b4ef371a0e2de209e1a1c22160d6</td>
+       <td>CVE-2023-40590</td>
+       <td>2023-08-28 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>GitPython is a python library used to interact with Git repositories. When resolving a program, Python/Windows look for the current working directory, and after that the PATH environment. GitPython defaults to use the `git` command, if a user runs GitPython from a repo has a `git.exe` or `git` executable, that program will be run instead of the one in the user's `PATH`. This is more of a problem on how Python interacts with Windows systems, Linux and any other OS aren't affected by this. But probably people using GitPython usually run it from the CWD of a repo. An attacker can trick a user to download a repository with a malicious `git` executable, if the user runs/imports GitPython from that directory, it allows the attacker to run any arbitrary commands. There is no fix currently available for windows users, however there are a few mitigations. 1: Default to an absolute path for the git program on Windows, like `C:\\Program Files\\Git\\cmd\\git.EXE` (default git path installation). 2: Require users to set the `GIT_PYTHON_GIT_EXECUTABLE` environment variable on Windows systems. 3: Make this problem prominent in the documentation and advise users to never run GitPython from an untrusted repo, or set the `GIT_PYTHON_GIT_EXECUTABLE` env var to an absolute path. 4: Resolve the executable manually by only looking into the `PATH` environment variable.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40590">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0bfbfcdf98914abbbc60fccc70ec9040</td>
+       <td>CVE-2023-39062</td>
+       <td>2023-08-28 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>Cross Site Scripting vulnerability in Spipu HTML2PDF before v.5.2.8 allows a remote attacker to execute arbitrary code via a crafted script to the forms.php.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39062">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>09c1ead0f7dd4e046c9579c8c42496f3</td>
+       <td>CVE-2020-27366</td>
+       <td>2023-08-28 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>Cross Site Scripting (XSS) vulnerability in wlscanresults.html in Humax HGB10R-02 BRGCAB version 1.0.03, allows local attackers to execute arbitrary code.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2020-27366">详情</a></td>
+      </tr>
+
+      <tr>
        <td>830b260f57d361c7917ae3f1171db478</td>
        <td>CVE-2023-39560</td>
        <td>2023-08-28 17:15:00 <img src="imgs/new.gif" /></td>
@@ -376,54 +424,6 @@
        <td>2023-08-28 06:15:00 <img src="imgs/new.gif" /></td>
        <td>Saho’s attendance devices ADM100 and ADM-100FP has insufficient filtering for special characters and file type within their file uploading function. A unauthenticate remote attacker authenticated can upload and execute arbitrary files to perform arbitrary system commands or disrupt service.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-38029">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4863b9d4656aebbdc494be2f3d50105f</td>
-       <td>CVE-2023-38028</td>
-       <td>2023-08-28 05:15:00 <img src="imgs/new.gif" /></td>
-       <td>Saho’s attendance devices ADM100 and ADM-100FP have insufficient authentication. An unauthenticated remote attacker can exploit this vulnerability to bypass authentication to read system information and operate user's data,  but can’t control system or disrupt service.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-38028">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f4891288027c88177d72f5a3bc4562c0</td>
-       <td>CVE-2023-38027</td>
-       <td>2023-08-28 04:15:00 <img src="imgs/new.gif" /></td>
-       <td>SpotCam Co., Ltd. SpotCam Sense’s hidden Telnet function has a vulnerability of OS command injection. An remote unauthenticated attacker can exploit this vulnerability to execute command injection attack to perform arbitrary system commands or disrupt service.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-38027">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>02c5b99b61660d55fd6ab364c0b221d2</td>
-       <td>CVE-2023-38026</td>
-       <td>2023-08-28 04:15:00 <img src="imgs/new.gif" /></td>
-       <td>SpotCam Co., Ltd. SpotCam FHD 2 has a vulnerability of using hard-coded uBoot credentials. An remote attacker can exploit this vulnerability to access the system to perform arbitrary system operations or disrupt service.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-38026">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4e007e02f29a6c92449b664fa2479dfb</td>
-       <td>CVE-2023-38025</td>
-       <td>2023-08-28 04:15:00 <img src="imgs/new.gif" /></td>
-       <td>SpotCam Co., Ltd. SpotCam FHD 2’s hidden Telnet function has a vulnerability of OS command injection. An remote unauthenticated attacker can exploit this vulnerability to execute command injection attack to arbitrary system commands or disrupt service.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-38025">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>af960124e910bc7b47263c2501d723f8</td>
-       <td>CVE-2023-38024</td>
-       <td>2023-08-28 04:15:00 <img src="imgs/new.gif" /></td>
-       <td>SpotCam Co., Ltd. SpotCam FHD 2’s hidden Telnet function has a vulnerability of using hard-coded Telnet credentials. An remote unauthenticated attacker can exploit this vulnerability to access the system to perform arbitrary system operations or disrupt service.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-38024">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>34aba4e26f1585ea262c2ed967c59356</td>
-       <td>CVE-2016-15035</td>
-       <td>2023-08-28 04:15:00 <img src="imgs/new.gif" /></td>
-       <td>A vulnerability was found in Doc2k RE-Chat 1.0. It has been classified as problematic. This affects an unknown part of the file js_on_radio-emergency.de_/re_chat.js. The manipulation leads to cross site scripting. It is possible to initiate the attack remotely. The patch is named bd17d497ddd3bab4ef9c6831c747c37cc016c570. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-238155.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2016-15035">详情</a></td>
       </tr>
 
      </tbody>
