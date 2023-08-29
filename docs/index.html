@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-08-29 20:26:17 -->
+<!-- RELEASE TIME : 2023-08-29 21:23:52 -->
 <html lang="zh-cn">
 
  <head>
@@ -235,6 +235,46 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>d6495c407a2431db3f3eade604a63efd</td>
+       <td>CVE-2023-3252</td>
+       <td>2023-08-29 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>An arbitrary file write vulnerability exists where an authenticated, remote attacker with administrator privileges could alter logging variables to overwrite arbitrary files on the remote host with log data, which could lead to a denial of service condition.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-3252">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>91e7f7c14f43725493248cb4c46dbe5e</td>
+       <td>CVE-2023-3251</td>
+       <td>2023-08-29 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>A pass-back vulnerability exists where an authenticated, remote attacker with administrator privileges could uncover stored SMTP credentials within the Nessus application.This issue affects Nessus: before 10.6.0.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-3251">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d5495b4cc3fd47f62c0ac6d20e447c5e</td>
+       <td>CVE-2023-39522</td>
+       <td>2023-08-29 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>goauthentik is an open-source Identity Provider. In affected versions using a recovery flow with an identification stage an attacker is able to determine if a username exists. Only setups configured with a recovery flow are impacted by this. Anyone with a user account on a system with the recovery flow described above is susceptible to having their username/email revealed as existing. An attacker can easily enumerate and check users' existence using the recovery flow, as a clear message is shown when a user doesn't exist. Depending on configuration this can either be done by username, email, or both. This issue has been addressed in versions 2023.5.6 and 2023.6.2. Users are advised to upgrade. There are no known workarounds for this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39522">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3cd799fbf2726ff8d15ea12b324e4f34</td>
+       <td>CVE-2023-34039</td>
+       <td>2023-08-29 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>Aria Operations for Networks contains an Authentication Bypass vulnerability due to a lack of unique cryptographic key generation. A malicious actor with network access to Aria Operations for Networks could bypass SSH authentication to gain access to the Aria Operations for Networks CLI.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-34039">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a94ae23cbadce3a2c1f6adfe96a24f00</td>
+       <td>CVE-2023-20890</td>
+       <td>2023-08-29 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>Aria Operations for Networks contains an arbitrary file write vulnerability. An authenticated malicious actor with administrative access to VMware Aria Operations for Networks can write files to arbitrary locations resulting in remote code execution.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-20890">详情</a></td>
+      </tr>
+
+      <tr>
        <td>5fc67553b5ab7a124fc93e64da06ac0b</td>
        <td>CVE-2023-41037</td>
        <td>2023-08-29 17:15:00 <img src="imgs/new.gif" /></td>
@@ -384,46 +424,6 @@
        <td>2023-08-29 05:15:00 <img src="imgs/new.gif" /></td>
        <td>In Cerebrate 1.14, a vulnerability in UserSettingsController allows authenticated users to change user settings of other users.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-41363">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>812a8d6f4829916c8856cee2bebed219</td>
-       <td>CVE-2023-41361</td>
-       <td>2023-08-29 04:15:00 <img src="imgs/new.gif" /></td>
-       <td>An issue was discovered in FRRouting FRR 9.0. bgpd/bgp_open.c does not check for an overly large length of the rcv software version.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-41361">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cfa62cc26334377c19ebe62a97f7decd</td>
-       <td>CVE-2023-41360</td>
-       <td>2023-08-29 04:15:00 <img src="imgs/new.gif" /></td>
-       <td>An issue was discovered in FRRouting FRR through 9.0. bgpd/bgp_packet.c can read the initial byte of the ORF header in an ahead-of-stream situation.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-41360">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c848ec22de3add71fceddb0e03e4ebe7</td>
-       <td>CVE-2023-41359</td>
-       <td>2023-08-29 04:15:00 <img src="imgs/new.gif" /></td>
-       <td>An issue was discovered in FRRouting FRR through 9.0. There is an out-of-bounds read in bgp_attr_aigp_valid in bgpd/bgp_attr.c because there is no check for the availability of two bytes during AIGP validation.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-41359">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5297e0d94af3938f68aa733972a32565</td>
-       <td>CVE-2023-41358</td>
-       <td>2023-08-29 04:15:00 <img src="imgs/new.gif" /></td>
-       <td>An issue was discovered in FRRouting FRR through 9.0. bgpd/bgp_packet.c processes NLRIs if the attribute length is zero.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-41358">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>bb5b64f9d94daabfc607639feeebfbde</td>
-       <td>CVE-2023-1995</td>
-       <td>2023-08-29 02:15:00 <img src="imgs/new.gif" /></td>
-       <td>Insufficient Logging vulnerability in Hitachi HiRDB Server, HiRDB Server With Addtional Function, HiRDB Structured Data Access Facility.This issue affects HiRDB Server: before 09-60-39, before 09-65-23, before 10-01-10, before 10-03-12, before 10-04-06, before 10-05-06, before 10-06-02; HiRDB Server With Addtional Function: before 09-60-2M, before 09-65-/W; HiRDB Structured Data Access Facility: before 09-60-39, before 10-03-12, before 10-04-06, before 10-06-02.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1995">详情</a></td>
       </tr>
 
      </tbody>
