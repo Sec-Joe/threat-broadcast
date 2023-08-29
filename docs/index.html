@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-08-29 05:27:51 -->
+<!-- RELEASE TIME : 2023-08-29 06:30:36 -->
 <html lang="zh-cn">
 
  <head>
@@ -235,6 +235,46 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>812a8d6f4829916c8856cee2bebed219</td>
+       <td>CVE-2023-41361</td>
+       <td>2023-08-29 04:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in FRRouting FRR 9.0. bgpd/bgp_open.c does not check for an overly large length of the rcv software version.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-41361">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>cfa62cc26334377c19ebe62a97f7decd</td>
+       <td>CVE-2023-41360</td>
+       <td>2023-08-29 04:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in FRRouting FRR through 9.0. bgpd/bgp_packet.c can read the initial byte of the ORF header in an ahead-of-stream situation.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-41360">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c848ec22de3add71fceddb0e03e4ebe7</td>
+       <td>CVE-2023-41359</td>
+       <td>2023-08-29 04:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in FRRouting FRR through 9.0. There is an out-of-bounds read in bgp_attr_aigp_valid in bgpd/bgp_attr.c because there is no check for the availability of two bytes during AIGP validation.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-41359">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5297e0d94af3938f68aa733972a32565</td>
+       <td>CVE-2023-41358</td>
+       <td>2023-08-29 04:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in FRRouting FRR through 9.0. bgpd/bgp_packet.c processes NLRIs if the attribute length is zero.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-41358">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bb5b64f9d94daabfc607639feeebfbde</td>
+       <td>CVE-2023-1995</td>
+       <td>2023-08-29 02:15:00 <img src="imgs/new.gif" /></td>
+       <td>Insufficient Logging vulnerability in Hitachi HiRDB Server, HiRDB Server With Addtional Function, HiRDB Structured Data Access Facility.This issue affects HiRDB Server: before 09-60-39, before 09-65-23, before 10-01-10, before 10-03-12, before 10-04-06, before 10-05-06, before 10-06-02; HiRDB Server With Addtional Function: before 09-60-2M, before 09-65-/W; HiRDB Structured Data Access Facility: before 09-60-39, before 10-03-12, before 10-04-06, before 10-06-02.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1995">详情</a></td>
+      </tr>
+
+      <tr>
        <td>d994019971230d4d56bf663e0995e2be</td>
        <td>CVE-2023-39650</td>
        <td>2023-08-28 23:15:00 <img src="imgs/new.gif" /></td>
@@ -384,46 +424,6 @@
        <td>2023-08-28 20:15:00 <img src="imgs/new.gif" /></td>
        <td>Zoho ManageEngine ADManager Plus through 7186 is vulnerable to 2FA bypass.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-35785">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8755b982ac39d2ba7203f077d5225a1a</td>
-       <td>CVE-2023-39810</td>
-       <td>2023-08-28 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>An issue in the CPIO command of Busybox v1.33.2 allows attackers to execute a directory traversal.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39810">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>71dbf13b6577d31744f418a486dc062d</td>
-       <td>CVE-2023-39709</td>
-       <td>2023-08-28 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>Multiple cross-site scripting (XSS) vulnerabilities in Free and Open Source Inventory Management System v1.0 allows attackers to execute arbitrary web scripts or HTML via injecting a crafted payload into the Name, Address, and Company parameters under the Add Member section.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39709">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>59e122ba98bcceb1b5a76971cf3b0856</td>
-       <td>CVE-2023-39562</td>
-       <td>2023-08-28 19:15:00 <img src="imgs/new.gif" /></td>
-       <td>GPAC v2.3-DEV-rev449-g5948e4f70-master was discovered to contain a heap-use-after-free via the gf_bs_align function at bitstream.c. This vulnerability allows attackers to cause a Denial of Service (DoS) via supplying a crafted file.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39562">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5c54b4ef371a0e2de209e1a1c22160d6</td>
-       <td>CVE-2023-40590</td>
-       <td>2023-08-28 18:15:00 <img src="imgs/new.gif" /></td>
-       <td>GitPython is a python library used to interact with Git repositories. When resolving a program, Python/Windows look for the current working directory, and after that the PATH environment. GitPython defaults to use the `git` command, if a user runs GitPython from a repo has a `git.exe` or `git` executable, that program will be run instead of the one in the user's `PATH`. This is more of a problem on how Python interacts with Windows systems, Linux and any other OS aren't affected by this. But probably people using GitPython usually run it from the CWD of a repo. An attacker can trick a user to download a repository with a malicious `git` executable, if the user runs/imports GitPython from that directory, it allows the attacker to run any arbitrary commands. There is no fix currently available for windows users, however there are a few mitigations. 1: Default to an absolute path for the git program on Windows, like `C:\\Program Files\\Git\\cmd\\git.EXE` (default git path installation). 2: Require users to set the `GIT_PYTHON_GIT_EXECUTABLE` environment variable on Windows systems. 3: Make this problem prominent in the documentation and advise users to never run GitPython from an untrusted repo, or set the `GIT_PYTHON_GIT_EXECUTABLE` env var to an absolute path. 4: Resolve the executable manually by only looking into the `PATH` environment variable.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40590">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0bfbfcdf98914abbbc60fccc70ec9040</td>
-       <td>CVE-2023-39062</td>
-       <td>2023-08-28 18:15:00 <img src="imgs/new.gif" /></td>
-       <td>Cross Site Scripting vulnerability in Spipu HTML2PDF before v.5.2.8 allows a remote attacker to execute arbitrary code via a crafted script to the forms.php.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39062">详情</a></td>
       </tr>
 
      </tbody>
