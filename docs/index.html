@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-08-29 15:26:37 -->
+<!-- RELEASE TIME : 2023-08-29 17:29:02 -->
 <html lang="zh-cn">
 
  <head>
@@ -235,6 +235,14 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>5b73e4c8520a4d6dba74a451f25760a7</td>
+       <td>CVE-2023-0238</td>
+       <td>2023-08-29 15:15:00 <img src="imgs/new.gif" /></td>
+       <td>Due to lack of a security policy, the WARP Mobile Client (<=6.29) for Android was susceptible to this vulnerability which allowed a malicious app installed on a victim's device to exploit a peculiarity in an Android function, wherein under certain conditions, the malicious app could dictate the task behaviour of the WARP app.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0238">详情</a></td>
+      </tr>
+
+      <tr>
        <td>ba35fb0779bef05440382bff330b167e</td>
        <td>CVE-2023-40787</td>
        <td>2023-08-29 13:15:00 <img src="imgs/new.gif" /></td>
@@ -416,14 +424,6 @@
        <td>2023-08-28 22:15:00 <img src="imgs/new.gif" /></td>
        <td>An issue in Perfree PerfreeBlog v.3.1.2 allows a remote attacker to execute arbitrary code via crafted plugin listed in admin/plugin/access/list.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40825">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>62798fdb50cd5d41113e6a42a5152a82</td>
-       <td>CVE-2023-40170</td>
-       <td>2023-08-28 21:15:00 <img src="imgs/new.gif" /></td>
-       <td>jupyter-server is the backend for Jupyter web applications. Improper cross-site credential checks on `/files/` URLs could allow exposure of certain file contents, or accessing files when opening untrusted files via  "Open image in new tab". This issue has been addressed in commit `87a49272728` which has been included in release `2.7.2`. Users are advised to upgrade. Users unable to upgrade may use the lower performance `--ContentsManager.files_handler_class=jupyter_server.files.handlers.FilesHandler`, which implements the correct checks.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40170">详情</a></td>
       </tr>
 
      </tbody>
