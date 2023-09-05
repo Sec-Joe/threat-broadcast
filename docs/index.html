@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-09-05 14:29:31 -->
+<!-- RELEASE TIME : 2023-09-05 16:33:06 -->
 <html lang="zh-cn">
 
  <head>
@@ -1915,6 +1915,14 @@
       </tr>
 
       <tr>
+       <td>487bdc1c01e2d019a563776471d8af4e</td>
+       <td>CVE-2023-4640</td>
+       <td>2023-08-30 17:15:11 </td>
+       <td>The controller responsible for setting the logging level does not include any authorizationchecks to ensure the user is authenticated. This can be seen by noting that it extendsController rather than AuthenticatedController and includes no further checks.&Acirc;&nbsp;This issue affects YugabyteDB Anywhere: from 2.0.0 through 2.17.3</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4640">详情</a></td>
+      </tr>
+
+      <tr>
        <td>49eaacb8462c2c10b94c87ac17c5c2a8</td>
        <td>CVE-2023-4624</td>
        <td>2023-08-30 13:15:15 </td>
@@ -2024,14 +2032,6 @@
        <td>2023-08-26 07:15:10 </td>
        <td>A vulnerability was found in IBOS OA 4.5.5. It has been classified as critical. Affected is an unknown function of the file ?r=recruit/bgchecks/export&amp;checkids=x. The manipulation leads to sql injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-238056. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4545">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>56d51bd3ba779e211bfeeb5ab4bfb4b7</td>
-       <td>CVE-2023-4508</td>
-       <td>2023-08-24 23:15:09 </td>
-       <td>A user able to control file input to Gerbv, between versions 2.4.0 and 2.10.0, can cause a crash and cause denial-of-service with a specially crafted Gerber RS-274X file.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4508">详情</a></td>
       </tr>
 
      </tbody>
