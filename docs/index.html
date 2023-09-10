@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-09-10 01:32:22 -->
+<!-- RELEASE TIME : 2023-09-10 05:27:03 -->
 <html lang="zh-cn">
 
  <head>
@@ -1859,6 +1859,14 @@
       </tr>
 
       <tr>
+       <td>b604d93faa75fafd3d9056462d70b424</td>
+       <td>CVE-2023-4773</td>
+       <td>2023-09-06 04:15:17 </td>
+       <td>The WordPress Social Login plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'wordpress_social_login_meta' shortcode in versions up to, and including, 3.0.4 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers with contributor-level and above permissions to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4773">详情</a></td>
+      </tr>
+
+      <tr>
        <td>b017b786bec13d149965d32eb9a41876</td>
        <td>CVE-2023-4719</td>
        <td>2023-09-06 02:15:09 </td>
@@ -1872,6 +1880,30 @@
        <td>2023-09-05 22:15:09 </td>
        <td>Out of bounds memory access in FedCM in Google Chrome prior to 116.0.5845.179 allowed a remote attacker who had compromised the renderer process to perform an out of bounds memory read via a crafted HTML page. (Chromium security severity: High)</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4761">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7112cbddbd6ab578129b9890e045108b</td>
+       <td>CVE-2023-4764</td>
+       <td>2023-09-05 22:15:09 </td>
+       <td>Incorrect security UI in BFCache in Google Chrome prior to 116.0.5845.179 allowed a remote attacker to spoof the contents of the Omnibox (URL bar) via a crafted HTML page. (Chromium security severity: High)</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4764">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>451f66af777896995dae4a3d547796b7</td>
+       <td>CVE-2023-4763</td>
+       <td>2023-09-05 22:15:09 </td>
+       <td>Use after free in Networks in Google Chrome prior to 116.0.5845.179 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4763">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4e7e652ad20c4d3d46f8d77e7cc2f8bb</td>
+       <td>CVE-2023-4762</td>
+       <td>2023-09-05 22:15:09 </td>
+       <td>Type Confusion in V8 in Google Chrome prior to 116.0.5845.179 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: High)</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4762">详情</a></td>
       </tr>
 
       <tr>
@@ -2000,38 +2032,6 @@
        <td>2023-09-04 12:15:10 </td>
        <td>The Post Timeline WordPress plugin before 2.2.6 does not sanitise and escape an invalid nonce before outputting it back in an AJAX response, leading to a Reflected Cross-Site Scripting which could be used against high privilege users such as admin</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4284">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>09c0b597c0a20282f87f6033f4410b6b</td>
-       <td>CVE-2023-4269</td>
-       <td>2023-09-04 12:15:10 </td>
-       <td>The User Activity Log WordPress plugin before 1.6.6 lacks proper authorisation when exporting its activity logs, allowing any authenticated users, such as subscriber to perform such action and retrieve PII such as email addresses.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4269">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7ac70a7dde742888b7bc99e2e01c0ac5</td>
-       <td>CVE-2023-4254</td>
-       <td>2023-09-04 12:15:10 </td>
-       <td>The AI ChatBot WordPress plugin before 4.7.8 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup)</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4254">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2bd586748166d4d87833bb0bfa63d31c</td>
-       <td>CVE-2023-4253</td>
-       <td>2023-09-04 12:15:10 </td>
-       <td>The AI ChatBot WordPress plugin before 4.7.8 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup)</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4253">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>43d8a757aceb64e6a594805aaba3b9ad</td>
-       <td>CVE-2023-4216</td>
-       <td>2023-09-04 12:15:10 </td>
-       <td>The Orders Tracking for WooCommerce WordPress plugin before 1.2.6 doesn't validate the file_url parameter when importing a CSV file, allowing high privilege users with the manage_woocommerce capability to access any file on the web server via a Traversal attack. The content retrieved is however limited to the first line of the file.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4216">详情</a></td>
       </tr>
 
      </tbody>
