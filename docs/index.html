@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-09-11 10:32:56 -->
+<!-- RELEASE TIME : 2023-09-11 12:45:31 -->
 <html lang="zh-cn">
 
  <head>
@@ -235,6 +235,30 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>07142fd9d31a9145f7845ea2bbd77d6d</td>
+       <td>CVE-2023-42467</td>
+       <td>2023-09-11 04:15:00 <img src="imgs/new.gif" /></td>
+       <td>QEMU through 8.0.0 could trigger a division by zero in scsi_disk_reset in hw/scsi/scsi-disk.c because scsi_disk_emulate_mode_select does not prevent s->qdev.blocksize from being 256. This stops QEMU and the guest immediately.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-42467">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>574f4181391952d48ce13f4551f3d3a1</td>
+       <td>CVE-2023-4879</td>
+       <td>2023-09-10 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>Cross-site Scripting (XSS) - Stored in GitHub repository instantsoft/icms2 prior to 2.16.1.-git.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4879">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2eb07ddfaafa7ad3d0d516362ec9ddc1</td>
+       <td>CVE-2023-4878</td>
+       <td>2023-09-10 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>Server-Side Request Forgery (SSRF) in GitHub repository instantsoft/icms2 prior to 2.16.1-git.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4878">详情</a></td>
+      </tr>
+
+      <tr>
        <td>7ddc59bd71bf181d69c0e4a3619b5da4</td>
        <td>CVE-2023-4873</td>
        <td>2023-09-10 03:15:00 <img src="imgs/new.gif" /></td>
@@ -400,30 +424,6 @@
        <td>2023-09-07 20:15:00</td>
        <td>Tolgee is an open-source localization platform. Due to lack of validation field - Org Name, bad actor can send emails with HTML injected code to the victims. Registered users can inject HTML into unsanitized emails from the Tolgee instance to other users. This unsanitized HTML ends up in invitation emails which appear as legitimate org invitations. Bad actors may direct users to malicious website or execute javascript in the context of the users browser. This vulnerability has been addressed in version 3.29.2. Users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-41316">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>db38d96136ec0b54243b3ed3b5ffe33e</td>
-       <td>CVE-2023-20194</td>
-       <td>2023-09-07 20:15:00</td>
-       <td>A vulnerability in the ERS API of Cisco ISE could allow an authenticated, remote attacker to read arbitrary files on the underlying operating system of an affected device. To exploit this vulnerability, an attacker must have valid Administrator-level privileges on the affected device. This vulnerability is due to improper privilege management in the ERS API. An attacker could exploit this vulnerability by sending a crafted request to an affected device. A successful exploit could allow the attacker to elevate their privileges beyond the sphere of their intended access level, which would allow them to obtain sensitive information from the underlying operating system. Note: The ERS is not enabled by default. To verify the status of the ERS API in the Admin GUI, choose Administration > Settings > API Settings > API Service Settings.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-20194">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0e12677cad70efef8db68c3ada181fe9</td>
-       <td>CVE-2023-20193</td>
-       <td>2023-09-07 20:15:00</td>
-       <td>A vulnerability in the Embedded Service Router (ESR) of Cisco ISE could allow an authenticated, local attacker to read, write, or delete arbitrary files on the underlying operating system and escalate their privileges to root. To exploit this vulnerability, an attacker must have valid Administrator-level privileges on the affected device. This vulnerability is due to improper privilege management in the ESR console. An attacker could exploit this vulnerability by sending a crafted request to an affected device. A successful exploit could allow the attacker to elevate their privileges to root and read, write, or delete arbitrary files from the underlying operating system of the affected device. Note: The ESR is not enabled by default and must be licensed. To verify the status of the ESR in the Admin GUI, choose Administration > Settings > Protocols > IPSec.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-20193">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0bdb754fb0e3b5ee5c1f5a9e3b110692</td>
-       <td>CVE-2023-37798</td>
-       <td>2023-09-07 19:15:00</td>
-       <td>A stored cross-site scripting (XSS) vulnerability in the new REDCap project creation function of Vanderbilt REDCap 13.1.35 allows attackers to execute arbitrary web scripts or HTML via injecting a crafted payload into the project title parameter.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-37798">详情</a></td>
       </tr>
 
      </tbody>
