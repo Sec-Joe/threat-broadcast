@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-09-12 16:32:40 -->
+<!-- RELEASE TIME : 2023-09-12 18:28:59 -->
 <html lang="zh-cn">
 
  <head>
@@ -1851,6 +1851,14 @@
       </tr>
 
       <tr>
+       <td>58dbdcfe7cc0d60cf84438cdf2e78ff0</td>
+       <td>CVE-2023-4843</td>
+       <td>2023-09-08 17:15:30 </td>
+       <td>Pega Platform versions 7.1 to 8.8.3 are affected by an HTML Injection issue with a name field utilized in Visual Business Director, however this field can only be modified by an authenticated administrative user.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4843">详情</a></td>
+      </tr>
+
+      <tr>
        <td>989c507fc0d35249c74d04dee335b88d</td>
        <td>CVE-2023-4815</td>
        <td>2023-09-07 07:15:08 </td>
@@ -2024,14 +2032,6 @@
        <td>2023-09-04 18:15:09 </td>
        <td>hyper-bump-it is a command line tool for updating the version in project files.`hyper-bump-it` reads a file glob pattern from the configuration file. That is combined with the project root directory to construct a full glob pattern that is used to find files that should be edited. These matched files should be contained within the project root directory, but that is not checked. This could result in changes being written to files outside of the project. The default behaviour of `hyper-bump-it` is to display the planned changes and prompt the user for confirmation before editing any files. However, the configuration file provides a field that can be used cause files to be edited without displaying the prompt. This issue has been fixed in release version 0.5.1. Users are advised to upgrade. Users that are unable to update from vulnerable versions, executing `hyper-bump-it` with the `--interactive` command line argument will ensure that all planned changes are displayed and prompt the user for confirmation before editing any files, even if the configuration file contains `show_confirm_prompt=true`.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-41057">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d3f911159054428360b5a01515f40072</td>
-       <td>CVE-2023-41055</td>
-       <td>2023-09-04 18:15:09 </td>
-       <td>LibreY is a fork of LibreX, a framework-less and javascript-free privacy respecting meta search engine. LibreY is subject to a Server-Side Request Forgery (SSRF) vulnerability in the `engines/google/text.php` and `engines/duckduckgo/text.php` files in versions before commit be59098abd119cda70b15bf3faac596dfd39a744. This vulnerability allows remote attackers to request the server to send HTTP GET requests to arbitrary targets and conduct Denial-of-Service (DoS) attacks via the `wikipedia_language` cookie. Remote attackers can request the server to download large files to reduce the performance of the server or even deny access from legitimate users. This issue has been patched in https://github.com/Ahwxorg/LibreY/pull/9. LibreY hosters are advised to use the latest commit. There are no known workarounds for this vulnerability.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-41055">详情</a></td>
       </tr>
 
      </tbody>
