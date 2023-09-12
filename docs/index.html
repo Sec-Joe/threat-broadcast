@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-09-12 15:27:20 -->
+<!-- RELEASE TIME : 2023-09-12 16:32:40 -->
 <html lang="zh-cn">
 
  <head>
@@ -1875,6 +1875,14 @@
       </tr>
 
       <tr>
+       <td>cee15ef09fbc90793abddb86879816fd</td>
+       <td>CVE-2023-4809</td>
+       <td>2023-09-06 20:15:08 </td>
+       <td>In pf packet processing with a 'scrub fragment reassemble' rule, a packet containing multiple IPv6 fragment headers would be reassembled, and then immediately processed.  That is, a packet with multiple fragment extension headers would not be recognized as the correct ultimate payload. Instead a packet with multiple IPv6 fragment headers would unexpectedly be interpreted as a fragmented packet, rather than as whatever the real payload is.As a result, IPv6 fragments may bypass pf firewall rules written on the assumption all fragments have been reassembled and, as a result, be forwarded or processed by the host.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4809">详情</a></td>
+      </tr>
+
+      <tr>
        <td>314c2a621137efea0191d93bf63fe9e3</td>
        <td>CVE-2023-41150</td>
        <td>2023-09-06 13:15:09 </td>
@@ -2024,14 +2032,6 @@
        <td>2023-09-04 18:15:09 </td>
        <td>LibreY is a fork of LibreX, a framework-less and javascript-free privacy respecting meta search engine. LibreY is subject to a Server-Side Request Forgery (SSRF) vulnerability in the `engines/google/text.php` and `engines/duckduckgo/text.php` files in versions before commit be59098abd119cda70b15bf3faac596dfd39a744. This vulnerability allows remote attackers to request the server to send HTTP GET requests to arbitrary targets and conduct Denial-of-Service (DoS) attacks via the `wikipedia_language` cookie. Remote attackers can request the server to download large files to reduce the performance of the server or even deny access from legitimate users. This issue has been patched in https://github.com/Ahwxorg/LibreY/pull/9. LibreY hosters are advised to use the latest commit. There are no known workarounds for this vulnerability.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-41055">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b54d2cbff700437fd46c40edd581278a</td>
-       <td>CVE-2023-41054</td>
-       <td>2023-09-04 18:15:08 </td>
-       <td>LibreY is a fork of LibreX, a framework-less and javascript-free privacy respecting meta search engine. LibreY is subject to a Server-Side Request Forgery (SSRF) vulnerability in the `image_proxy.php` file of LibreY before commit 8f9b9803f231e2954e5b49987a532d28fe50a627. This vulnerability allows remote attackers to use the server as a proxy to send HTTP GET requests to arbitrary targets and retrieve information in the internal network or conduct Denial-of-Service (DoS) attacks via the `url` parameter. Remote attackers can use the server as a proxy to send HTTP GET requests and retrieve information in the internal network. Remote attackers can also request the server to download large files or chain requests among multiple instances to reduce the performance of the server or even deny access from legitimate users. This issue has been addressed in https://github.com/Ahwxorg/LibreY/pull/31. LibreY hosters are advised to use the latest commit. There are no known workarounds for this vulnerability.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-41054">详情</a></td>
       </tr>
 
      </tbody>
