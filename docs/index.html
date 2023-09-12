@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-09-12 20:26:07 -->
+<!-- RELEASE TIME : 2023-09-12 22:28:58 -->
 <html lang="zh-cn">
 
  <head>
@@ -1867,6 +1867,14 @@
       </tr>
 
       <tr>
+       <td>783d43ff42c42388e1bf5c5c7dabcda5</td>
+       <td>CVE-2023-4685</td>
+       <td>2023-09-07 18:15:07 </td>
+       <td>Delta Electronics' CNCSoft-B version 1.0.0.4 and DOPSoft versions 4.0.0.82 and prior are vulnerable to stack-based buffer overflow, which could allow an attacker to execute arbitrary code.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4685">详情</a></td>
+      </tr>
+
+      <tr>
        <td>989c507fc0d35249c74d04dee335b88d</td>
        <td>CVE-2023-4815</td>
        <td>2023-09-07 07:15:08 </td>
@@ -2024,14 +2032,6 @@
        <td>2023-09-05 03:15:12 </td>
        <td>The WordPress File Sharing Plugin plugin for WordPress is vulnerable to Stored Cross-Site Scripting via admin settings in versions up to, and including, 2.0.3 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with administrator-level permissions and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. This only affects multi-site installations and installations where unfiltered_html has been disabled.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4636">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f545eb9d6f6d228d4bc86f68c441a2fb</td>
-       <td>CVE-2023-41058</td>
-       <td>2023-09-04 23:15:47 </td>
-       <td>Parse Server is an open source backend server. In affected versions the Parse Cloud trigger `beforeFind` is not invoked in certain conditions of `Parse.Query`. This can pose a vulnerability for deployments where the `beforeFind` trigger is used as a security layer to modify the incoming query. The vulnerability has been fixed by refactoring the internal query pipeline for a more concise code structure and implementing a patch to ensure the `beforeFind` trigger is invoked. This fix was introduced in commit `be4c7e23c6` and has been included in releases 6.2.2 and 5.5.5. Users are advised to upgrade. Users unable to upgrade should make use of parse server's security layers to manage access levels with Class-Level Permissions and Object-Level Access Control that should be used instead of custom security layers in Cloud Code triggers.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-41058">详情</a></td>
       </tr>
 
      </tbody>
