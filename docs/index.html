@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-09-12 18:28:59 -->
+<!-- RELEASE TIME : 2023-09-12 20:26:07 -->
 <html lang="zh-cn">
 
  <head>
@@ -1851,6 +1851,14 @@
       </tr>
 
       <tr>
+       <td>e387fa388fd40e8a7c804d4b3e8ae6b2</td>
+       <td>CVE-2023-4782</td>
+       <td>2023-09-08 18:15:07 </td>
+       <td>Terraform version 1.0.8 through 1.5.6 allows arbitrary file write during the `init` operation if run on maliciously crafted Terraform configuration. This vulnerability is fixed in Terraform 1.5.7.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4782">详情</a></td>
+      </tr>
+
+      <tr>
        <td>58dbdcfe7cc0d60cf84438cdf2e78ff0</td>
        <td>CVE-2023-4843</td>
        <td>2023-09-08 17:15:30 </td>
@@ -2024,14 +2032,6 @@
        <td>2023-09-04 23:15:47 </td>
        <td>Parse Server is an open source backend server. In affected versions the Parse Cloud trigger `beforeFind` is not invoked in certain conditions of `Parse.Query`. This can pose a vulnerability for deployments where the `beforeFind` trigger is used as a security layer to modify the incoming query. The vulnerability has been fixed by refactoring the internal query pipeline for a more concise code structure and implementing a patch to ensure the `beforeFind` trigger is invoked. This fix was introduced in commit `be4c7e23c6` and has been included in releases 6.2.2 and 5.5.5. Users are advised to upgrade. Users unable to upgrade should make use of parse server's security layers to manage access levels with Class-Level Permissions and Object-Level Access Control that should be used instead of custom security layers in Cloud Code triggers.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-41058">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f19b1324bd5e2d1818ee3206521daedc</td>
-       <td>CVE-2023-41057</td>
-       <td>2023-09-04 18:15:09 </td>
-       <td>hyper-bump-it is a command line tool for updating the version in project files.`hyper-bump-it` reads a file glob pattern from the configuration file. That is combined with the project root directory to construct a full glob pattern that is used to find files that should be edited. These matched files should be contained within the project root directory, but that is not checked. This could result in changes being written to files outside of the project. The default behaviour of `hyper-bump-it` is to display the planned changes and prompt the user for confirmation before editing any files. However, the configuration file provides a field that can be used cause files to be edited without displaying the prompt. This issue has been fixed in release version 0.5.1. Users are advised to upgrade. Users that are unable to update from vulnerable versions, executing `hyper-bump-it` with the `--interactive` command line argument will ensure that all planned changes are displayed and prompt the user for confirmation before editing any files, even if the configuration file contains `show_confirm_prompt=true`.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-41057">详情</a></td>
       </tr>
 
      </tbody>
