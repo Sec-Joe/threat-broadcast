@@ -16,7 +16,7 @@ import re
 import time
 
 
-class Cert360(BaseCrawler):
+class Aliyunnvd(BaseCrawler):
 
     def __init__(self):
         BaseCrawler.__init__(self)
