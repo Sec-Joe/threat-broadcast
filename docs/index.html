@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-09-13 14:33:12 -->
+<!-- RELEASE TIME : 2023-09-13 16:32:16 -->
 <html lang="zh-cn">
 
  <head>
@@ -1859,6 +1859,14 @@
       </tr>
 
       <tr>
+       <td>36b54d4552a86e797dacf78d31b115f9</td>
+       <td>CVE-2023-4897</td>
+       <td>2023-09-11 21:15:42 </td>
+       <td>Relative Path Traversal in GitHub repository mintplex-labs/anything-llm prior to 0.0.1.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4897">详情</a></td>
+      </tr>
+
+      <tr>
        <td>c2bf618fc8f19c88451514c8c251aecf</td>
        <td>CVE-2023-4873</td>
        <td>2023-09-10 03:15:18 </td>
@@ -1920,6 +1928,22 @@
        <td>2023-09-10 01:15:07 </td>
        <td>A vulnerability was found in SourceCodester Contact Manager App 1.0. It has been declared as problematic. Affected by this vulnerability is an unknown functionality of the file add.php. The manipulation leads to cross-site request forgery. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-239353 was assigned to this vulnerability.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4868">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>837638b02e53d28c647abdb7488a256d</td>
+       <td>CVE-2023-4875</td>
+       <td>2023-09-09 15:15:35 </td>
+       <td>Null pointer dereference when composing from a specially crafted draft message in Mutt &gt;1.5.2 &lt;2.2.12</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4875">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a4ff7dd14c1442b04c30ee1e942fa61e</td>
+       <td>CVE-2023-4874</td>
+       <td>2023-09-09 15:15:34 </td>
+       <td>Null pointer dereference when viewing a specially crafted email in Mutt &gt;1.5.2 &lt;2.2.12</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4874">详情</a></td>
       </tr>
 
       <tr>
@@ -2008,30 +2032,6 @@
        <td>2023-09-07 02:15:08 </td>
        <td>The Newsletter plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'newsletter_form' shortcode in versions up to, and including, 7.8.9 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers with contributor-level and above permissions to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4772">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cee15ef09fbc90793abddb86879816fd</td>
-       <td>CVE-2023-4809</td>
-       <td>2023-09-06 20:15:08 </td>
-       <td>In pf packet processing with a 'scrub fragment reassemble' rule, a packet containing multiple IPv6 fragment headers would be reassembled, and then immediately processed.  That is, a packet with multiple fragment extension headers would not be recognized as the correct ultimate payload. Instead a packet with multiple IPv6 fragment headers would unexpectedly be interpreted as a fragmented packet, rather than as whatever the real payload is.As a result, IPv6 fragments may bypass pf firewall rules written on the assumption all fragments have been reassembled and, as a result, be forwarded or processed by the host.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4809">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7a62d74ab50d94feb05e19e83103d8fd</td>
-       <td>CVE-2023-4623</td>
-       <td>2023-09-06 14:15:12 </td>
-       <td>A use-after-free vulnerability in the Linux kernel's net/sched: sch_hfsc (HFSC qdisc traffic control) component can be exploited to achieve local privilege escalation.If a class with a link-sharing curve (i.e. with the HFSC_FSC flag set) has a parent without a link-sharing curve, then init_vf() will call vttree_insert() on the parent, but vttree_remove() will be skipped in update_vf(). This leaves a dangling pointer that can cause a use-after-free.We recommend upgrading past commit b3d26c5702c7d6c45456326e56d2ccf3f103e60f.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4623">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>314c2a621137efea0191d93bf63fe9e3</td>
-       <td>CVE-2023-41150</td>
-       <td>2023-09-06 13:15:09 </td>
-       <td>F-RevoCRM 7.3 series prior to version7.3.8 contains a cross-site scripting vulnerability. If this vulnerability is exploited, an arbitrary script may be executed on the web browser of the user who is using the product.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-41150">详情</a></td>
       </tr>
 
      </tbody>
