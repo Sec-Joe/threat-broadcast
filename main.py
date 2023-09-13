@@ -10,6 +10,7 @@ from color_log.clog import log
 from pypdm.dbc._sqlite import SqliteDBC
 
 from src.crawler.cert360 import Cert360
+from src.crawler.aliyunnvd import Aliyunnvd
 from src.crawler.nsfocus import Nsfocus
 from src.crawler.qianxin import QiAnXin
 from src.crawler.redqueen import RedQueen
@@ -79,6 +80,7 @@ def main(top, auto_commit, gtk, mail_smtp, mail_user, mail_pass, qq_user, qq_pas
     all_cves = {}
     srcs = [ 
         Cert360(), 
+        Aliyunnvd(),
         Nsfocus(), 
         QiAnXin(), 
         RedQueen(), 
