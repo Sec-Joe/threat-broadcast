@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-10-01 01:39:43 -->
+<!-- RELEASE TIME : 2023-10-01 05:27:47 -->
 <html lang="zh-cn">
 
  <head>
@@ -1851,6 +1851,38 @@
       </tr>
 
       <tr>
+       <td>3b1fbc714218c70cdd91dbdd4baab0ab</td>
+       <td>CVE-2023-5185</td>
+       <td>2023-09-28 21:15:10 </td>
+       <td>Gym Management System Project v1.0 is vulnerable toan Insecure File Upload vulnerability on the 'file'parameter of profile/i.php page, allowing anauthenticated attacker to obtain Remote Code Executionon the server hosting the application.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-5185">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f711a72e1eb254da4465b1252c0f56bd</td>
+       <td>CVE-2023-5217</td>
+       <td>2023-09-28 16:15:10 </td>
+       <td>Heap buffer overflow in vp8 encoding in libvpx in Google Chrome prior to 117.0.5938.132 and libvpx 1.13.1 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-5217">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c0b806e7bb86184fd64543df91d73881</td>
+       <td>CVE-2023-5187</td>
+       <td>2023-09-28 16:15:10 </td>
+       <td>Use after free in Extensions in Google Chrome prior to 117.0.5938.132 allowed an attacker who convinced a user to install a malicious extension to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-5187">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>96d2571322442668bed5913ac88de4d6</td>
+       <td>CVE-2023-5186</td>
+       <td>2023-09-28 16:15:10 </td>
+       <td>Use after free in Passwords in Google Chrome prior to 117.0.5938.132 allowed a remote attacker who convinced a user to engage in specific UI interaction to potentially exploit heap corruption via crafted UI interaction. (Chromium security severity: High)</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-5186">详情</a></td>
+      </tr>
+
+      <tr>
        <td>25b69a039f3adbfe3729150c471c405c</td>
        <td>CVE-2023-43884</td>
        <td>2023-09-28 15:15:12 </td>
@@ -1995,43 +2027,11 @@
       </tr>
 
       <tr>
-       <td>160c6e4db879bd030641f9ca5434e26d</td>
-       <td>CVE-2023-5192</td>
-       <td>2023-09-27 15:19:42 </td>
-       <td>Excessive Data Query Operations in a Large Data Table in GitHub repository pimcore/demo prior to 10.3.0.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-5192">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ac78f62eb954822702ebb809d36559fd</td>
-       <td>CVE-2023-5175</td>
-       <td>2023-09-27 15:19:42 </td>
-       <td>During process shutdown, it was possible that an `ImageBitmap` was created that would later be used after being freed from a different codepath, leading to a potentially exploitable crash. This vulnerability affects Firefox &lt; 118.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-5175">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>637c52d0c3d8e26c44cb2b265b44ef3b</td>
-       <td>CVE-2023-5173</td>
-       <td>2023-09-27 15:19:42 </td>
-       <td>In a non-standard configuration of Firefox, an integer overflow could have occurred based on network traffic (possibly under influence of a local unprivileged webpage), leading to an out-of-bounds write to privileged process memory. *This bug only affects Firefox if a non-standard preference allowing non-HTTPS Alternate Services (`network.http.altsvc.oe`) is enabled.* This vulnerability affects Firefox &lt; 118.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-5173">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7ac7db75f1d6efa4a1e5ef1e17310d3c</td>
-       <td>CVE-2023-5176</td>
-       <td>2023-09-27 15:19:42 </td>
-       <td>Memory safety bugs present in Firefox 117, Firefox ESR 115.2, and Thunderbird 115.2. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox &lt; 118, Firefox ESR &lt; 115.3, and Thunderbird &lt; 115.3.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-5176">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>93a30f171133ad61e25d2170ff919175</td>
-       <td>CVE-2023-5174</td>
-       <td>2023-09-27 15:19:42 </td>
-       <td>If Windows failed to duplicate a handle during process creation, the sandbox code may have inadvertently freed a pointer twice, resulting in a use-after-free and a potentially exploitable crash.*This bug only affects Firefox on Windows when run in non-standard configurations (such as using `runas`). Other operating systems are unaffected.* This vulnerability affects Firefox &lt; 118, Firefox ESR &lt; 115.3, and Thunderbird &lt; 115.3.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-5174">详情</a></td>
+       <td>0897ba0609bda0b0cb27eba9b71c9de8</td>
+       <td>CVE-2023-5244</td>
+       <td>2023-09-28 01:15:09 </td>
+       <td>Cross-site Scripting (XSS) - Reflected in GitHub repository microweber/microweber prior to 2.0.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-5244">详情</a></td>
       </tr>
 
      </tbody>
