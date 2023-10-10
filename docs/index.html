@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-10-10 16:33:52 -->
+<!-- RELEASE TIME : 2023-10-10 20:23:48 -->
 <html lang="zh-cn">
 
  <head>
@@ -1843,6 +1843,14 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>de56652809047a93b6e1c5c5b5dc6905</td>
+       <td>CVE-2023-5452</td>
+       <td>2023-10-06 20:15:11 </td>
+       <td>Cross-site Scripting (XSS) - Stored in GitHub repository snipe/snipe-it prior to v6.2.2.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-5452">详情</a></td>
+      </tr>
+
+      <tr>
        <td>57747aa6d7903315237947e18b3db7eb</td>
        <td>CVE-2023-5441</td>
        <td>2023-10-05 21:15:11 </td>
@@ -2024,14 +2032,6 @@
        <td>2023-10-04 04:15:14 </td>
        <td>Before correction, the&Acirc;&nbsp;copy_file_range&Acirc;&nbsp;system call checked only for the CAP_READ and CAP_WRITE capabilities on the input and output file descriptors, respectively.  Using an offset is logically equivalent to seeking, and the system call must additionally require the CAP_SEEK capability.This incorrect privilege check enabled sandboxed processes with only read or write but no seek capability on a file descriptor to read data from or write data to an arbitrary location within the file corresponding to that file descriptor.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-5369">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7d33e40c4c4f0eb7241bb47b604fa5ae</td>
-       <td>CVE-2023-5357</td>
-       <td>2023-10-04 02:15:10 </td>
-       <td>The Instagram for WordPress plugin for WordPress is vulnerable to Stored Cross-Site Scripting via shortcodes in versions up to, and including, 2.1.6 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers with contributor-level and above permissions to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-5357">详情</a></td>
       </tr>
 
      </tbody>
