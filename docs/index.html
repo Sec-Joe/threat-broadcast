@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-10-11 09:26:16 -->
+<!-- RELEASE TIME : 2023-10-11 10:32:32 -->
 <html lang="zh-cn">
 
  <head>
@@ -1907,6 +1907,22 @@
       </tr>
 
       <tr>
+       <td>d4c680c0ad11e5bbdf35fd39bf906e84</td>
+       <td>CVE-2023-5399</td>
+       <td>2023-10-04 19:15:10 </td>
+       <td>A CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('PathTraversal') vulnerability exists that could cause tampering of files on the personal computerrunning C-Bus when using the File Command.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-5399">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0bab7339aefdfdc1220268ec90afba9f</td>
+       <td>CVE-2023-5391</td>
+       <td>2023-10-04 19:15:10 </td>
+       <td>A CWE-502: Deserialization of untrusted data vulnerability exists that could allow an attacker toexecute arbitrary code on the targeted system by sending a specifically crafted packet to theapplication.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-5391">详情</a></td>
+      </tr>
+
+      <tr>
        <td>9ee12a9b532012221bbc779ceaa1cf39</td>
        <td>CVE-2023-5371</td>
        <td>2023-10-04 17:15:10 </td>
@@ -2016,22 +2032,6 @@
        <td>2023-10-04 04:15:15 </td>
        <td>On CPU 0 the check for the SMCCC workaround is called before SMCCC support has been initialized. This resulted in no speculative execution workarounds being installed on CPU 0.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-5370">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>27159ca605e3e3f935734c27e48fd812</td>
-       <td>CVE-2023-5368</td>
-       <td>2023-10-04 04:15:14 </td>
-       <td>On an msdosfs filesystem, the 'truncate' or 'ftruncate' system calls under certain circumstances populate the additional space in the file with unallocated data from the underlying disk device, rather than zero bytes.This may permit a user with write access to files on a msdosfs filesystem to read unintended data (e.g. from a previously deleted file).</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-5368">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>35297ba9b2388b22390cd2939ef47a39</td>
-       <td>CVE-2023-5369</td>
-       <td>2023-10-04 04:15:14 </td>
-       <td>Before correction, the&Acirc;&nbsp;copy_file_range&Acirc;&nbsp;system call checked only for the CAP_READ and CAP_WRITE capabilities on the input and output file descriptors, respectively.  Using an offset is logically equivalent to seeking, and the system call must additionally require the CAP_SEEK capability.This incorrect privilege check enabled sandboxed processes with only read or write but no seek capability on a file descriptor to read data from or write data to an arbitrary location within the file corresponding to that file descriptor.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-5369">详情</a></td>
       </tr>
 
      </tbody>
