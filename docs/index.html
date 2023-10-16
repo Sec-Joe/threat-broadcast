@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-10-16 20:27:51 -->
+<!-- RELEASE TIME : 2023-10-16 22:29:16 -->
 <html lang="zh-cn">
 
  <head>
@@ -235,6 +235,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>1dbcb87a082e482cf25b38e3e6e4dc66</td>
+       <td>CVE-2023-45683</td>
+       <td>2023-10-16 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>github.com/crewjam/saml is a saml library for the go language. In affected versions the package does not validate the ACS Location URI according to the SAML binding being parsed. If abused, this flaw allows attackers to register malicious Service Providers at the IdP and inject Javascript in the ACS endpoint definition, achieving Cross-Site-Scripting (XSS) in the IdP context during the redirection at the end of a SAML SSO Flow. Consequently, an attacker may perform any authenticated action as the victim once the victim’s browser loaded the SAML IdP initiated SSO link for the malicious service provider. Note: SP registration is commonly an unrestricted operation in IdPs, hence not requiring particular permissions or publicly accessible to ease the IdP interoperability. This issue is fixed in version 0.4.14. Users unable to upgrade may perform external validation of URLs provided in SAML metadata, or restrict the ability for end-users to upload arbitrary metadata.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-45683">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>063a052d6b2b829a61f50f0ad311caa7</td>
+       <td>CVE-2023-45669</td>
+       <td>2023-10-16 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>WebAuthn4J Spring Security provides Web Authentication specification support for Spring applications. Affected versions are subject to improper signature counter value handling. A flaw was found in webauthn4j-spring-security-core. When an authneticator returns an incremented signature counter value during authentication, webauthn4j-spring-security-core does not properly persist the value, which means cloned authenticator detection does not work. An attacker who cloned valid authenticator in some way can use the cloned authenticator without being detected. This issue has been addressed in version `0.9.1.RELEASE`. Users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-45669">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>60299a30474a67f4835d43d12ebaebd4</td>
+       <td>CVE-2023-45660</td>
+       <td>2023-10-16 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>Nextcloud mail is an email app for the Nextcloud home server platform. In affected versions a missing check of origin, target and cookies allows for an attacker to abuse the proxy endpoint to denial of service a third server. It is recommended that the Nextcloud Mail is upgraded to 2.2.8 or 3.3.0. There are no known workarounds for this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-45660">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>17236910e1ff3ff4d6fc1b6aaff9c373</td>
+       <td>CVE-2023-45151</td>
+       <td>2023-10-16 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>Nextcloud server is an open source home cloud platform. Affected versions of Nextcloud stored OAuth2 tokens in plaintext which allows an attacker who has gained access to the server to potentially elevate their privilege. This issue has been addressed and users are recommended to upgrade their Nextcloud Server to version 25.0.8, 26.0.3 or 27.0.1. There are no known workarounds for this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-45151">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e6b230eb4a433286bd2bb4c7141514da</td>
+       <td>CVE-2023-45148</td>
+       <td>2023-10-16 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>Nextcloud is an open source home cloud server. When Memcached is used as `memcache.distributed` the rate limiting in Nextcloud Server could be reset unexpectedly resetting the rate count earlier than intended. Users are advised to upgrade to versions 25.0.11, 26.0.6 or 27.1.0. Users unable to upgrade should change their config setting `memcache.distributed` to `\OC\Memcache\Redis` and install Redis instead of Memcached.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-45148">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2fe099730cc38d16a1f8584dc02bcc7f</td>
+       <td>CVE-2023-43120</td>
+       <td>2023-10-16 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue discovered in Extreme Networks Switch Engine (EXOS) before 32.5.1.5, before 22.7 and before 31.7.1 allows attackers to gain escalated privileges via crafted HTTP request.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-43120">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>92f4b87635a0e7d2830ebdfd113ac090</td>
+       <td>CVE-2023-40180</td>
+       <td>2023-10-16 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>silverstripe-graphql is a package which serves Silverstripe data in GraphQL representations. An attacker could use a recursive graphql query to execute a Distributed Denial of Service attack (DDOS attack) against a website. This mostly affects websites with publicly exposed graphql schemas. If your Silverstripe CMS project does not expose a public facing graphql schema, a user account is required to trigger the DDOS attack. If your site is hosted behind a content delivery network (CDN), such as Imperva or CloudFlare, this may further mitigate the risk. This issue has been addressed in versions 3.8.2, 4.1.3, 4.2.5, 4.3.4, and 5.0.3. Users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40180">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b4c265358c55b6c5f2fd3e2191655be8</td>
+       <td>CVE-2023-45985</td>
+       <td>2023-10-16 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>TOTOLINK X5000R V9.1.0u.6118_B20201102 and TOTOLINK A7000R V9.1.0u.6115_B20201022 were discovered to contain a stack overflow in the function setParentalRules. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted POST request.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-45985">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e3742b44de2533ae53535984be4beb50</td>
+       <td>CVE-2023-45984</td>
+       <td>2023-10-16 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>TOTOLINK X5000R V9.1.0u.6118_B20201102 and TOTOLINK A7000R V9.1.0u.6115_B20201022 was discovered to contain a stack overflow via the lang parameter in the function setLanguageCfg.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-45984">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3b48559c8f8db9fa8d6636ee726646ed</td>
+       <td>CVE-2023-45690</td>
+       <td>2023-10-16 17:15:00 <img src="imgs/new.gif" /></td>
+       <td>Default file permissions on South River Technologies' Titan MFT and Titan SFTP servers on Linux allows a user that's authentication to the OS to read sensitive files on the filesystem</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-45690">详情</a></td>
+      </tr>
+
+      <tr>
        <td>83502a876ef1ca4319e099cb10d3fbb8</td>
        <td>CVE-2023-40378</td>
        <td>2023-10-15 02:15:00 <img src="imgs/new.gif" /></td>
@@ -344,86 +424,6 @@
        <td>2023-10-14 02:15:00</td>
        <td>In Vitogate 300 2.1.3.0, /cgi-bin/vitogate.cgi allows an unauthenticated attacker to bypass authentication and execute arbitrary commands via shell metacharacters in the ipaddr params JSON data for the put method.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-45852">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e8d8d4942fd651ab1fc2972cb5cb47b0</td>
-       <td>CVE-2023-45674</td>
-       <td>2023-10-14 00:15:00</td>
-       <td>Farmbot-Web-App is a web control interface for the Farmbot farm automation platform. An SQL injection vulnerability was found in FarmBot's web app that allows authenticated attackers to extract arbitrary data from its database (including the user table). This issue may lead to Information Disclosure. This issue has been patched in version 15.8.4. Users are advised to upgrade. There are no known workarounds for this issue.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-45674">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>afb44cd234df13574dd5c2ba0b436be7</td>
-       <td>CVE-2023-4257</td>
-       <td>2023-10-13 22:15:00</td>
-       <td>Unchecked user input length in /subsys/net/l2/wifi/wifi_shell.c can cause buffer overflows.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4257">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7d1c73733377342a4c239ce909db9aa3</td>
-       <td>CVE-2023-4263</td>
-       <td>2023-10-13 21:15:00</td>
-       <td>Potential buffer overflow vulnerability in the Zephyr IEEE 802.15.4 nRF 15.4 driver</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4263">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>16dc8966b1fdd057f17a3f25d4c2b416</td>
-       <td>CVE-2023-36559</td>
-       <td>2023-10-13 21:15:00</td>
-       <td>Microsoft Edge (Chromium-based) Spoofing Vulnerability</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-36559">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6c5f54c9783cfa9793ec83b4e66e7f5f</td>
-       <td>CVE-2023-34977</td>
-       <td>2023-10-13 20:15:00</td>
-       <td>A cross-site scripting (XSS) vulnerability has been reported to affect Video Station. If exploited, the vulnerability could allow authenticated users to inject malicious code via a network. We have already fixed the vulnerability in the following version: Video Station 5.7.0 ( 2023/07/27 ) and later</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-34977">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4cd9b5980a5c7f8d564ca5dbd8b7920d</td>
-       <td>CVE-2023-34976</td>
-       <td>2023-10-13 20:15:00</td>
-       <td>A SQL injection vulnerability has been reported to affect Video Station. If exploited, the vulnerability could allow authenticated users to inject malicious code via a network. We have already fixed the vulnerability in the following version: Video Station 5.7.0 ( 2023/07/27 ) and later</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-34976">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>db73cabd6529ab4f406a5fdaae957d9d</td>
-       <td>CVE-2023-5557</td>
-       <td>2023-10-13 02:15:00</td>
-       <td>A flaw was found in the tracker-miners package. A weakness in the sandbox allows a maliciously-crafted file to execute code outside the sandbox if the tracker-extract process has first been compromised by a separate vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5557">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1346abb583ff982d11353c324cfbdff5</td>
-       <td>CVE-2023-4562</td>
-       <td>2023-10-13 02:15:00</td>
-       <td>Improper Authentication vulnerability in Mitsubishi Electric Corporation MELSEC-F Series main modules allows a remote unauthenticated attacker to obtain sequence programs from the product or write malicious sequence programs or improper data in the product without authentication by sending illegitimate messages.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4562">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>775eca4526f6884e5cd91c702b9b3942</td>
-       <td>CVE-2023-42752</td>
-       <td>2023-10-13 02:15:00</td>
-       <td>An integer overflow flaw was found in the Linux kernel. This issue leads to the kernel allocating `skb_shared_info` in the userspace, which is exploitable in systems without SMAP protection since `skb_shared_info` contains references to function pointers.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-42752">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f1e6b25c72f5eff42942360165d62be0</td>
-       <td>CVE-2023-5564</td>
-       <td>2023-10-13 01:15:00</td>
-       <td>Cross-site Scripting (XSS) - Stored in GitHub repository froxlor/froxlor prior to 2.1.0-dev1.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5564">详情</a></td>
       </tr>
 
      </tbody>
@@ -1843,6 +1843,38 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>3884bc47445f097bb127072068187462</td>
+       <td>CVE-2023-45106</td>
+       <td>2023-10-12 15:15:47 </td>
+       <td>Cross-Site Request Forgery (CSRF) vulnerability in Fedor Urvanov, Aram Kocharyan Urvanov Syntax Highlighter plugin &lt;=&Acirc;&nbsp;2.8.33 versions.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-45106">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>71203b71731ad6d088e435d32f817109</td>
+       <td>CVE-2023-45103</td>
+       <td>2023-10-12 15:15:47 </td>
+       <td>Cross-Site Request Forgery (CSRF) vulnerability in YAS Global Team Permalinks Customizer plugin &lt;=&Acirc;&nbsp;2.8.2 versions.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-45103">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>45e74f85dc39a8a5bb5a8de1383625d2</td>
+       <td>CVE-2023-45102</td>
+       <td>2023-10-12 15:15:47 </td>
+       <td>Cross-Site Request Forgery (CSRF) vulnerability in OTWthemes Blog Manager Light plugin &lt;=&Acirc;&nbsp;1.20 versions.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-45102">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1bed1bc062bcb20bb7c8bfcd754c9097</td>
+       <td>CVE-2023-45068</td>
+       <td>2023-10-12 13:15:11 </td>
+       <td>Cross-Site Request Forgery (CSRF) vulnerability in Supsystic Contact Form by Supsystic plugin &lt;=&Acirc;&nbsp;1.7.27 versions.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-45068">详情</a></td>
+      </tr>
+
+      <tr>
        <td>2acd1bba9dc3b592cb411070a2388430</td>
        <td>CVE-2023-5487</td>
        <td>2023-10-11 23:15:11 </td>
@@ -2000,38 +2032,6 @@
        <td>2023-10-10 18:15:18 </td>
        <td>Layer 2 Tunneling Protocol Remote Code Execution Vulnerability</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-41771">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ebb100f36a6db176e2391dc8688707e8</td>
-       <td>CVE-2023-41770</td>
-       <td>2023-10-10 18:15:18 </td>
-       <td>Layer 2 Tunneling Protocol Remote Code Execution Vulnerability</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-41770">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f660dd54f0be8ef6f884a54010ae6678</td>
-       <td>CVE-2023-41769</td>
-       <td>2023-10-10 18:15:18 </td>
-       <td>Layer 2 Tunneling Protocol Remote Code Execution Vulnerability</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-41769">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>30de1f07bc3f643a0b7d23ca91c5b21d</td>
-       <td>CVE-2023-41768</td>
-       <td>2023-10-10 18:15:18 </td>
-       <td>Layer 2 Tunneling Protocol Remote Code Execution Vulnerability</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-41768">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>119d595b6fdef73dfc57348208d392eb</td>
-       <td>CVE-2023-41767</td>
-       <td>2023-10-10 18:15:18 </td>
-       <td>Layer 2 Tunneling Protocol Remote Code Execution Vulnerability</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-41767">详情</a></td>
       </tr>
 
      </tbody>
