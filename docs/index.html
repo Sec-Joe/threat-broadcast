@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-10-23 05:28:42 -->
+<!-- RELEASE TIME : 2023-10-23 07:24:20 -->
 <html lang="zh-cn">
 
  <head>
@@ -26,6 +26,14 @@
        <th width="43%">TITLE</th>
        <th width="5%">URL</th>
       </tr>
+      <tr>
+       <td>947b75b656162330cd5ee5f8fdc7fd55</td>
+       <td></td>
+       <td>2023-10-23 07:15:02 <img src="imgs/new.gif" /></td>
+       <td>安全事件周报 2023-10-16 第42周</td>
+       <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=65361d0eea0822e915605e37">详情</a></td>
+      </tr>
+
       <tr>
        <td>efc4ae30a7585e59f452af74e8669a81</td>
        <td></td>
@@ -210,14 +218,6 @@
        <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=64f9b81e22adc884abcd7ee2">详情</a></td>
       </tr>
 
-      <tr>
-       <td>e5144d71091b417ffd2a4443f40d8b65</td>
-       <td></td>
-       <td>2023-09-04 09:30:13</td>
-       <td>安全事件周报 2023-08-28 第35周</td>
-       <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=64f5a39e22adc884abcd7eb7">详情</a></td>
-      </tr>
-
      </tbody>
     </table>
    </div>
@@ -234,6 +234,86 @@
        <th width="43%">TITLE</th>
        <th width="5%">URL</th>
       </tr>
+      <tr>
+       <td>6ecaeafd86bf9975c1d15338f667a414</td>
+       <td>CVE-2023-5702</td>
+       <td>2023-10-23 01:15:00 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability was found in Viessmann Vitogate 300 up to 2.1.3.0 and classified as problematic. Affected by this issue is some unknown functionality of the file /cgi-bin/. The manipulation leads to direct request. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-243140. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5702">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>afd6da19c84f44155d07cb60b2080aa6</td>
+       <td>CVE-2023-5701</td>
+       <td>2023-10-23 01:15:00 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability has been found in vnotex vnote up to 3.17.0 and classified as problematic. Affected by this vulnerability is an unknown functionality of the component Markdown File Handler. The manipulation with the input <xss onclick="alert(1)" style=display:block>Click here</xss> leads to cross site scripting. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-243139. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5701">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a54db898b218c262a40cd336dd892f63</td>
+       <td>CVE-2023-46324</td>
+       <td>2023-10-23 01:15:00 <img src="imgs/new.gif" /></td>
+       <td>pkg/suci/suci.go in free5GC udm before 1.2.0, when Go before 1.19 is used, allows an Invalid Curve Attack because it may compute a shared secret via an uncompressed public key that has not been validated. An attacker can send arbitrary SUCIs to the UDM, which tries to decrypt them via both its private key and the attacker's public key.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46324">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d674083ea03396fc8bf55f80bf525736</td>
+       <td>CVE-2023-5700</td>
+       <td>2023-10-23 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability, which was classified as critical, was found in Netentsec NS-ASG Application Security Gateway 6.3. Affected is an unknown function of the file /protocol/iscgwtunnel/uploadiscgwrouteconf.php. The manipulation of the argument GWLinkId leads to sql injection. The exploit has been disclosed to the public and may be used. VDB-243138 is the identifier assigned to this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5700">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fd0cfac10d5205dff76e5ca81fe9484a</td>
+       <td>CVE-2023-5699</td>
+       <td>2023-10-23 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability, which was classified as problematic, has been found in CodeAstro Internet Banking System 1.0. This issue affects some unknown processing of the file pages_view_client.php. The manipulation of the argument acc_name with the input Johnnie Reyes'"()&%<zzz><ScRiPt >alert(5646)</ScRiPt> leads to cross site scripting. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-243137 was assigned to this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5699">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6327224e28f0c5c0f12912f6d105eb4e</td>
+       <td>CVE-2023-5698</td>
+       <td>2023-10-23 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability classified as problematic was found in CodeAstro Internet Banking System 1.0. This vulnerability affects unknown code of the file pages_deposit_money.php. The manipulation of the argument account_number with the input 421873905--><ScRiPt%20>alert(9523)</ScRiPt><!-- leads to cross site scripting. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-243136.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5698">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e371ae8081153373622a4c1da83d8d91</td>
+       <td>CVE-2023-5697</td>
+       <td>2023-10-23 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability classified as problematic has been found in CodeAstro Internet Banking System 1.0. This affects an unknown part of the file pages_withdraw_money.php. The manipulation of the argument account_number with the input 287359614--><ScRiPt%20>alert(1234)</ScRiPt><!-- leads to cross site scripting. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-243135.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5697">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f8f1da40666898eb18ebe4c5141ab23d</td>
+       <td>CVE-2023-46322</td>
+       <td>2023-10-23 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>iTermSessionLauncher.m in iTerm2 before 3.5.0beta12 does not sanitize ssh hostnames in URLs. The hostname's initial character may be non-alphanumeric. The hostname's other characters may be outside the set of alphanumeric characters, dash, and period.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46322">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>900d9e6d3666aca080748ba36315a761</td>
+       <td>CVE-2023-46321</td>
+       <td>2023-10-23 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>iTermSessionLauncher.m in iTerm2 before 3.5.0beta12 does not sanitize paths in x-man-page URLs. They may have shell metacharacters for a /usr/bin/man command line.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46321">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>87e37904095afdc0884b3cf167044b9f</td>
+       <td>CVE-2023-46319</td>
+       <td>2023-10-23 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>WALLIX Bastion 9.x before 9.0.9 and 10.x before 10.0.5 allows unauthenticated access to sensitive information by bypassing access control on a network access administration web interface.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46319">详情</a></td>
+      </tr>
+
       <tr>
        <td>917c5389e8122c32bd70dc4828296af9</td>
        <td>CVE-2023-46301</td>
@@ -344,86 +424,6 @@
        <td>2023-10-21 07:15:00</td>
        <td>Cross Site Scripting (XSS) vulnerability in WBCE CMS v.1.6.1 and before allows a remote attacker to escalate privileges via a crafted script to the website_footer parameter in the admin/settings/save.php component.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46054">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ec1668b969d68de3621c83c38ded272a</td>
-       <td>CVE-2023-5683</td>
-       <td>2023-10-21 05:16:00</td>
-       <td>A vulnerability was found in Beijing Baichuo Smart S85F Management Platform up to 20231010 and classified as critical. This issue affects some unknown processing of the file /sysmanage/importconf.php. The manipulation of the argument btn_file_renew leads to os command injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-243059. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5683">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2ac428bf06e0ed751c5ff8a996b034fa</td>
-       <td>CVE-2023-5132</td>
-       <td>2023-10-21 02:15:00</td>
-       <td>The Soisy Pagamento Rateale plugin for WordPress is vulnerable to unauthorized access of data due to a missing capability check on the parseRemoteRequest function in versions up to, and including, 6.0.1. This makes it possible for unauthenticated attackers with knowledge of an existing WooCommerce Order ID to expose sensitive WooCommerce order information (e.g., Name, Address, Email Address, and other order metadata).</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5132">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>bf391a626505ec6ba66f934a69d68c93</td>
-       <td>CVE-2023-46003</td>
-       <td>2023-10-21 01:15:00</td>
-       <td>I-doit pro 25 and below is vulnerable to Cross Site Scripting (XSS) via index.php.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46003">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7db987cd1bafc03a3fead4ab6a9ff767</td>
-       <td>CVE-2023-34046</td>
-       <td>2023-10-20 09:15:00</td>
-       <td>VMware Fusion(13.x prior to 13.5) contains a TOCTOU (Time-of-check Time-of-use) vulnerability that occurs during installation for the first time (the user needs to drag or copy the application to a folder from the '.dmg' volume) or when installing an upgrade. A malicious actor with local non-administrative user privileges may exploit this vulnerability to escalate privileges to root on the system where Fusion is installed or being installed for the first time.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-34046">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>04b968802b7c8748fbd87b5a8b993d01</td>
-       <td>CVE-2023-34044</td>
-       <td>2023-10-20 09:15:00</td>
-       <td>VMware Workstation( 17.x prior to 17.5) and Fusion(13.x prior to 13.5) contain an out-of-bounds read vulnerability that exists in the functionality for sharing host Bluetooth devices with the virtual machine. A malicious actor with local administrative privileges on a virtual machine may be able to read privileged information contained in hypervisor memory from a virtual machine.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-34044">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ce86dd2f453122cdf85c00f46f7a9681</td>
-       <td>CVE-2023-5656</td>
-       <td>2023-10-20 08:15:00</td>
-       <td>The AI ChatBot plugin for WordPress is vulnerable to unauthorized use of AJAX actions due to missing capability checks on the corresponding functions in versions up to, and including, 4.9.2. This makes it possible for unauthenticated attackers to perform some of those actions that were intended for higher privileged users. This vulnerability is the same as CVE-2023-5533 but was reintroduced in version 4.9.2.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5656">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>68da925b5ad2ce904987f7f9724a595b</td>
-       <td>CVE-2023-5615</td>
-       <td>2023-10-20 08:15:00</td>
-       <td>The Skype Legacy Buttons plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's 'skype-status' shortcode in all versions up to, and including, 3.1 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers with contributor-level and above permissions to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5615">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>31dba5acc0c1ddc379bf01138dc1c7b1</td>
-       <td>CVE-2023-5602</td>
-       <td>2023-10-20 08:15:00</td>
-       <td>The Social Media Share Buttons & Social Sharing Icons plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 2.8.5. This is due to missing or incorrect nonce validation on several functions corresponding to AJAX actions. This makes it possible for unauthenticated attackers to invoke those actions via a forged request granted they can trick a site administrator into performing an action such as clicking on a link.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5602">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c3cad15264e6806acb5dfffc4b5c06e9</td>
-       <td>CVE-2023-5534</td>
-       <td>2023-10-20 08:15:00</td>
-       <td>The AI ChatBot plugin for WordPress is vulnerable to Cross-Site Request Forgery in versions up to, and including, 4.8.9. This is due to missing or incorrect nonce validation on the corresponding functions. This makes it possible for unauthenticated attackers to invoke those functions via a forged request granted they can trick a site administrator into performing an action such as clicking on a link.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5534">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>023eb07dc14d4051ddb448095c491389</td>
-       <td>CVE-2023-5533</td>
-       <td>2023-10-20 08:15:00</td>
-       <td>The AI ChatBot plugin for WordPress is vulnerable to unauthorized use of AJAX actions due to missing capability checks on the corresponding functions in versions up to, and including, 4.8.9. This makes it possible for unauthenticated attackers to perform some of those actions that were intended for higher privileged users.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5533">详情</a></td>
       </tr>
 
      </tbody>
