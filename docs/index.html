@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-10-25 18:29:15 -->
+<!-- RELEASE TIME : 2023-10-25 20:25:57 -->
 <html lang="zh-cn">
 
  <head>
@@ -1843,6 +1843,46 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>d023e5ae79f9bc2c39fdf5ebc47bec59</td>
+       <td>CVE-2023-45280</td>
+       <td>2023-10-19 22:15:09 </td>
+       <td>Yamcs 5.8.6 allows XSS (issue 2 of 2). It comes with a Bucket as its primary storage mechanism. Buckets allow for the upload of any file. There's a way to upload an HTML file containing arbitrary JavaScript and then navigate to it. Once the user opens the file, the browser will execute the arbitrary JavaScript.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-45280">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b93c4a7e10a6469a8df32bfaa481ab99</td>
+       <td>CVE-2023-45279</td>
+       <td>2023-10-19 22:15:09 </td>
+       <td>Yamcs 5.8.6 allows XSS (issue 1 of 2). It comes with a Bucket as its primary storage mechanism. Buckets allow for the upload of any file. There's a way to upload a display referencing a malicious JavaScript file to the bucket. The user can then open the uploaded display by selecting Telemetry from the menu and navigating to the display.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-45279">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a3321ac3cd6145f8ca72c2e4197af26f</td>
+       <td>CVE-2023-45281</td>
+       <td>2023-10-19 17:15:10 </td>
+       <td>An issue in Yamcs 5.8.6 allows attackers to obtain the session cookie via upload of crafted HTML file.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-45281">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a2194003cded30f3648ab520bedbbf43</td>
+       <td>CVE-2023-45278</td>
+       <td>2023-10-19 17:15:10 </td>
+       <td>Directory Traversal vulnerability in the storage functionality of the API in Yamcs 5.8.6 allows attackers to delete arbitrary files via crafted HTTP DELETE request.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-45278">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bda915458500b3a0d864dbbbee4650d9</td>
+       <td>CVE-2023-45277</td>
+       <td>2023-10-19 17:15:10 </td>
+       <td>Yamcs 5.8.6 is vulnerable to directory traversal (issue 1 of 2). The vulnerability is in the storage functionality of the API and allows one to escape the base directory of the buckets, freely navigate system directories, and read arbitrary files.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-45277">详情</a></td>
+      </tr>
+
+      <tr>
        <td>128b17765083a4832013f2039b8b0be9</td>
        <td>CVE-2023-5639</td>
        <td>2023-10-19 02:15:08 </td>
@@ -1992,46 +2032,6 @@
        <td>2023-10-17 14:15:10 </td>
        <td>Dreamer CMS v4.1.3 was discovered to contain a Cross-Site Request Forgery (CSRF) via the component /admin/variable/add.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-45905">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>eea63e9e96d534f360fd7d58133db9e0</td>
-       <td>CVE-2023-45904</td>
-       <td>2023-10-17 14:15:10 </td>
-       <td>Dreamer CMS v4.1.3 was discovered to contain a Cross-Site Request Forgery (CSRF) via the component /variable/update.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-45904">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5ddc9d480d0bc0c907191a84f47c5c18</td>
-       <td>CVE-2023-45903</td>
-       <td>2023-10-17 14:15:10 </td>
-       <td>Dreamer CMS v4.1.3 was discovered to contain a Cross-Site Request Forgery (CSRF) via the component /admin/label/delete.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-45903">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6c0c5b4fe167b7d8c2fdc31387216286</td>
-       <td>CVE-2023-45003</td>
-       <td>2023-10-17 11:15:10 </td>
-       <td>Unauth. Reflected Cross-Site Scripting (XSS) vulnerability in Arrow Plugins Social Feed | Custom Feed for Social Media Networks plugin &lt;=&Acirc;&nbsp;2.2.0 versions.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-45003">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3e42b3546fc1f84d7f8654c1ab86cdfb</td>
-       <td>CVE-2023-45005</td>
-       <td>2023-10-17 10:15:10 </td>
-       <td>Unauth. Reflected Cross-Site Scripting (XSS) vulnerability in Castos Seriously Simple Stats plugin &lt;=&Acirc;&nbsp;1.5.1 versions.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-45005">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>656ce405d6e08953ff78bb71f9a68fd1</td>
-       <td>CVE-2023-5522</td>
-       <td>2023-10-17 10:15:10 </td>
-       <td>Mattermost Mobile fails to limit&Acirc;&nbsp;the maximum number of Markdown elements in a post allowing an attacker to send a post with hundreds of emojis to a channel and&Acirc;&nbsp;freeze the mobile app of users when viewing that particular channel.&Acirc;&nbsp;</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-5522">详情</a></td>
       </tr>
 
      </tbody>
