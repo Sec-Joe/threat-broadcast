@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-10-27 14:29:50 -->
+<!-- RELEASE TIME : 2023-10-27 16:32:11 -->
 <html lang="zh-cn">
 
  <head>
@@ -1891,6 +1891,30 @@
       </tr>
 
       <tr>
+       <td>902856d78a83174b74280d9c146db5bb</td>
+       <td>CVE-2023-45682</td>
+       <td>2023-10-21 00:15:09 </td>
+       <td>stb_vorbis is a single file MIT licensed library for processing ogg vorbis files. A crafted file may trigger out of bounds read in `DECODE` macro when `var` is negative. As it can be seen in the definition of `DECODE_RAW` a negative `var` is a valid value. This issue may be used to leak internal memory allocation information.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-45682">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>456ce75402ce1d54c9c0962b469a4821</td>
+       <td>CVE-2023-45681</td>
+       <td>2023-10-21 00:15:09 </td>
+       <td>stb_vorbis is a single file MIT licensed library for processing ogg vorbis files. A crafted file may trigger memory write past an allocated heap buffer in `start_decoder`. The root cause is a potential integer overflow in `sizeof(char*) * (f-&gt;comment_list_length)` which may make `setup_malloc` allocate less memory than required. Since there is another integer overflow an attacker may overflow it too to force `setup_malloc` to return 0 and make the exploit more reliable. This issue may lead to code execution.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-45681">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2e563c1b617d76b8f9b07b565b574003</td>
+       <td>CVE-2023-45680</td>
+       <td>2023-10-21 00:15:09 </td>
+       <td>stb_vorbis is a single file MIT licensed library for processing ogg vorbis files. A crafted file may trigger memory allocation failure in `start_decoder`. In that case the function returns early, the `f-&gt;comment_list` is set to `NULL`, but `f-&gt;comment_list_length` is not reset. Later in `vorbis_deinit` it tries to dereference the `NULL` pointer. This issue may lead to denial of service.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-45680">详情</a></td>
+      </tr>
+
+      <tr>
        <td>cf83f2f1ef38d672ab03cc74d848d5fe</td>
        <td>CVE-2023-46287</td>
        <td>2023-10-20 14:15:12 </td>
@@ -2008,30 +2032,6 @@
        <td>2023-10-20 05:15:08 </td>
        <td>please (aka pleaser) through 0.5.4 allows privilege escalation through the TIOCSTI and/or TIOCLINUX ioctl. (If both TIOCSTI and TIOCLINUX are disabled, this cannot be exploited.)</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-46277">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>47d3d3ad86bcdd6c074535d37df05a6a</td>
-       <td>CVE-2023-46115</td>
-       <td>2023-10-20 00:15:16 </td>
-       <td>Tauri is a framework for building binaries for all major desktop platforms. This advisory is not describing a vulnerability in the Tauri code base itself but a commonly used misconfiguration which could lead to leaking of the private key and updater key password into bundled Tauri applications using the Vite frontend in a specific configuration. The Tauri documentation used an insecure example configuration in the `Vite guide` to showcase how to use Tauri together with Vite.  Copying the following snippet `envPrefix: ['VITE_', 'TAURI_'],` from this guide into the `vite.config.ts` of a Tauri project leads to bundling the `TAURI_PRIVATE_KEY` and `TAURI_KEY_PASSWORD` into the Vite frontend code and therefore leaking this value to the released Tauri application. Using the `envPrefix: ['VITE_'],` or any other framework than Vite means you are not impacted by this advisory. Users are advised to rotate their updater private key if they are affected by this (requires Tauri CLI &gt;=1.5.5). After updating the envPrefix configuration, generate a new private key with `tauri signer generate`, saving the new private key and updating the updater's `pubkey` value on `tauri.conf.json` with the new public key. To update your existing application, the next application build must be signed with the older private key in order to be accepted by the existing application.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-46115">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4fb845f3e6b89a3cf4e1cb7a878e3260</td>
-       <td>CVE-2023-45819</td>
-       <td>2023-10-19 22:15:11 </td>
-       <td>TinyMCE is an open source rich text editor. A cross-site scripting (XSS) vulnerability was discovered in TinyMCE&acirc;&euro;&trade;s Notification Manager API. The vulnerability exploits TinyMCE's unfiltered notification system, which is used in error handling. The conditions for this exploit requires carefully crafted malicious content to have been inserted into the editor and a notification to have been triggered. When a notification was opened, the HTML within the text argument was displayed unfiltered in the notification. The vulnerability allowed arbitrary JavaScript execution when an notification presented in the TinyMCE UI for the current user.  This issue could also be exploited by any integration which uses a TinyMCE notification to display unfiltered HTML content. This vulnerability has been patched in TinyMCE 5.10.8 and TinyMCE 6.7.1 by ensuring that the HTML displayed in the notification is sanitized, preventing the exploit. Users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-45819">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a60b0761d97df0660820f9e2f163261d</td>
-       <td>CVE-2023-45818</td>
-       <td>2023-10-19 22:15:10 </td>
-       <td>TinyMCE is an open source rich text editor. A mutation cross-site scripting (mXSS) vulnerability was discovered in TinyMCE&acirc;&euro;&trade;s core undo and redo functionality. When a carefully-crafted HTML snippet passes the XSS sanitisation layer, it is manipulated as a string by internal trimming functions before being stored in the undo stack. If the HTML snippet is restored from the undo stack, the combination of the string manipulation and reparative parsing by either the browser's native [DOMParser API](https://developer.mozilla.org/en-US/docs/Web/API/DOMParser) (TinyMCE 6) or the SaxParser API (TinyMCE 5) mutates the HTML maliciously, allowing an XSS payload to be executed. This vulnerability has been patched in TinyMCE 5.10.8 and TinyMCE 6.7.1 by ensuring HTML is trimmed using node-level manipulation instead of string manipulation. Users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-45818">详情</a></td>
       </tr>
 
      </tbody>
