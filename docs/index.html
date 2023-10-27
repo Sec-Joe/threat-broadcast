@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-10-27 16:32:11 -->
+<!-- RELEASE TIME : 2023-10-27 18:29:51 -->
 <html lang="zh-cn">
 
  <head>
@@ -1915,6 +1915,38 @@
       </tr>
 
       <tr>
+       <td>2508bd0e66c7d220123d55f0f369ecdd</td>
+       <td>CVE-2023-45679</td>
+       <td>2023-10-21 00:15:09 </td>
+       <td>stb_vorbis is a single file MIT licensed library for processing ogg vorbis files. A crafted file may trigger memory allocation failure in `start_decoder`. In that case the function returns early, but some of the pointers in `f-&gt;comment_list` are left initialized and later `setup_free` is called on these pointers in `vorbis_deinit`. This issue may lead to code execution.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-45679">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a4a02c6ae3f08cdc069ca9a470e26e05</td>
+       <td>CVE-2023-45678</td>
+       <td>2023-10-21 00:15:09 </td>
+       <td>stb_vorbis is a single file MIT licensed library for processing ogg vorbis files. A crafted file may trigger out of buffer write in `start_decoder` because at maximum `m-&gt;submaps` can be 16 but `submap_floor` and `submap_residue` are declared as arrays of 15 elements. This issue may lead to code execution.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-45678">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e1bc4b934c50dbc763f83c4c567c7edc</td>
+       <td>CVE-2023-45677</td>
+       <td>2023-10-21 00:15:09 </td>
+       <td>stb_vorbis is a single file MIT licensed library for processing ogg vorbis files. A crafted file may trigger out of bounds write in `f-&gt;vendor[len] = (char)'\0';`. The root cause is that if `len` read in `start_decoder` is a negative number and `setup_malloc` successfully allocates memory in that case, but memory write is done with a negative index `len`. Similarly if len is INT_MAX the integer overflow len+1 happens in `f-&gt;vendor = (char*)setup_malloc(f, sizeof(char) * (len+1));` and `f-&gt;comment_list[i] = (char*)setup_malloc(f, sizeof(char) * (len+1));`. This issue may lead to code execution.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-45677">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e8740370a25b504ad14ab071873c9e21</td>
+       <td>CVE-2023-45676</td>
+       <td>2023-10-21 00:15:09 </td>
+       <td>stb_vorbis is a single file MIT licensed library for processing ogg vorbis files. A crafted file may trigger out of bounds write in `f-&gt;vendor[i] = get8_packet(f);`. The root cause is an integer overflow in `setup_malloc`. A sufficiently large value in the variable `sz` overflows with `sz+7` in and the negative value passes the maximum available memory buffer check. This issue may lead to code execution.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-45676">详情</a></td>
+      </tr>
+
+      <tr>
        <td>cf83f2f1ef38d672ab03cc74d848d5fe</td>
        <td>CVE-2023-46287</td>
        <td>2023-10-20 14:15:12 </td>
@@ -2000,38 +2032,6 @@
        <td>2023-10-20 07:15:16 </td>
        <td>The BEAR for WordPress is vulnerable to Cross-Site Request Forgery in versions up to, and including, 1.1.3.3. This is due to missing or incorrect nonce validation on the create_profile function. This makes it possible for unauthenticated attackers to create profiles via a forged request granted they can trick a site administrator into performing an action such as clicking on a link.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4935">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5fae4ef9d98ba85144cd05f8f24b1420</td>
-       <td>CVE-2023-5668</td>
-       <td>2023-10-20 05:15:08 </td>
-       <td>The WhatsApp Share Button plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's 'whatsapp' shortcode in all versions up to, and including, 1.0.1 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers with contributor-level and above permissions to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-5668">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9e070a7f76a11ef5d42ca187566201be</td>
-       <td>CVE-2023-5614</td>
-       <td>2023-10-20 05:15:08 </td>
-       <td>The Theme Switcha plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's 'theme_switcha_list' shortcode in all versions up to, and including, 3.3 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers with contributor-level and above permissions to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-5614">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>64d7a2faa9307b7cf1030e5c86648f15</td>
-       <td>CVE-2023-5613</td>
-       <td>2023-10-20 05:15:08 </td>
-       <td>The Super Testimonials plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's 'tpsscode' shortcode in all versions up to, and including, 2.9 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers with contributor-level and above permissions to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-5613">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>852c3ee7b8188d52ba1455a324180c91</td>
-       <td>CVE-2023-46277</td>
-       <td>2023-10-20 05:15:08 </td>
-       <td>please (aka pleaser) through 0.5.4 allows privilege escalation through the TIOCSTI and/or TIOCLINUX ioctl. (If both TIOCSTI and TIOCLINUX are disabled, this cannot be exploited.)</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-46277">详情</a></td>
       </tr>
 
      </tbody>
