@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-11-08 14:29:37 -->
+<!-- RELEASE TIME : 2023-11-08 17:28:27 -->
 <html lang="zh-cn">
 
  <head>
@@ -235,6 +235,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>b4752464d2f1ed0c763f2615f0338110</td>
+       <td>CVE-2023-44115</td>
+       <td>2023-11-08 04:15:00 <img src="imgs/new.gif" /></td>
+       <td>Vulnerability of improper permission control in the Booster module. Impact: Successful exploitation of this vulnerability may affect service confidentiality.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-44115">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b5e02b7518b54657ea17f769f1b1a4fc</td>
+       <td>CVE-2023-5801</td>
+       <td>2023-11-08 03:15:00 <img src="imgs/new.gif" /></td>
+       <td>Vulnerability of identity verification being bypassed in the face unlock module. Successful exploitation of this vulnerability will affect integrity and confidentiality.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5801">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5ae2e866d3d5851cd51ce675a99efd44</td>
+       <td>CVE-2023-46770</td>
+       <td>2023-11-08 03:15:00 <img src="imgs/new.gif" /></td>
+       <td>Out-of-bounds vulnerability in the sensor module. Successful exploitation of this vulnerability may cause mistouch prevention errors on users' mobile phones.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46770">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>26a0afa1cf7cbbaa057dd92f7bda552f</td>
+       <td>CVE-2023-46769</td>
+       <td>2023-11-08 03:15:00 <img src="imgs/new.gif" /></td>
+       <td>Use-After-Free (UAF) vulnerability in the dubai module. Successful exploitation of this vulnerability will affect availability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46769">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>cfb107b58c4ee090362373f35a384cce</td>
+       <td>CVE-2023-46768</td>
+       <td>2023-11-08 03:15:00 <img src="imgs/new.gif" /></td>
+       <td>Multi-thread vulnerability in the idmap module. Successful exploitation of this vulnerability may cause features to perform abnormally.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46768">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b6dc951deff2eb688596c7445d899106</td>
+       <td>CVE-2023-4061</td>
+       <td>2023-11-08 01:15:00 <img src="imgs/new.gif" /></td>
+       <td>A flaw was found in wildfly-core. A management user could use the resolve-expression in the HAL Interface to read possible sensitive information from the Wildfly system. This issue could allow a malicious user to access the system and obtain possible sensitive information from the system.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4061">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8cb16fba13219a1e50a633bf6369fc3d</td>
+       <td>CVE-2023-6002</td>
+       <td>2023-11-08 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>YugabyteDB is vulnerable to cross site scripting (XSS) via log injection. Writing invalidated user input to log files can allow an attacker to forge log entries or inject malicious content into the logs.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-6002">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3a55dc51f047fb5901cf975333f13cce</td>
+       <td>CVE-2023-6001</td>
+       <td>2023-11-08 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>Prometheus metrics are available without authentication. These expose detailed and sensitive information about the YugabyteDB Anywhere environment.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-6001">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3aa8d12bf38707d5978358d6caa49087</td>
+       <td>CVE-2023-45380</td>
+       <td>2023-11-07 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>In the module "Order Duplicator " Clone and Delete Existing Order" (orderduplicate) in version <= 1.1.7 from Silbersaiten for PrestaShop, a guest can download personal information without restriction. Due to a lack of permissions control, a guest can download personal information from ps_customer/ps_address tables such as name / surname / phone number / full postal address.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-45380">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>07eae0f90fe10e89965d13303f132fa6</td>
+       <td>CVE-2023-43984</td>
+       <td>2023-11-07 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>Insecure permissions in Smart Soft advancedexport before v4.4.7 allow unauthenticated attackers to arbitrarily download user information from the ps_customer table.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-43984">详情</a></td>
+      </tr>
+
+      <tr>
        <td>9b770ebda38e00769ba242015de44dce</td>
        <td>CVE-2023-36409</td>
        <td>2023-11-07 00:15:00 <img src="imgs/new.gif" /></td>
@@ -344,86 +424,6 @@
        <td>2023-11-06 04:15:00</td>
        <td>In dpe, there is a possible out of bounds write due to a missing valid range checking. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07310805; Issue ID: ALPS07310805.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-32838">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>85172e38a430c2adc57576ad8de44c7e</td>
-       <td>CVE-2023-32837</td>
-       <td>2023-11-06 04:15:00</td>
-       <td>In video, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS08235273; Issue ID: ALPS08250357.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-32837">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1f32f357478160d1ff350ee2a08a561c</td>
-       <td>CVE-2023-32836</td>
-       <td>2023-11-06 04:15:00</td>
-       <td>In display, there is a possible out of bounds write due to an integer overflow. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS08126725; Issue ID: ALPS08126725.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-32836">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>355ccce2637641907c22e04f22869d61</td>
-       <td>CVE-2023-32835</td>
-       <td>2023-11-06 04:15:00</td>
-       <td>In keyinstall, there is a possible memory corruption due to type confusion. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS08157918; Issue ID: ALPS08157918.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-32835">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4d3e04c28c8f1dbf7ea2651372454013</td>
-       <td>CVE-2023-32834</td>
-       <td>2023-11-06 04:15:00</td>
-       <td>In secmem, there is a possible memory corruption due to type confusion. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS08161762; Issue ID: ALPS08161762.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-32834">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c8fc2528b0cf87a94473d368dbd39487</td>
-       <td>CVE-2023-32832</td>
-       <td>2023-11-06 04:15:00</td>
-       <td>In video, there is a possible memory corruption due to a race condition. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS08235273; Issue ID: ALPS08235273.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-32832">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3cc0cc407bb6505bdd007d3b0225d707</td>
-       <td>CVE-2023-32825</td>
-       <td>2023-11-06 04:15:00</td>
-       <td>In bluethooth service, there is a possible out of bounds reads due to improper input validation. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07884130; Issue ID: ALPS07884130.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-32825">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>33867123dc17dfa68762c1532f8609e2</td>
-       <td>CVE-2023-46963</td>
-       <td>2023-11-04 23:15:00</td>
-       <td>An issue in Beijing Yunfan Internet Technology Co., Ltd, Yunfan Learning Examination System v.6.5 allows a remote attacker to obtain sensitive information via the password parameter in the login function.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46963">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>204af718cd09c9c90770bd57e17bbd4e</td>
-       <td>CVE-2023-46382</td>
-       <td>2023-11-04 23:15:00</td>
-       <td>LOYTEC LINX-212 firmware 6.2.4 and LVIS-3ME12-A1 firmware 6.2.2 and LIOB-586 firmware 6.2.3 devices use cleartext HTTP for login.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46382">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>432eca1f22a1ef4daa1f145ac523bf12</td>
-       <td>CVE-2023-46381</td>
-       <td>2023-11-04 23:15:00</td>
-       <td>LOYTEC LINX-212 firmware 6.2.4 and LVIS-3ME12-A1 firmware 6.2.2 and LIOB-586 firmware 6.2.3 devices lack authentication for the preinstalled version of LWEB-802 via an lweb802_pre/ URI. An unauthenticated attacker can edit any project (or create a new project) and control its GUI.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46381">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>291121c171d9be5dc5ff53efdc1f8e57</td>
-       <td>CVE-2023-46380</td>
-       <td>2023-11-04 23:15:00</td>
-       <td>LOYTEC LINX-212 firmware 6.2.4 and LVIS-3ME12-A1 firmware 6.2.2 and LIOB-586 firmware 6.2.3 devices send password-change requests via cleartext HTTP.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46380">详情</a></td>
       </tr>
 
      </tbody>
