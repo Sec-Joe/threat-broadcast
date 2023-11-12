@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-11-12 17:26:32 -->
+<!-- RELEASE TIME : 2023-11-12 23:24:46 -->
 <html lang="zh-cn">
 
  <head>
@@ -235,6 +235,38 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>708e7bb02839f4693fda9f78cfd82a6b</td>
+       <td>CVE-2023-47037</td>
+       <td>2023-11-12 14:15:00 <img src="imgs/new.gif" /></td>
+       <td>We failed to apply CVE-2023-40611 in 2.7.1 and this vulnerability was marked as fixed then. Apache Airflow, versions before 2.7.3, is affected by a vulnerability that allows authenticated and DAG-view authorized Users to modify some DAG run detail values when submitting notes. This could have them alter details such as configuration parameters, start date, etc. Users should upgrade to version 2.7.3 or later which has removed the vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-47037">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d630820d2e93170e1be7683a5c53ecd5</td>
+       <td>CVE-2023-42781</td>
+       <td>2023-11-12 14:15:00 <img src="imgs/new.gif" /></td>
+       <td>Apache Airflow, versions before 2.7.3, has a vulnerability that allows an authorized user who has access to read specific DAGs only, to read information about task instances in other DAGs. This is a different issue than CVE-2023-42663 but leading to similar outcome. Users of Apache Airflow are advised to upgrade to version 2.7.3 or newer to mitigate the risk associated with this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-42781">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8519f20792177aeea2bf068ebf4e2014</td>
+       <td>CVE-2023-6084</td>
+       <td>2023-11-12 11:15:00 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability was found in Tongda OA 2017 up to 11.9 and classified as critical. Affected by this issue is some unknown functionality of the file general/vehicle/checkup/delete.php. The manipulation of the argument VU_ID leads to sql injection. The exploit has been disclosed to the public and may be used. Upgrading to version 11.10 is able to address this issue. It is recommended to upgrade the affected component. VDB-244994 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-6084">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9b47aa023a827d297f4d42eedbc32b9f</td>
+       <td>CVE-2023-47390</td>
+       <td>2023-11-11 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>Headscale through 0.22.3 writes bearer tokens to info-level logs.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-47390">详情</a></td>
+      </tr>
+
+      <tr>
        <td>76f620633b2145ebfdec75c56cb1c440</td>
        <td>CVE-2023-43057</td>
        <td>2023-11-11 16:15:00 <img src="imgs/new.gif" /></td>
@@ -392,38 +424,6 @@
        <td>2023-11-10 06:15:00</td>
        <td>In SysAid On-Premise before 23.3.36, a path traversal vulnerability leads to code execution after an attacker writes a file to the Tomcat webroot, as exploited in the wild in November 2023.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-47246">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>67f2f5c7be63b3485cf8a6283b22175b</td>
-       <td>CVE-2023-47248</td>
-       <td>2023-11-09 09:15:00</td>
-       <td>Deserialization of untrusted data in IPC and Parquet readers in PyArrow versions 0.14.0 to 14.0.0 allows arbitrary code execution. An application is vulnerable if it reads Arrow IPC, Feather or Parquet data from untrusted sources (for example user-supplied input files). This vulnerability only affects PyArrow, not other Apache Arrow implementations or bindings. It is recommended that users of PyArrow upgrade to 14.0.1. Similarly, it is recommended that downstream libraries upgrade their dependency requirements to PyArrow 14.0.1 or later. PyPI packages are already available, and we hope that conda-forge packages will be available soon. If it is not possible to upgrade, we provide a separate package `pyarrow-hotfix` that disables the vulnerability on older PyArrow versions. See https://pypi.org/project/pyarrow-hotfix/ for instructions.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-47248">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d7d2944c280ee4bbe549ab5dab528559</td>
-       <td>CVE-2023-4218</td>
-       <td>2023-11-09 09:15:00</td>
-       <td>In Eclipse IDE versions < 2023-09 (4.29) some files with xml content are parsed vulnerable against all sorts of XXE attacks. The user just needs to open any evil project or update an open project with a vulnerable file (for example for review a foreign repository or patch).</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4218">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f94e600250cb85217828b042b1164116</td>
-       <td>CVE-2023-47613</td>
-       <td>2023-11-09 07:15:00</td>
-       <td>A CWE-23: Relative Path Traversal vulnerability exists in Telit Cinterion BGS5, Telit Cinterion EHS5/6/8, Telit Cinterion PDS5/6/8, Telit Cinterion ELS61/81, Telit Cinterion PLS62 that could allow a local, low privileged attacker to escape from virtual directories and get read/write access to protected files on the targeted system.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-47613">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7da1b8c109563bfedf809829af32d4a4</td>
-       <td>CVE-2023-47489</td>
-       <td>2023-11-09 06:15:00</td>
-       <td>An issue in Combodo iTop v.3.1.0-2-11973 allows a local attacker to execute arbitrary code via a crafted script to the export-v2.php and ajax.render.php components.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-47489">详情</a></td>
       </tr>
 
      </tbody>
