@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-11-29 09:26:26 -->
+<!-- RELEASE TIME : 2023-11-29 13:29:20 -->
 <html lang="zh-cn">
 
  <head>
@@ -235,6 +235,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>4b9854f1c790c2b66f5235a4d61835a8</td>
+       <td>CVE-2023-46944</td>
+       <td>2023-11-28 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue in GitKraken GitLens before v.14.0.0 allows an attacker to execute arbitrary code via a crafted file to the Visual Studio Codes workspace trust component.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46944">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5f0c7a113e140f8aa6f17fb46737e7ea</td>
+       <td>CVE-2023-49092</td>
+       <td>2023-11-28 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>RustCrypto/RSA is a portable RSA implementation in pure Rust. Due to a non-constant-time implementation, information about the private key is leaked through timing information which is observable over the network. An attacker may be able to use that information to recover the key. There is currently no fix available. As a workaround, avoid using the RSA crate in settings where attackers are able to observe timing information, e.g. local use on a non-compromised computer.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-49092">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>491025f8cbfa8fa551df504535fe668e</td>
+       <td>CVE-2023-48193</td>
+       <td>2023-11-28 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>Insecure Permissions vulnerability in JumpServer GPLv3 v.3.8.0 allows a remote attacker to execute arbitrary code via bypassing the command filtering function.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-48193">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9c29452b95021a547c4ef646e5b108b7</td>
+       <td>CVE-2023-29066</td>
+       <td>2023-11-28 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>The FACSChorus software does not properly assign data access privileges for operating system user accounts. A non-administrative OS account can modify information stored in the local application data folders.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-29066">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e6a40e3a1a12a7d7bff24822d2ddbd1e</td>
+       <td>CVE-2023-29065</td>
+       <td>2023-11-28 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>The FACSChorus software database can be accessed directly with the privileges of the currently logged-in user. A threat actor with physical access could potentially gain credentials, which could be used to alter or destroy data stored in the database.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-29065">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>45d7ab377285b8be8acd06ab88515836</td>
+       <td>CVE-2023-29064</td>
+       <td>2023-11-28 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>The FACSChorus software contains sensitive information stored in plaintext. A threat actor could gain hardcoded secrets used by the application, which include tokens and passwords for administrative accounts.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-29064">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8d3536792e877a157270ab396189121a</td>
+       <td>CVE-2023-29063</td>
+       <td>2023-11-28 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>The FACSChorus workstation does not prevent physical access to its PCI express (PCIe) slots, which could allow a threat actor to insert a PCI card designed for memory capture. A threat actor can then isolate sensitive information such as a BitLocker encryption key from a dump of the workstation RAM during startup.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-29063">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e79e81faf0899b8c0b09c79784873dd4</td>
+       <td>CVE-2023-29062</td>
+       <td>2023-11-28 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>The Operating System hosting the FACSChorus application is configured to allow transmission of hashed user credentials upon user action without adequately validating the identity of the requested resource. This is possible through the use of LLMNR, MBT-NS, or MDNS and will result in NTLMv2 hashes being sent to a malicious entity position on the local network. These hashes can subsequently be attacked through brute force and cracked if a weak password is used. This attack would only apply to domain joined systems.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-29062">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6e51d15e6f38ccb60735d42b415a4a98</td>
+       <td>CVE-2023-29061</td>
+       <td>2023-11-28 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>There is no BIOS password on the FACSChorus workstation. A threat actor with physical access to the workstation can potentially exploit this vulnerability to access the BIOS configuration and modify the drive boot order and BIOS pre-boot authentication.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-29061">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>26e2b0daa617f071c9156ac820906217</td>
+       <td>CVE-2023-45539</td>
+       <td>2023-11-28 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>HAProxy before 2.8.2 accepts # as part of the URI component, which might allow remote attackers to obtain sensitive information or have unspecified other impact upon misinterpretation of a path_end rule, such as routing index.html#.png to a static server.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-45539">详情</a></td>
+      </tr>
+
+      <tr>
        <td>5a96589d2f6df7d90f5e05226401748c</td>
        <td>CVE-2023-6239</td>
        <td>2023-11-28 14:15:00 <img src="imgs/new.gif" /></td>
@@ -344,86 +424,6 @@
        <td>2023-11-28 08:15:00 <img src="imgs/new.gif" /></td>
        <td>Anyscale Ray 2.6.3 and 2.8.0 allows /log_proxy SSRF. NOTE: the vendor's position is that this report is irrelevant because Ray, as stated in its documentation, is not intended for use outside of a strictly controlled network environment</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-48023">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cb9e7fddd2f08a61d918d91b280196a4</td>
-       <td>CVE-2023-48022</td>
-       <td>2023-11-28 08:15:00 <img src="imgs/new.gif" /></td>
-       <td>Anyscale Ray 2.6.3 and 2.8.0 allows a remote attacker to execute arbitrary code via the job submission API. NOTE: the vendor's position is that this report is irrelevant because Ray, as stated in its documentation, is not intended for use outside of a strictly controlled network environment</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-48022">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>98569d1f3decd437514d1a4237e09400</td>
-       <td>CVE-2023-4226</td>
-       <td>2023-11-28 08:15:00 <img src="imgs/new.gif" /></td>
-       <td>Unrestricted file upload in `/main/inc/ajax/work.ajax.php` in Chamilo LMS <= v1.11.24 allows authenticated attackers with learner role to obtain remote code execution via uploading of PHP files.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4226">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e19805702611143b7cdf7727a6c25d8f</td>
-       <td>CVE-2023-4225</td>
-       <td>2023-11-28 08:15:00 <img src="imgs/new.gif" /></td>
-       <td>Unrestricted file upload in `/main/inc/ajax/exercise.ajax.php` in Chamilo LMS <= v1.11.24 allows authenticated attackers with learner role to obtain remote code execution via uploading of PHP files.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4225">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>74f8ae9c2d101c078906462007037dc6</td>
-       <td>CVE-2023-6287</td>
-       <td>2023-11-27 14:15:00</td>
-       <td>Sensitive data exposure in Webconf in Tribe29 Checkmk Appliance before 1.6.8 allows local attacker to retrieve passwords via reading log files.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-6287">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d574b6dc7bc4c36f87452872646a34f2</td>
-       <td>CVE-2023-4931</td>
-       <td>2023-11-27 14:15:00</td>
-       <td>Uncontrolled search path element vulnerability in Plesk Installer affects version 3.27.0.0. A local attacker could execute arbitrary code by injecting DLL files into the same folder where the application is installed, resulting in DLL hijacking in edputil.dll, samlib.dll, urlmon.dll, sspicli.dll, propsys.dll and profapi.dll files.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4931">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6fa05fd9c545ca09b4cea2c92c17e8ef</td>
-       <td>CVE-2023-4590</td>
-       <td>2023-11-27 13:15:00</td>
-       <td>Buffer overflow vulnerability in Frhed hex editor, affecting version 1.6.0. This vulnerability could allow an attacker to execute arbitrary code via a long filename argument through the Structured Exception Handler (SEH) registers.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4590">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>aacd940b2a692d8212b2fbeebefa45fb</td>
-       <td>CVE-2023-5871</td>
-       <td>2023-11-27 12:15:00</td>
-       <td>A flaw was found in libnbd, due to a malicious Network Block Device (NBD), a protocol for accessing Block Devices such as hard disks over a Network. This issue may allow a malicious NBD server to cause a Denial of Service.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5871">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c8a237c8ca0b11079a5c7a97cf877f67</td>
-       <td>CVE-2023-5607</td>
-       <td>2023-11-27 11:15:00</td>
-       <td>An improper limitation of a path name to a restricted directory (path traversal) vulnerability in the TACC ePO extension, for on-premises ePO servers, prior to version 8.4.0 could lead to an authorised administrator attacker executing arbitrary code through uploading a specially crafted GTI reputation file. The attacker would need the appropriate privileges to access the relevant section of the User Interface. The import logic has been updated to restrict file types and content.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5607">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>409b6ee1072123b282717c77fbde3419</td>
-       <td>CVE-2023-43701</td>
-       <td>2023-11-27 11:15:00</td>
-       <td>Improper payload validation and an improper REST API response type, made it possible for an authenticated malicious actor to store malicious code into Chart's metadata, this code could get executed if a user specifically accesses a specific deprecated API endpoint. This issue affects Apache Superset versions prior to 2.1.2. Users are recommended to upgrade to version 2.1.2, which fixes this issue.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-43701">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e373846674f36a6e285e0d3c90dce81e</td>
-       <td>CVE-2023-42501</td>
-       <td>2023-11-27 11:15:00</td>
-       <td>Unnecessary read permissions within the Gamma role would allow authenticated users to read configured CSS templates and annotations. This issue affects Apache Superset: before 2.1.2. Users should upgrade to version or above 2.1.2 and run `superset init` to reconstruct the Gamma role or remove `can_read` permission from the mentioned resources.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-42501">详情</a></td>
       </tr>
 
      </tbody>
