@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-12-06 12:46:05 -->
+<!-- RELEASE TIME : 2023-12-06 17:28:26 -->
 <html lang="zh-cn">
 
  <head>
@@ -235,6 +235,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>297f2dba01606413f747265f6a59994b</td>
+       <td>CVE-2023-6527</td>
+       <td>2023-12-06 05:15:10 <img src="imgs/new.gif" /></td>
+       <td>The Email Subscription Popup plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via the HTTP_REFERER header in all versions up to, and including, 1.2.18 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that execute if they can successfully trick a user into performing an action such as clicking on a link.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-6527">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>96b9a4e0f0bc259ece054e4803192dd2</td>
+       <td>CVE-2023-26154</td>
+       <td>2023-12-06 05:15:10 <img src="imgs/new.gif" /></td>
+       <td>Versions of the package pubnub before 7.4.0; all versions of the package com.pubnub:pubnub; versions of the package pubnub before 6.19.0; all versions of the package github.com/pubnub/go; versions of the package github.com/pubnub/go/v7 before 7.2.0; versions of the package pubnub before 7.3.0; versions of the package pubnub/pubnub before 6.1.0; versions of the package pubnub before 5.3.0; versions of the package pubnub before 0.4.0; versions of the package pubnub/c-core before 4.5.0; versions of the package com.pubnub:pubnub-kotlin before 7.7.0; versions of the package pubnub/swift before 6.2.0; versions of the package pubnub before 5.2.0; versions of the package pubnub before 4.3.0 are vulnerable to Insufficient Entropy via the getKey function, due to inefficient implementation of the AES-256-CBC cryptographic algorithm. The provided encrypt function is less secure when hex encoding and trimming are applied, leaving half of the bits in the key always the same for every encoded message or file. **Note:** In order to exploit this vulnerability, the attacker needs to invest resources in preparing the attack and brute-force the encryption.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-26154">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c7c800440c57d7ebf691681fd7515162</td>
+       <td>CVE-2023-22524</td>
+       <td>2023-12-06 05:15:10 <img src="imgs/new.gif" /></td>
+       <td>Certain versions of the Atlassian Companion App for MacOS were affected by a remote code execution vulnerability. An attacker could utilize WebSockets to bypass Atlassian Companion’s blocklist and MacOS Gatekeeper to allow execution of code.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22524">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6bbed3412a21539b5e0533869e8d18ca</td>
+       <td>CVE-2023-22523</td>
+       <td>2023-12-06 05:15:10 <img src="imgs/new.gif" /></td>
+       <td>This vulnerability, if exploited, allows an attacker to perform privileged RCE (Remote Code Execution) on machines with the Assets Discovery agent installed. The vulnerability exists between the Assets Discovery application (formerly known as Insight Discovery) and the Assets Discovery agent. Assets Discovery, which can be downloaded via Atlassian Marketplace, is a network scanning tool that can be used with or without an agent with Jira Service Management Cloud, Data Center or Server. It detects hardware and software that is connected to your local network and extracts detailed information about each asset. This data can then be imported into Assets in Jira Service Management to help you manage all of the devices and configuration items within your local network.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22523">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>15d4e3db4b91186a87e8f80a6817ef32</td>
+       <td>CVE-2023-22522</td>
+       <td>2023-12-06 05:15:09 <img src="imgs/new.gif" /></td>
+       <td>This Template Injection vulnerability allows an authenticated attacker, including one with anonymous access, to inject unsafe user input into a Confluence page. Using this approach, an attacker is able to achieve Remote Code Execution (RCE) on an affected instance. Publicly accessible Confluence Data Center and Server versions as listed below are at risk and require immediate attention. See the advisory for additional details Atlassian Cloud sites are not affected by this vulnerability. If your Confluence site is accessed via an atlassian.net domain, it is hosted by Atlassian and is not vulnerable to this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22522">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d2f0aee1c51eaba54c9441244186761e</td>
+       <td>CVE-2023-41268</td>
+       <td>2023-12-06 04:15:07 <img src="imgs/new.gif" /></td>
+       <td>Improper input validation vulnerability in Samsung Open Source Escargot allows stack overflow and segmentation fault. This issue affects Escargot: from 3.0.0 through 4.0.0.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-41268">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8f49368674447da3015accd1a57a2992</td>
+       <td>CVE-2023-40053</td>
+       <td>2023-12-06 04:15:07 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability has been identified within Serv-U 15.4 that allows an authenticated actor to insert content on the file share function feature of Serv-U, which could be used maliciously.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40053">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>849a741c4246804250b91f066c12f503</td>
+       <td>CVE-2023-6512</td>
+       <td>2023-12-06 02:15:07 <img src="imgs/new.gif" /></td>
+       <td>Inappropriate implementation in Web Browser UI in Google Chrome prior to 120.0.6099.62 allowed a remote attacker to potentially spoof the contents of an iframe dialog context menu via a crafted HTML page. (Chromium security severity: Low)</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-6512">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0938fa91800d0cb492aeb94bc78c3cb9</td>
+       <td>CVE-2023-6511</td>
+       <td>2023-12-06 02:15:07 <img src="imgs/new.gif" /></td>
+       <td>Inappropriate implementation in Autofill in Google Chrome prior to 120.0.6099.62 allowed a remote attacker to bypass Autofill restrictions via a crafted HTML page. (Chromium security severity: Low)</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-6511">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c9aa7206e6e3824f59002e6668fc8624</td>
+       <td>CVE-2023-6510</td>
+       <td>2023-12-06 02:15:07 <img src="imgs/new.gif" /></td>
+       <td>Use after free in Media Capture in Google Chrome prior to 120.0.6099.62 allowed a remote attacker who convinced a user to engage in specific UI interaction to potentially exploit heap corruption via specific UI interaction. (Chromium security severity: Medium)</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-6510">详情</a></td>
+      </tr>
+
+      <tr>
        <td>159254516de3c122789a69cc4a8a3406</td>
        <td>CVE-2023-6448</td>
        <td>2023-12-05 18:15:12 <img src="imgs/new.gif" /></td>
@@ -344,86 +424,6 @@
        <td>2023-12-05 08:15:07 <img src="imgs/new.gif" /></td>
        <td>Pre-auth RCE in Apache Ofbiz 18.12.09. It's due to XML-RPC no longer maintained still present. This issue affects Apache OFBiz: before 18.12.10. Users are recommended to upgrade to version 18.12.10</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-49070">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>482a49f0eaadeeef70129cf254633c03</td>
-       <td>CVE-2023-43472</td>
-       <td>2023-12-05 07:15:07 <img src="imgs/new.gif" /></td>
-       <td>An issue in MLFlow versions 2.8.1 and before allows a remote attacker to obtain sensitive information via a crafted request to REST API.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-43472">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f2e84d1d96a29ad950f8e296c7456546</td>
-       <td>CVE-2023-44295</td>
-       <td>2023-12-05 06:15:49 <img src="imgs/new.gif" /></td>
-       <td>Dell PowerScale OneFS versions 8.2.2.x through 9.6.0.x contains an improper control of a resource through its lifetime vulnerability. A low privilege attacker could potentially exploit this vulnerability, leading to loss of information, and information disclosure.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-44295">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b6ae8de0c4533b476342391214c7da80</td>
-       <td>CVE-2023-44288</td>
-       <td>2023-12-05 06:15:48 <img src="imgs/new.gif" /></td>
-       <td>Dell PowerScale OneFS, 8.2.2.x through 9.6.0.x, contains an improper control of a resource through its lifetime vulnerability. An unauthenticated network attacker could potentially exploit this vulnerability, leading to denial of service.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-44288">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>12e351e7b4f104e23a61d77b316d76ae</td>
-       <td>CVE-2023-39248</td>
-       <td>2023-12-05 06:15:48 <img src="imgs/new.gif" /></td>
-       <td>Dell OS10 Networking Switches running 10.5.2.x and above contain an Uncontrolled Resource Consumption (Denial of Service) vulnerability, when switches are configured with VLT and VRRP. A remote unauthenticated user can cause the network to be flooded leading to Denial of Service for actual network users. This is a high severity vulnerability as it allows an attacker to cause an outage of network. Dell recommends customers to upgrade at the earliest opportunity.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39248">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>63def42f5249d2c5edfdde4de9feb285</td>
-       <td>CVE-2023-37572</td>
-       <td>2023-12-05 06:15:48 <img src="imgs/new.gif" /></td>
-       <td>Softing OPC Suite version 5.25 and before has Incorrect Access Control, allows attackers to obtain sensitive information via weak permissions in OSF_discovery service.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-37572">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d0aaeda86faf0ea43eafcc133825d6e9</td>
-       <td>CVE-2022-47531</td>
-       <td>2023-12-05 06:15:48 <img src="imgs/new.gif" /></td>
-       <td>An issue was discovered in Ericsson Evolved Packet Gateway (EPG) versions 3.x before 3.25 and 2.x before 2.16, allows authenticated users to bypass system CLI and execute commands they are authorized to execute directly in the UNIX shell.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-47531">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8f80eef302e36f1be6b0951e9218a365</td>
-       <td>CVE-2023-41613</td>
-       <td>2023-12-04 14:15:00</td>
-       <td>EzViz Studio v2.2.0 is vulnerable to DLL hijacking.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-41613">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>da0f162c5d3f50f4195c309ff40d3ff1</td>
-       <td>CVE-2023-6460</td>
-       <td>2023-12-04 13:15:00</td>
-       <td>A potential logging of the firestore key via logging within nodejs-firestore exists - Developers who were logging objects through this._settings would be logging the firestore key as well potentially exposing it to anyone with logs read access. We recommend upgrading to version 6.1.0 to avoid this issue</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-6460">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>849152d0852176b6d3976db3f00a9780</td>
-       <td>CVE-2023-48863</td>
-       <td>2023-12-04 13:15:00</td>
-       <td>SEMCMS 3.9 is vulnerable to SQL Injection. Due to the lack of security checks on the input of the application, the attacker uses the existing application to inject malicious SQL commands into the background database engine for execution, and sends some attack codes as commands or query statements to the interpreter. These malicious data can deceive the interpreter, so as to execute unplanned commands or unauthorized access to data.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-48863">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>050496e498dfc2580714c1a92fe1eb5c</td>
-       <td>CVE-2023-48800</td>
-       <td>2023-12-04 13:15:00</td>
-       <td>In TOTOLINK X6000R_Firmware V9.4.0cu.852_B20230719, the shttpd file sub_417338 function obtains fields from the front-end, connects them through the snprintf function, and passes them to the CsteSystem function, resulting in a command execution vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-48800">详情</a></td>
       </tr>
 
      </tbody>
