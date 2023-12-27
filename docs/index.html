@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-12-26 23:28:25 -->
+<!-- RELEASE TIME : 2023-12-27 08:30:27 -->
 <html lang="zh-cn">
 
  <head>
@@ -29,7 +29,7 @@
       <tr>
        <td>0c520d1f3614bc8cba4450fee6f03f5d</td>
        <td></td>
-       <td>2023-12-25 08:21:40 <img src="imgs/new.gif" /></td>
+       <td>2023-12-25 08:21:40</td>
        <td>安全事件周报 2023-12-18 第51周</td>
        <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=65893b7fc09f255b91b17b9d">详情</a></td>
       </tr>
@@ -235,6 +235,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>2ee0c9072c5ba0ab925bd86ddf954d05</td>
+       <td>CVE-2023-6268</td>
+       <td>2023-12-26 19:15:08 <img src="imgs/new.gif" /></td>
+       <td>The JSON Content Importer WordPress plugin before 1.5.4 does not sanitise and escape the tab parameter before outputting it back in the page, leading to a Reflected Cross-Site Scripting which could be used against high privilege users such as admin</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-6268">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>56c0641762efd6564545ef7551d7cf7c</td>
+       <td>CVE-2023-6250</td>
+       <td>2023-12-26 19:15:08 <img src="imgs/new.gif" /></td>
+       <td>The BestWebSoft's Like & Share WordPress plugin before 2.74 discloses the content of password protected posts to unauthenticated users via a meta tag</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-6250">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9f375a6768a37467572dcd01dc6851d9</td>
+       <td>CVE-2023-6166</td>
+       <td>2023-12-26 19:15:08 <img src="imgs/new.gif" /></td>
+       <td>The Quiz Maker WordPress plugin before 6.4.9.5 does not escape generated URLs before outputting them in attributes, leading to Reflected Cross-Site Scripting</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-6166">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3983fed3b3cb9de6e7fd1f2f06b9ae03</td>
+       <td>CVE-2023-6155</td>
+       <td>2023-12-26 19:15:08 <img src="imgs/new.gif" /></td>
+       <td>The Quiz Maker WordPress plugin before 6.4.9.5 does not adequately authorize the `ays_quiz_author_user_search` AJAX action, allowing an unauthenticated attacker to perform a search for users of the system, ultimately leaking user email addresses.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-6155">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>32d07b4fd48f423bc332c46196bdbc0a</td>
+       <td>CVE-2023-6114</td>
+       <td>2023-12-26 19:15:08 <img src="imgs/new.gif" /></td>
+       <td>The Duplicator WordPress plugin before 1.5.7.1, Duplicator Pro WordPress plugin before 4.5.14.2 does not disallow listing the `backups-dup-lite/tmp` directory (or the `backups-dup-pro/tmp` directory in the Pro version), which temporarily stores files containing sensitive data. When directory listing is enabled in the web server, this allows unauthenticated attackers to discover and access these sensitive files, which include a full database dump and a zip archive of the site.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-6114">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ea3633572d0b757c064c5f77a8f2dd26</td>
+       <td>CVE-2023-5991</td>
+       <td>2023-12-26 19:15:08 <img src="imgs/new.gif" /></td>
+       <td>The Hotel Booking Lite WordPress plugin before 4.8.5 does not validate file paths provided via user input, as well as does not have proper CSRF and authorisation checks, allowing unauthenticated users to download and delete arbitrary files on the server</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5991">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f52f399ef66e950b7f6f644c2412d6e8</td>
+       <td>CVE-2023-5980</td>
+       <td>2023-12-26 19:15:08 <img src="imgs/new.gif" /></td>
+       <td>The BSK Forms Blacklist WordPress plugin before 3.7 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup).</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5980">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>699aad4b57d64c6bc4921b58eb8242ba</td>
+       <td>CVE-2023-5939</td>
+       <td>2023-12-26 19:15:08 <img src="imgs/new.gif" /></td>
+       <td>The rtMedia for WordPress, BuddyPress and bbPress WordPress plugin before 4.6.16 loads the contents of the import file in an unsafe manner, leading to remote code execution by privileged users.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5939">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>38f25c63fa5e94389cb9c55fc6b26471</td>
+       <td>CVE-2023-5931</td>
+       <td>2023-12-26 19:15:08 <img src="imgs/new.gif" /></td>
+       <td>The rtMedia for WordPress, BuddyPress and bbPress WordPress plugin before 4.6.16 does not validate files to be uploaded, which could allow attackers with a low-privilege account (e.g. subscribers) to upload arbitrary files such as PHP on the server</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5931">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b203b7214bfe5c97e339393e73ee6299</td>
+       <td>CVE-2023-5674</td>
+       <td>2023-12-26 19:15:08 <img src="imgs/new.gif" /></td>
+       <td>The WP Mail Log WordPress plugin before 1.1.3 does not properly sanitise and escape a parameter before using it in a SQL statement, leading to a SQL injection exploitable by users with a role as low as Contributor.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5674">详情</a></td>
+      </tr>
+
+      <tr>
        <td>db7b3a081ca3f10d03d3a63346493552</td>
        <td>CVE-2023-28616</td>
        <td>2023-12-26 04:15:07 <img src="imgs/new.gif" /></td>
@@ -261,7 +341,7 @@
       <tr>
        <td>dd5dfe631179401fe985da6a4617cacf</td>
        <td>CVE-2023-38321</td>
-       <td>2023-12-25 09:15:07 <img src="imgs/new.gif" /></td>
+       <td>2023-12-25 09:15:07</td>
        <td>OpenNDS, as used in Sierra Wireless ALEOS before 4.17.0.12 and other products, allows remote attackers to cause a denial of service (NULL pointer dereference, daemon crash, and Captive Portal outage) via a GET request to /opennds_auth/ that lacks a custom query string parameter and client-token.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-38321">详情</a></td>
       </tr>
@@ -269,7 +349,7 @@
       <tr>
        <td>801d2b5710bf51e261e22003ae120898</td>
        <td>CVE-2023-49954</td>
-       <td>2023-12-25 08:15:07 <img src="imgs/new.gif" /></td>
+       <td>2023-12-25 08:15:07</td>
        <td>The CRM Integration in 3CX before 18.0.9.23 and 20 before 20.0.0.1494 allows SQL Injection via a first name, search string, or email address.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-49954">详情</a></td>
       </tr>
@@ -277,7 +357,7 @@
       <tr>
        <td>e0e45694ade204e60b229d73321cfbe9</td>
        <td>CVE-2023-49944</td>
-       <td>2023-12-25 08:15:07 <img src="imgs/new.gif" /></td>
+       <td>2023-12-25 08:15:07</td>
        <td>The Challenge Response feature of BeyondTrust Privilege Management for Windows (PMfW) before 2023-07-14 allows local administrators to bypass this feature by decrypting the shared key, or by locating the decrypted shared key in process memory. The threat is mitigated by the Agent Protection feature.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-49944">详情</a></td>
       </tr>
@@ -285,7 +365,7 @@
       <tr>
        <td>f7ffa179db033bc31f364f46d7a73f78</td>
        <td>CVE-2023-49226</td>
-       <td>2023-12-25 08:15:07 <img src="imgs/new.gif" /></td>
+       <td>2023-12-25 08:15:07</td>
        <td>An issue was discovered in Peplink Balance Two before 8.4.0. Command injection in the traceroute feature of the administration console allows users with admin privileges to execute arbitrary commands as root.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-49226">详情</a></td>
       </tr>
@@ -293,7 +373,7 @@
       <tr>
        <td>0af963f8c39ca5652e6928b99e8af797</td>
        <td>CVE-2023-48652</td>
-       <td>2023-12-25 08:15:07 <img src="imgs/new.gif" /></td>
+       <td>2023-12-25 08:15:07</td>
        <td>Concrete CMS 9 before 9.2.3 is vulnerable to Cross Site Request Forgery (CSRF) via /ccm/system/dialogs/logs/delete_all/submit. An attacker can force an admin user to delete server report logs on a web application to which they are currently authenticated.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-48652">详情</a></td>
       </tr>
@@ -301,7 +381,7 @@
       <tr>
        <td>7590a906921f2148f5cb3113fc37aebf</td>
        <td>CVE-2023-38826</td>
-       <td>2023-12-25 08:15:07 <img src="imgs/new.gif" /></td>
+       <td>2023-12-25 08:15:07</td>
        <td>A Cross Site Scripting (XSS) vulnerability exists in Follet Learning Solutions Destiny through 20.0_1U. via the handlewpesearchform.do. searchString.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-38826">详情</a></td>
       </tr>
@@ -309,7 +389,7 @@
       <tr>
        <td>cf391ce4c4a09740e68400db21db1b34</td>
        <td>CVE-2023-36486</td>
-       <td>2023-12-25 08:15:07 <img src="imgs/new.gif" /></td>
+       <td>2023-12-25 08:15:07</td>
        <td>The workflow-engine of ILIAS before 7.23 and 8 before 8.3 allows remote authenticated users to run arbitrary system commands on the application server as the application user by uploading a workflow definition file with a malicious filename.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-36486">详情</a></td>
       </tr>
@@ -317,7 +397,7 @@
       <tr>
        <td>12eeb28f9825c317799e26619ba03627</td>
        <td>CVE-2023-51771</td>
-       <td>2023-12-25 05:15:08 <img src="imgs/new.gif" /></td>
+       <td>2023-12-25 05:15:08</td>
        <td>In MicroHttpServer (aka Micro HTTP Server) through a8ab029, _ParseHeader in lib/server.c allows a one-byte recv buffer overflow via a long URI.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-51771">详情</a></td>
       </tr>
@@ -325,7 +405,7 @@
       <tr>
        <td>734e0e1468760aca3f4a1ba664c95570</td>
        <td>CVE-2023-30451</td>
-       <td>2023-12-25 05:15:08 <img src="imgs/new.gif" /></td>
+       <td>2023-12-25 05:15:08</td>
        <td>In TYPO3 11.5.24, the filelist component allows attackers (who have access to the administrator panel) to read arbitrary files via directory traversal in the baseuri field, as demonstrated by POST /typo3/record/edit with ../../../ in data[sys_file_storage]*[data][sDEF][lDEF][basePath][vDEF].</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-30451">详情</a></td>
       </tr>
@@ -333,7 +413,7 @@
       <tr>
        <td>5f34feb089de402d443c01586f5e82c3</td>
        <td>CVE-2023-7100</td>
-       <td>2023-12-25 03:15:08 <img src="imgs/new.gif" /></td>
+       <td>2023-12-25 03:15:08</td>
        <td>A vulnerability, which was classified as critical, was found in PHPGurukul Restaurant Table Booking System 1.0. Affected is an unknown function of the file /admin/bwdates-report-details.php. The manipulation of the argument fdate leads to sql injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-248952.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-7100">详情</a></td>
       </tr>
@@ -341,89 +421,9 @@
       <tr>
        <td>09db1f85790a392373a140a203cdcfb5</td>
        <td>CVE-2023-7099</td>
-       <td>2023-12-25 03:15:08 <img src="imgs/new.gif" /></td>
+       <td>2023-12-25 03:15:08</td>
        <td>A vulnerability, which was classified as critical, has been found in PHPGurukul Nipah Virus Testing Management System 1.0. This issue affects some unknown processing of the file bwdates-report-result.php. The manipulation of the argument fromdate leads to sql injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-248951.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-7099">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b10e08a69276098d54ee62c18d74807c</td>
-       <td>CVE-2023-49880</td>
-       <td>2023-12-25 03:15:08 <img src="imgs/new.gif" /></td>
-       <td>In the Message Entry and Repair (MER) facility of IBM Financial Transaction Manager for SWIFT Services 3.2.4 the sending address and the message type of FIN messages are assumed to be immutable. However, an attacker might modify these elements of a business transaction. IBM X-Force ID: 273183.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-49880">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ce148c9f4cf2a08b547dffd8904bbb38</td>
-       <td>CVE-2023-43064</td>
-       <td>2023-12-25 03:15:08 <img src="imgs/new.gif" /></td>
-       <td>Facsimile Support for IBM i 7.2, 7.3, 7.4, and 7.5 could allow a local user to gain elevated privileges due to an unqualified library call. A malicious actor could cause arbitrary code to run with the privilege of the user invoking the facsimile support. IBM X-Force ID: 267689.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-43064">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e5dc3ecb0abfad6b49eca8db5476b556</td>
-       <td>CVE-2021-38927</td>
-       <td>2023-12-25 03:15:07 <img src="imgs/new.gif" /></td>
-       <td>IBM Aspera Console 3.4.0 is vulnerable to cross-site scripting. This vulnerability allows users to embed arbitrary JavaScript code in the Web UI thus altering the intended functionality potentially leading to credentials disclosure within a trusted session. IBM X-Force ID: 210322.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-38927">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b9145be13a08a325d7bdab4079c01da6</td>
-       <td>CVE-2023-7098</td>
-       <td>2023-12-25 02:15:44 <img src="imgs/new.gif" /></td>
-       <td>** UNSUPPORTED WHEN ASSIGNED ** A vulnerability classified as problematic was found in icret EasyImages 2.8.3. This vulnerability affects unknown code of the file app/hide.php. The manipulation of the argument key leads to path traversal: '../filedir'. The attack can be initiated remotely. The complexity of an attack is rather high. The exploitation appears to be difficult. The exploit has been disclosed to the public and may be used. VDB-248950 is the identifier assigned to this vulnerability. NOTE: This vulnerability only affects products that are no longer supported by the maintainer.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-7098">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>57b5bbb4520b0c4df7072b10558dc8c9</td>
-       <td>CVE-2023-7097</td>
-       <td>2023-12-25 02:15:44 <img src="imgs/new.gif" /></td>
-       <td>A vulnerability classified as critical has been found in code-projects Water Billing System 1.0. This affects an unknown part of the file /addbill.php. The manipulation of the argument owners_id leads to sql injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-248949 was assigned to this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-7097">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f5ae0cd73bc59a023eb7b0a0faa5b3d0</td>
-       <td>CVE-2023-7096</td>
-       <td>2023-12-25 01:15:08 <img src="imgs/new.gif" /></td>
-       <td>A vulnerability was found in code-projects Faculty Management System 1.0. It has been rated as critical. Affected by this issue is some unknown functionality of the file /admin/php/crud.php. The manipulation of the argument fieldname leads to sql injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-248948.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-7096">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4f01aa37f8b4af53e2f55ee2720bba69</td>
-       <td>CVE-2023-7092</td>
-       <td>2023-12-24 23:15:08</td>
-       <td>A vulnerability was found in Uniway UW-302VP 2.0. It has been rated as problematic. This issue affects some unknown processing of the file /boaform/wlan_basic_set.cgi of the component Admin Web Interface. The manipulation of the argument wlanssid/password leads to cross-site request forgery. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-248939. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-7092">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>72be9b9009bec647fc8e21a051010f80</td>
-       <td>CVE-2023-7102</td>
-       <td>2023-12-24 22:15:08</td>
-       <td>Use of a Third Party library produced a vulnerability in Barracuda Networks Inc. Barracuda ESG Appliance which allowed Parameter Injection.This issue affected Barracuda ESG Appliance, from 5.1.3.001 through 9.2.1.001, until Barracuda removed the vulnerable logic.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-7102">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>03f4a4c02441109622efe650bc4d4de1</td>
-       <td>CVE-2023-7101</td>
-       <td>2023-12-24 22:15:07</td>
-       <td>Spreadsheet::ParseExcel version 0.65 is a Perl module used for parsing Excel files. Spreadsheet::ParseExcel is vulnerable to an arbitrary code execution (ACE) vulnerability due to passing unvalidated input from a file into a string-type “eval”. Specifically, the issue stems from the evaluation of Number format strings (not to be confused with printf-style format strings) within the Excel parsing logic.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-7101">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0ffed68238cf9693e4d3d2dc2308145f</td>
-       <td>CVE-2023-7091</td>
-       <td>2023-12-24 21:15:25</td>
-       <td>A vulnerability was found in Dreamer CMS 4.1.3. It has been declared as problematic. This vulnerability affects unknown code of the file /upload/uploadFile. The manipulation of the argument file leads to unrestricted upload. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. VDB-248938 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-7091">详情</a></td>
       </tr>
 
      </tbody>
@@ -1757,7 +1757,7 @@
       <tr>
        <td>2aae78a8e001adb12889214f314dfe7c</td>
        <td>CVE-2023-5363</td>
-       <td>2023-12-25 09:23:36 <img src="imgs/new.gif" /></td>
+       <td>2023-12-25 09:23:36</td>
        <td>OpenSSL信息泄露漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88386">详情</a></td>
       </tr>
@@ -1765,7 +1765,7 @@
       <tr>
        <td>fd3fef8d69740e571cb05d9ae2db9234</td>
        <td>CVE-2023-5740</td>
-       <td>2023-12-25 09:23:36 <img src="imgs/new.gif" /></td>
+       <td>2023-12-25 09:23:36</td>
        <td>WordPress Live Chat with Facebook Messenger Plugin跨站脚本漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88385">详情</a></td>
       </tr>
@@ -1773,7 +1773,7 @@
       <tr>
        <td>8aed9a1c702533b8b3f0d2dd69877c63</td>
        <td>CVE-2023-5717</td>
-       <td>2023-12-25 09:23:36 <img src="imgs/new.gif" /></td>
+       <td>2023-12-25 09:23:36</td>
        <td>Linux Kernel越界写入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88384">详情</a></td>
       </tr>
@@ -1781,7 +1781,7 @@
       <tr>
        <td>8472ea5c38064eb9afcf5ca49a21f6d0</td>
        <td>CVE-2023-5472</td>
-       <td>2023-12-25 09:23:36 <img src="imgs/new.gif" /></td>
+       <td>2023-12-25 09:23:36</td>
        <td>Google Chrome内存错误引用漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88383">详情</a></td>
       </tr>
@@ -1789,7 +1789,7 @@
       <tr>
        <td>b0ba415ef354c72286103c5428d2ac57</td>
        <td>CVE-2023-5723</td>
-       <td>2023-12-25 09:23:36 <img src="imgs/new.gif" /></td>
+       <td>2023-12-25 09:23:36</td>
        <td>Mozilla Firefox信息泄露漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88382">详情</a></td>
       </tr>
@@ -1797,7 +1797,7 @@
       <tr>
        <td>8c789870883610b477b75e7d9594d830</td>
        <td>CVE-2023-5725</td>
-       <td>2023-12-25 09:23:36 <img src="imgs/new.gif" /></td>
+       <td>2023-12-25 09:23:36</td>
        <td>Mozilla多款产品信息泄露漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88381">详情</a></td>
       </tr>
@@ -1805,7 +1805,7 @@
       <tr>
        <td>16b46772f67cdd17413d4e290a0da924</td>
        <td>CVE-2023-5731</td>
-       <td>2023-12-25 09:23:36 <img src="imgs/new.gif" /></td>
+       <td>2023-12-25 09:23:36</td>
        <td>Mozilla Firefox越界写入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88380">详情</a></td>
       </tr>
@@ -1813,7 +1813,7 @@
       <tr>
        <td>c61f7f53e687456a317e28980712fb2d</td>
        <td>CVE-2023-5724</td>
-       <td>2023-12-25 09:23:36 <img src="imgs/new.gif" /></td>
+       <td>2023-12-25 09:23:36</td>
        <td>Mozilla多款产品拒绝服务漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88379">详情</a></td>
       </tr>
@@ -1821,7 +1821,7 @@
       <tr>
        <td>0f2e589716816443bf60e1c01a5eae64</td>
        <td>CVE-2023-5732</td>
-       <td>2023-12-25 09:23:36 <img src="imgs/new.gif" /></td>
+       <td>2023-12-25 09:23:36</td>
        <td>Mozilla多款产品信息泄露漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88378">详情</a></td>
       </tr>
