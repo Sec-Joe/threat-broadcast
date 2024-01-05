@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2024-01-05 09:26:12 -->
+<!-- RELEASE TIME : 2024-01-05 22:30:27 -->
 <html lang="zh-cn">
 
  <head>
@@ -235,6 +235,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>d34dc08f9354801ab047cbc6cdd5f707</td>
+       <td>CVE-2024-0247</td>
+       <td>2024-01-05 19:15:08 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability classified as critical was found in CodeAstro Online Food Ordering System 1.0. This vulnerability affects unknown code of the file /admin/ of the component Admin Panel. The manipulation of the argument Username leads to sql injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. VDB-249778 is the identifier assigned to this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0247">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b5abb66e3974495dc7cb0193d1d7e662</td>
+       <td>CVE-2023-47560</td>
+       <td>2024-01-05 17:15:11 <img src="imgs/new.gif" /></td>
+       <td>An OS command injection vulnerability has been reported to affect QuMagie. If exploited, the vulnerability could allow authenticated users to execute commands via a network. We have already fixed the vulnerability in the following version: QuMagie 2.2.1 and later</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-47560">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9d7221fcd7518c82efd6818f15e19450</td>
+       <td>CVE-2023-47559</td>
+       <td>2024-01-05 17:15:11 <img src="imgs/new.gif" /></td>
+       <td>A cross-site scripting (XSS) vulnerability has been reported to affect QuMagie. If exploited, the vulnerability could allow authenticated users to inject malicious code via a network. We have already fixed the vulnerability in the following version: QuMagie 2.2.1 and later</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-47559">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2a53532b07e523d8ae1289750297ed92</td>
+       <td>CVE-2023-47219</td>
+       <td>2024-01-05 17:15:11 <img src="imgs/new.gif" /></td>
+       <td>A SQL injection vulnerability has been reported to affect QuMagie. If exploited, the vulnerability could allow authenticated users to inject malicious code via a network. We have already fixed the vulnerability in the following version: QuMagie 2.2.1 and later</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-47219">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ddd68565aed7654e0f21b83ffa4e3abb</td>
+       <td>CVE-2023-46837</td>
+       <td>2024-01-05 17:15:11 <img src="imgs/new.gif" /></td>
+       <td>Arm provides multiple helpers to clean & invalidate the cache for a given region. This is, for instance, used when allocating guest memory to ensure any writes (such as the ones during scrubbing) have reached memory before handing over the page to a guest. Unfortunately, the arithmetics in the helpers can overflow and would then result to skip the cache cleaning/invalidation. Therefore there is no guarantee when all the writes will reach the memory. This undefined behavior was meant to be addressed by XSA-437, but the approach was not sufficient.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46837">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>89ecce1dfc22fadd21be1f601a811204</td>
+       <td>CVE-2023-46836</td>
+       <td>2024-01-05 17:15:11 <img src="imgs/new.gif" /></td>
+       <td>The fixes for XSA-422 (Branch Type Confusion) and XSA-434 (Speculative Return Stack Overflow) are not IRQ-safe. It was believed that the mitigations always operated in contexts with IRQs disabled. However, the original XSA-254 fix for Meltdown (XPTI) deliberately left interrupts enabled on two entry paths; one unconditionally, and one conditionally on whether XPTI was active. As BTC/SRSO and Meltdown affect different CPU vendors, the mitigations are not active together by default. Therefore, there is a race condition whereby a malicious PV guest can bypass BTC/SRSO protections and launch a BTC/SRSO attack against Xen.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46836">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d8ff2da94ef61308d9518bac07906ab2</td>
+       <td>CVE-2023-46835</td>
+       <td>2024-01-05 17:15:11 <img src="imgs/new.gif" /></td>
+       <td>The current setup of the quarantine page tables assumes that the quarantine domain (dom_io) has been initialized with an address width of DEFAULT_DOMAIN_ADDRESS_WIDTH (48) and hence 4 page table levels. However dom_io being a PV domain gets the AMD-Vi IOMMU page tables levels based on the maximum (hot pluggable) RAM address, and hence on systems with no RAM above the 512GB mark only 3 page-table levels are configured in the IOMMU. On systems without RAM above the 512GB boundary amd_iommu_quarantine_init() will setup page tables for the scratch page with 4 levels, while the IOMMU will be configured to use 3 levels only, resulting in the last page table directory (PDE) effectively becoming a page table entry (PTE), and hence a device in quarantine mode gaining write access to the page destined to be a PDE. Due to this page table level mismatch, the sink page the device gets read/write access to is no longer cleared between device assignment, possibly leading to data leaks.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46835">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2537a1585b3eb169bc16341762e0f53c</td>
+       <td>CVE-2023-45044</td>
+       <td>2024-01-05 17:15:10 <img src="imgs/new.gif" /></td>
+       <td>A buffer copy without checking size of input vulnerability has been reported to affect several QNAP operating system versions. If exploited, the vulnerability could allow authenticated administrators to execute code via a network. We have already fixed the vulnerability in the following versions: QTS 5.1.4.2596 build 20231128 and later QuTS hero h5.1.4.2596 build 20231128 and later</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-45044">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0711661a0e20f5643307125e035d360d</td>
+       <td>CVE-2023-45043</td>
+       <td>2024-01-05 17:15:10 <img src="imgs/new.gif" /></td>
+       <td>A buffer copy without checking size of input vulnerability has been reported to affect several QNAP operating system versions. If exploited, the vulnerability could allow authenticated administrators to execute code via a network. We have already fixed the vulnerability in the following versions: QTS 5.1.4.2596 build 20231128 and later QuTS hero h5.1.4.2596 build 20231128 and later</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-45043">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>28404046648f8c3187b7e7565091bd1c</td>
+       <td>CVE-2023-45042</td>
+       <td>2024-01-05 17:15:10 <img src="imgs/new.gif" /></td>
+       <td>A buffer copy without checking size of input vulnerability has been reported to affect several QNAP operating system versions. If exploited, the vulnerability could allow authenticated administrators to execute code via a network. We have already fixed the vulnerability in the following versions: QTS 5.1.4.2596 build 20231128 and later QuTS hero h5.1.4.2596 build 20231128 and later</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-45042">详情</a></td>
+      </tr>
+
+      <tr>
        <td>05fdfca069662eb38c6d79235c81ccf0</td>
        <td>CVE-2024-22051</td>
        <td>2024-01-04 21:15:10 <img src="imgs/new.gif" /></td>
@@ -344,86 +424,6 @@
        <td>2024-01-03 17:15:12</td>
        <td>Craft is a content management system. This is a potential moderate impact, low complexity privilege escalation vulnerability in Craft starting in 3.x prior to 3.9.6 and 4.x prior to 4.4.16 with certain user permissions setups. This has been fixed in Craft 4.4.16 and Craft 3.9.6. Users should ensure they are running at least those versions.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-21622">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9e259a29a43c60b2469cb38ba121b172</td>
-       <td>CVE-2024-0217</td>
-       <td>2024-01-03 17:15:12</td>
-       <td>A use-after-free flaw was found in PackageKitd. In some conditions, the order of cleanup mechanics for a transaction could be impacted. As a result, some memory access could occur on memory regions that were previously freed. Once freed, a memory region can be reused for other allocations and any previously stored data in this memory region is considered lost.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0217">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7b4d67def060b6ec34c4f0346fe1accc</td>
-       <td>CVE-2023-6004</td>
-       <td>2024-01-03 17:15:11</td>
-       <td>A flaw was found in libssh. By utilizing the ProxyCommand or ProxyJump feature, users can exploit unchecked hostname syntax on the client. This issue may allow an attacker to inject malicious code into the command of the features mentioned through the hostname parameter.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-6004">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>41655c8b5db5379a2287ffd40fee8e23</td>
-       <td>CVE-2023-50253</td>
-       <td>2024-01-03 17:15:11</td>
-       <td>Laf is a cloud development platform. In the Laf version design, the log uses communication with k8s to quickly retrieve logs from the container without the need for additional storage. However, in version 1.0.0-beta.13 and prior, this interface does not verify the permissions of the pod, which allows authenticated users to obtain any pod logs under the same namespace through this method, thereby obtaining sensitive information printed in the logs. As of time of publication, no known patched versions exist.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-50253">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>408b418042a5def80f2b739b9261f074</td>
-       <td>CVE-2023-46742</td>
-       <td>2024-01-03 17:15:11</td>
-       <td>CubeFS is an open-source cloud-native file storage system. CubeFS prior to version 3.3.1 was found to leak users secret keys and access keys in the logs in multiple components. When CubeCS creates new users, it leaks the users secret key. This could allow a lower-privileged user with access to the logs to retrieve sensitive information and impersonate other users with higher privileges than themselves. The issue has been patched in v3.3.1. There is no other mitigation than upgrading CubeFS.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46742">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d8a14b34f9bdf38f76040a2641b1fb10</td>
-       <td>CVE-2023-46741</td>
-       <td>2024-01-03 17:15:10</td>
-       <td>CubeFS is an open-source cloud-native file storage system. A vulnerability was found in CubeFS prior to version 3.3.1 that could allow users to read sensitive data from the logs which could allow them escalate privileges. CubeFS leaks configuration keys in plaintext format in the logs. These keys could allow anyone to carry out operations on blobs that they otherwise do not have permissions for. For example, an attacker that has succesfully retrieved a secret key from the logs can delete blogs from the blob store. The attacker can either be an internal user with limited privileges to read the log, or they can be an external user who has escalated privileges sufficiently to access the logs. The vulnerability has been patched in v3.3.1. There is no other mitigation than upgrading.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46741">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5d2e8dfdcc554d690b4556438ac60061</td>
-       <td>CVE-2023-46740</td>
-       <td>2024-01-03 17:15:10</td>
-       <td>CubeFS is an open-source cloud-native file storage system. Prior to version 3.3.1, CubeFS used an insecure random string generator to generate user-specific, sensitive keys used to authenticate users in a CubeFS deployment. This could allow an attacker to predict and/or guess the generated string and impersonate a user thereby obtaining higher privileges. When CubeFS creates new users, it creates a piece of sensitive information for the user called the “accessKey”. To create the "accesKey", CubeFS uses an insecure string generator which makes it easy to guess and thereby impersonate the created user. An attacker could leverage the predictable random string generator and guess a users access key and impersonate the user to obtain higher privileges. The issue has been fixed in v3.3.1. There is no other mitigation than to upgrade.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46740">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7cb20be5df8d48c6074936e4d799e761</td>
-       <td>CVE-2023-49558</td>
-       <td>2024-01-03 00:15:09</td>
-       <td>An issue in YASM 1.3.0.86.g9def allows a remote attacker to cause a denial of service via the expand_mmac_params function in the modules/preprocs/nasm/nasm-pp.c component.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-49558">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>55b86f493446378c94563a947ad6f6bb</td>
-       <td>CVE-2023-49557</td>
-       <td>2024-01-03 00:15:09</td>
-       <td>An issue in YASM 1.3.0.86.g9def allows a remote attacker to cause a denial of service via the yasm_section_bcs_first function in the libyasm/section.c component.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-49557">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>49974a528c4569b309b2744492dea8f0</td>
-       <td>CVE-2023-49556</td>
-       <td>2024-01-03 00:15:09</td>
-       <td>Buffer Overflow vulnerability in YASM 1.3.0.86.g9def allows a remote attacker to cause a denial of service via the expr_delete_term function in the libyasm/expr.c component.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-49556">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c112f341204a7d0245340337843b65b5</td>
-       <td>CVE-2023-49555</td>
-       <td>2024-01-03 00:15:09</td>
-       <td>An issue in YASM 1.3.0.86.g9def allows a remote attacker to cause a denial of service via the expand_smacro function in the modules/preprocs/nasm/nasm-pp.c component.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-49555">详情</a></td>
       </tr>
 
      </tbody>
