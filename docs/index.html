@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2024-01-06 03:26:23 -->
+<!-- RELEASE TIME : 2024-01-06 23:26:06 -->
 <html lang="zh-cn">
 
  <head>
@@ -235,6 +235,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>49c47c735f40fb6da73a4d15cf067b6e</td>
+       <td>CVE-2023-51441</td>
+       <td>2024-01-06 12:15:42 <img src="imgs/new.gif" /></td>
+       <td>** UNSUPPORTED WHEN ASSIGNED ** Improper Input Validation vulnerability in Apache Axis allowed users with access to the admin service to perform possible SSRF This issue affects Apache Axis: through 1.3. As Axis 1 has been EOL we recommend you migrate to a different SOAP engine, such as Apache Axis 2/Java. Alternatively you could use a build of Axis with the patch from https://github.com/apache/axis-axis1-java/commit/685c309febc64aa393b2d64a05f90e7eb9f73e06 applied. The Apache Axis project does not expect to create an Axis 1.x release fixing this problem, though contributors that would like to work towards this are welcome.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-51441">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>19f5a97bf57e96570f7baf33b16ea990</td>
+       <td>CVE-2023-6801</td>
+       <td>2024-01-06 10:15:46 <img src="imgs/new.gif" /></td>
+       <td>The RSS Aggregator by Feedzy – Feed to Post, Autoblogging, News & YouTube Video Feeds Aggregator plugin for WordPress is vulnerable to Stored Cross-Site Scripting via admin settings in all versions up to, and including, 4.3.2 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with author-level permissions and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-6801">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0320dae2210944cc8f32d12a05fccb99</td>
+       <td>CVE-2023-6798</td>
+       <td>2024-01-06 10:15:45 <img src="imgs/new.gif" /></td>
+       <td>The RSS Aggregator by Feedzy – Feed to Post, Autoblogging, News & YouTube Video Feeds Aggregator plugin for WordPress is vulnerable to unauthorized settings update due to a missing capability check when updating settings in all versions up to, and including, 4.3.2. This makes it possible for authenticated attackers, with author-level access or above to change the plugin's settings including proxy settings, which are also exposed to authors.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-6798">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>28a377a7c6f00b367da2a77ba9011eb3</td>
+       <td>CVE-2023-50121</td>
+       <td>2024-01-06 05:15:09 <img src="imgs/new.gif" /></td>
+       <td>Autel EVO NANO drone flight control firmware version 1.6.5 is vulnerable to denial of service (DoS).</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-50121">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f9834cecb3a775e75f3a595324c8866b</td>
+       <td>CVE-2023-46953</td>
+       <td>2024-01-06 05:15:09 <img src="imgs/new.gif" /></td>
+       <td>SQL Injection vulnerability in ABO.CMS v.5.9.3, allows remote attackers to execute arbitrary code via the d parameter in the Documents module.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46953">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fa738aec469f5ceeb66fdac777b07ef0</td>
+       <td>CVE-2023-50609</td>
+       <td>2024-01-06 04:15:08 <img src="imgs/new.gif" /></td>
+       <td>Cross Site Scripting (XSS) vulnerability in AVA teaching video application service platform version 3.1, allows remote attackers to execute arbitrary code via a crafted script to ajax.aspx.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-50609">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3faac1fc0d4abdcd2c1f6ec6473e9d81</td>
+       <td>CVE-2023-39853</td>
+       <td>2024-01-06 04:15:08 <img src="imgs/new.gif" /></td>
+       <td>SQL Injection vulnerability in Dzzoffice version 2.01, allows remote attackers to obtain sensitive information via the doobj and doevent parameters in the Network Disk backend module.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39853">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e055e9dc21b65deca8e63e16ca13b59f</td>
+       <td>CVE-2023-50612</td>
+       <td>2024-01-06 03:15:43 <img src="imgs/new.gif" /></td>
+       <td>Insecure Permissions vulnerability in fit2cloud Cloud Explorer Lite version 1.4.1, allow local attackers to escalate privileges and obtain sensitive information via the cloud accounts parameter.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-50612">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>322721f2980d4deb06f32857550021b1</td>
+       <td>CVE-2024-21642</td>
+       <td>2024-01-05 22:15:43 <img src="imgs/new.gif" /></td>
+       <td>D-Tale is a visualizer for Pandas data structures. Users hosting versions D-Tale prior to 3.9.0 publicly can be vulnerable to server-side request forgery (SSRF), allowing attackers to access files on the server. Users should upgrade to version 3.9.0, where the `Load From the Web` input is turned off by default. The only workaround for versions earlier than 3.9.0 is to only host D-Tale to trusted users.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-21642">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>582a8c876463c39ca7a9f9aebf1eb939</td>
+       <td>CVE-2024-21641</td>
+       <td>2024-01-05 21:15:43 <img src="imgs/new.gif" /></td>
+       <td>Flarum is open source discussion platform software. Prior to version 1.8.5, the Flarum `/logout` route includes a redirect parameter that allows any third party to redirect users from a (trusted) domain of the Flarum installation to redirect to any link. For logged-in users, the logout must be confirmed. Guests are immediately redirected. This could be used by spammers to redirect to a web address using a trusted domain of a running Flarum installation. The vulnerability has been fixed and published as flarum/core v1.8.5. As a workaround, some extensions modifying the logout route can remedy this issue if their implementation is safe.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-21641">详情</a></td>
+      </tr>
+
+      <tr>
        <td>d34dc08f9354801ab047cbc6cdd5f707</td>
        <td>CVE-2024-0247</td>
        <td>2024-01-05 19:15:08 <img src="imgs/new.gif" /></td>
@@ -344,86 +424,6 @@
        <td>2024-01-04 21:15:09</td>
        <td>govuk_tech_docs versions from 2.0.2 to before 3.3.1 are vulnerable to a cross-site scripting vulnerability. Malicious JavaScript may be executed in the user's browser if a malicious search result is displayed on the search page.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-22048">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e0d75648ae70488d8f7a2c2301344e60</td>
-       <td>CVE-2024-22047</td>
-       <td>2024-01-04 21:15:09</td>
-       <td>A race condition exists in Audited 4.0.0 to 5.3.3 that can result in an authenticated user to cause audit log entries to be attributed to another user.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-22047">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>59d85acda3a1c220e56b86890781466a</td>
-       <td>CVE-2024-0241</td>
-       <td>2024-01-04 21:15:09</td>
-       <td>encoded_id-rails versions before 1.0.0.beta2 are affected by an uncontrolled resource consumption vulnerability. A remote and unauthenticated attacker might cause a denial of service condition by sending an HTTP request with an extremely long "id" parameter.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0241">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7fbb57bcb0a17cd6a6c3db8d24bdf548</td>
-       <td>CVE-2024-21636</td>
-       <td>2024-01-04 20:15:25</td>
-       <td>view_component is a framework for building reusable, testable, and encapsulated view components in Ruby on Rails. Versions prior to 3.9.0 have a cross-site scripting vulnerability that has the potential to impact anyone rendering a component directly from a controller with the view_component gem. Note that only components that define a `#call` method (i.e. instead of using a sidecar template) are affected. The return value of the `#call` method is not sanitized and can include user-defined content. In addition, the return value of the `#output_postamble` methodis not sanitized, which can also lead to cross-site scripting issues. Versions 3.9.0 has been released and fully mitigates both the `#call` and the `#output_postamble` vulnerabilities. As a workaround, sanitize the return value of `#call`.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-21636">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1ff5b7fbb4720b0857510753a0f179b9</td>
-       <td>CVE-2023-5619</td>
-       <td>2024-01-04 20:15:25</td>
-       <td>Rejected reason: ** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: CVE-2023-6530. Reason: This candidate is a reservation duplicate of CVE-2023-6530. Notes: All CVE users should reference CVE-2023-43226 instead of this candidate. All references and descriptions in this candidate have been removed to prevent accidental usage.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5619">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6bc8c39fdf193cbcb84b837d6391f826</td>
-       <td>CVE-2023-5442</td>
-       <td>2024-01-04 19:15:08</td>
-       <td>Rejected reason: ** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: CVE-2023-6991. Reason: This candidate is a reservation duplicate of CVE-2023-6991. Notes: All CVE users should reference CVE-2023-43226 instead of this candidate. All references and descriptions in this candidate have been removed to prevent accidental usage.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5442">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>245ef5ab04620e4d1e9989637d29956a</td>
-       <td>CVE-2023-51812</td>
-       <td>2024-01-04 19:15:08</td>
-       <td>Tenda AX3 v16.03.12.11 was discovered to contain a remote code execution (RCE) vulnerability via the list parameter at /goform/SetNetControlList.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-51812">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>44102087bced5fb0c7d9ce1a2d84da8e</td>
-       <td>CVE-2023-46929</td>
-       <td>2024-01-03 19:15:08</td>
-       <td>An issue discovered in GPAC 2.3-DEV-rev605-gfc9e29089-master in MP4Box in gf_avc_change_vui /afltest/gpac/src/media_tools/av_parsers.c:6872:55 allows attackers to crash the application.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46929">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>46a91bb73763686e20b127e7264c3d8a</td>
-       <td>CVE-2024-21633</td>
-       <td>2024-01-03 17:15:13</td>
-       <td>Apktool is a tool for reverse engineering Android APK files. In versions 2.9.1 and prior, Apktool infers resource files' output path according to their resource names which can be manipulated by attacker to place files at desired location on the system Apktool runs on. Affected environments are those in which an attacker may write/overwrite any file that user has write access, and either user name is known or cwd is under user folder. Commit d348c43b24a9de350ff6e5bd610545a10c1fc712 contains a patch for this issue.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-21633">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4264be1ccbbe07e942c97f62fb0d7fda</td>
-       <td>CVE-2024-21631</td>
-       <td>2024-01-03 17:15:12</td>
-       <td>Vapor is an HTTP web framework for Swift. Prior to version 4.90.0, Vapor's `vapor_urlparser_parse` function uses `uint16_t` indexes when parsing a URI's components, which may cause integer overflows when parsing untrusted inputs. This vulnerability does not affect Vapor directly but could impact applications relying on the URI type for validating user input. The URI type is used in several places in Vapor. A developer may decide to use URI to represent a URL in their application (especially if that URL is then passed to the HTTP Client) and rely on its public properties and methods. However, URI may fail to properly parse a valid (albeit abnormally long) URL, due to string ranges being converted to 16-bit integers. An attacker may use this behavior to trick the application into accepting a URL to an untrusted destination. By padding the port number with zeros, an attacker can cause an integer overflow to occur when the URL authority is parsed and, as a result, spoof the host. Version 4.90.0 contains a patch for this issue. As a workaround, validate user input before parsing as a URI or, if possible, use Foundation's `URL` and `URLComponents` utilities.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-21631">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b9f6137a8a47c87da3a8ac04b233b556</td>
-       <td>CVE-2024-21622</td>
-       <td>2024-01-03 17:15:12</td>
-       <td>Craft is a content management system. This is a potential moderate impact, low complexity privilege escalation vulnerability in Craft starting in 3.x prior to 3.9.6 and 4.x prior to 4.4.16 with certain user permissions setups. This has been fixed in Craft 4.4.16 and Craft 3.9.6. Users should ensure they are running at least those versions.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-21622">详情</a></td>
       </tr>
 
      </tbody>
