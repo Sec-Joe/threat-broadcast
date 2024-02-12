@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2024-02-12 03:27:08 -->
+<!-- RELEASE TIME : 2024-02-12 07:23:53 -->
 <html lang="zh-cn">
 
  <head>
@@ -235,6 +235,54 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>6f31033eeb01582e6f7026c776e4fb77</td>
+       <td>CVE-2024-25744</td>
+       <td>2024-02-12 05:15:07 <img src="imgs/new.gif" /></td>
+       <td>In the Linux kernel before 6.6.7, an untrusted VMM can trigger int80 syscall handling at any given point. This is related to arch/x86/coco/tdx/tdx.c and arch/x86/mm/mem_encrypt_amd.c.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-25744">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c7066a1278fbaaa7394cb5700fbf70e2</td>
+       <td>CVE-2024-25741</td>
+       <td>2024-02-12 03:15:32 <img src="imgs/new.gif" /></td>
+       <td>printer_write in drivers/usb/gadget/function/f_printer.c in the Linux kernel through 6.7.4 does not properly call usb_ep_queue, which might allow attackers to cause a denial of service or have unspecified other impact.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-25741">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7ab020082ecbf46287d59ee94c2596ba</td>
+       <td>CVE-2024-25740</td>
+       <td>2024-02-12 03:15:32 <img src="imgs/new.gif" /></td>
+       <td>A memory leak flaw was found in the UBI driver in drivers/mtd/ubi/attach.c in the Linux kernel through 6.7.4 for UBI_IOCATT, because kobj->name is not released.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-25740">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e4cf737008a30ca57ff4412f12dbe41b</td>
+       <td>CVE-2024-25739</td>
+       <td>2024-02-12 03:15:32 <img src="imgs/new.gif" /></td>
+       <td>create_empty_lvol in drivers/mtd/ubi/vtbl.c in the Linux kernel through 6.7.4 can attempt to allocate zero bytes, and crash, because of a missing check for ubi->leb_size.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-25739">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>060f7bf21981a500e82c1c0eefef12a8</td>
+       <td>CVE-2023-52429</td>
+       <td>2024-02-12 03:15:32 <img src="imgs/new.gif" /></td>
+       <td>dm_table_create in drivers/md/dm-table.c in the Linux kernel through 6.7.4 can attempt to (in alloc_targets) allocate more than INT_MAX bytes, and crash, because of a missing check for struct dm_ioctl.target_count.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-52429">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8fa5a716a7437bfdae163da7d9ecc0e1</td>
+       <td>CVE-2024-1433</td>
+       <td>2024-02-11 23:15:07 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability, which was classified as problematic, was found in KDE Plasma Workspace up to 5.93.0. This affects the function EventPluginsManager::enabledPlugins of the file components/calendar/eventpluginsmanager.cpp of the component Theme File Handler. The manipulation of the argument pluginId leads to path traversal. It is possible to initiate the attack remotely. The complexity of an attack is rather high. The exploitability is told to be difficult. The patch is named 6cdf42916369ebf4ad5bd876c4dfa0170d7b2f01. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-253407. NOTE: This requires write access to user's home or the installation of third party global themes.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-1433">详情</a></td>
+      </tr>
+
+      <tr>
        <td>2ee0f376aaf6f42762853e62d254d63a</td>
        <td>CVE-2024-25728</td>
        <td>2024-02-11 22:15:08 <img src="imgs/new.gif" /></td>
@@ -376,54 +424,6 @@
        <td>2024-02-10 16:15:08</td>
        <td>IBM Storage Defender - Resiliency Service 2.0 stores user credentials in plain clear text which can be read by a local user. IBM X-Force ID: 278748.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-22312">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f4f9ca58a6c1a835ad662c25aa818998</td>
-       <td>CVE-2023-50957</td>
-       <td>2024-02-10 16:15:07</td>
-       <td>IBM Storage Defender - Resiliency Service 2.0 could allow a privileged user to perform unauthorized actions after obtaining encrypted data from clear text key storage. IBM X-Force ID: 275783.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-50957">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>03fffefb6ae52488a2423ab10240a426</td>
-       <td>CVE-2023-45718</td>
-       <td>2024-02-09 22:15:08</td>
-       <td>Sametime is impacted by a failure to invalidate sessions. The application is setting sensitive cookie values in a persistent manner in Sametime Web clients. When this happens, cookie values can remain valid even after a user has closed out their session.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-45718">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>646fecf76a0cda275d7593a2c7559d25</td>
-       <td>CVE-2023-45716</td>
-       <td>2024-02-09 22:15:07</td>
-       <td>Sametime is impacted by sensitive information passed in URL.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-45716">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8bec4e47b075006cea0a6983203bea78</td>
-       <td>CVE-2023-50349</td>
-       <td>2024-02-09 21:15:07</td>
-       <td>Sametime is impacted by a Cross Site Request Forgery (CSRF) vulnerability. Some REST APIs in the Sametime Proxy application can allow an attacker to perform malicious actions on the application.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-50349">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ed2021c0efd8928d43fc3bf4201b9bde</td>
-       <td>CVE-2024-1246</td>
-       <td>2024-02-09 20:15:54</td>
-       <td>Concrete CMS in version 9 before 9.2.5 is vulnerable to reflected XSS via the Image URL Import Feature due to insufficient validation of administrator provided data. A rogue administrator could inject malicious code when importing images, leading to the execution of the malicious code on the website user’s browser. The Concrete CMS Security team scored this 2 with CVSS v3 vector AV:N/AC:H/PR:H/UI:R/S:U/C:L/I:N/A:N. This does not affect Concrete versions prior to version 9.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-1246">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d66473d0e3a60316e1a21e207a0ee59b</td>
-       <td>CVE-2024-1245</td>
-       <td>2024-02-09 20:15:54</td>
-       <td>Concrete CMS version 9 before 9.2.5 is vulnerable to stored XSS in file tags and description attributes since administrator entered file attributes are not sufficiently sanitized in the Edit Attributes page. A rogue administrator could put malicious code into the file tags or description attributes and, when another administrator opens the same file for editing, the malicious code could execute. The Concrete CMS Security team scored this 2.4 with CVSS v3 vector AV:N/AC:L/PR:H/UI:R/S:U/C:L/I:N/A:N.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-1245">详情</a></td>
       </tr>
 
      </tbody>
