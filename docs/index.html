@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2024-03-06 09:25:27 -->
+<!-- RELEASE TIME : 2024-03-06 21:23:26 -->
 <html lang="zh-cn">
 
  <head>
@@ -235,6 +235,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>ea95d9e88f5b6c26b5612f223c42e3a5</td>
+       <td>CVE-2024-2176</td>
+       <td>2024-03-06 19:15:09 <img src="imgs/new.gif" /></td>
+       <td>Use after free in FedCM in Google Chrome prior to 122.0.6261.111 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-2176">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>32d3e67523dbc15d53169a3b8d269771</td>
+       <td>CVE-2024-2174</td>
+       <td>2024-03-06 19:15:09 <img src="imgs/new.gif" /></td>
+       <td>Inappropriate implementation in V8 in Google Chrome prior to 122.0.6261.111 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-2174">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b0b6a6db92fc5e1333838f83f64c2267</td>
+       <td>CVE-2024-27304</td>
+       <td>2024-03-06 19:15:08 <img src="imgs/new.gif" /></td>
+       <td>pgx is a PostgreSQL driver and toolkit for Go. SQL injection can occur if an attacker can cause a single query or bind message to exceed 4 GB in size. An integer overflow in the calculated message size can cause the one large message to be sent as multiple messages under the attacker's control. The problem is resolved in v4.18.2 and v5.5.4. As a workaround, reject user input large enough to cause a single query or bind message to exceed 4 GB in size.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-27304">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b39740862ccc3bf6f4f7d8847c144361</td>
+       <td>CVE-2024-27303</td>
+       <td>2024-03-06 19:15:08 <img src="imgs/new.gif" /></td>
+       <td>electron-builder is a solution to package and build a ready for distribution Electron, Proton Native app for macOS, Windows and Linux. A vulnerability that only affects eletron-builder prior to 24.13.2 in Windows, the NSIS installer makes a system call to open cmd.exe via NSExec in the `.nsh` installer script. NSExec by default searches the current directory of where the installer is located before searching `PATH`. This means that if an attacker can place a malicious executable file named cmd.exe in the same folder as the installer, the installer will run the malicious file. Version 24.13.2 fixes this issue. No known workaround exists. The code executes at the installer-level before the app is present on the system, so there's no way to check if it exists in a current installer.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-27303">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ac0977b2e9226fa2617a7cdbd31a1eaf</td>
+       <td>CVE-2024-27302</td>
+       <td>2024-03-06 19:15:08 <img src="imgs/new.gif" /></td>
+       <td>go-zero is a web and rpc framework. Go-zero allows user to specify a CORS Filter with a configurable allows param - which is an array of domains allowed in CORS policy. However, the `isOriginAllowed` uses `strings.HasSuffix` to check the origin, which leads to bypass via a malicious domain. This vulnerability is capable of breaking CORS policy and thus allowing any page to make requests and/or retrieve data on behalf of other users. Version 1.4.4 fixes this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-27302">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a12e6709f2372fba2bedeb76e6ee98f1</td>
+       <td>CVE-2024-27289</td>
+       <td>2024-03-06 19:15:08 <img src="imgs/new.gif" /></td>
+       <td>pgx is a PostgreSQL driver and toolkit for Go. Prior to version 4.18.2, SQL injection can occur when all of the following conditions are met: the non-default simple protocol is used; a placeholder for a numeric value must be immediately preceded by a minus; there must be a second placeholder for a string value after the first placeholder; both must be on the same line; and both parameter values must be user-controlled. The problem is resolved in v4.18.2. As a workaround, do not use the simple protocol or do not place a minus directly before a placeholder.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-27289">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1bde3a0016dbe1bffed80582b4a87f29</td>
+       <td>CVE-2024-2173</td>
+       <td>2024-03-06 19:15:08 <img src="imgs/new.gif" /></td>
+       <td>Out of bounds memory access in V8 in Google Chrome prior to 122.0.6261.111 allowed a remote attacker to perform out of bounds memory access via a crafted HTML page. (Chromium security severity: High)</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-2173">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>881f070e95c767cf158ee51c5fb3fecc</td>
+       <td>CVE-2024-27288</td>
+       <td>2024-03-06 19:15:07 <img src="imgs/new.gif" /></td>
+       <td>1Panel is an open source Linux server operation and maintenance management panel. Prior to version 1.10.1-lts, users can use Burp to obtain unauthorized access to the console page. The vulnerability has been fixed in v1.10.1-lts. There are no known workarounds.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-27288">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fa72333eeec3853c565bbd783727f727</td>
+       <td>CVE-2024-27287</td>
+       <td>2024-03-06 19:15:07 <img src="imgs/new.gif" /></td>
+       <td>ESPHome is a system to control your ESP8266/ESP32 for Home Automation systems. Starting in version 2023.12.9 and prior to version 2024.2.2, editing the configuration file API in dashboard component of ESPHome version 2023.12.9 (command line installation and Home Assistant add-on) serves unsanitized data with `Content-Type: text/html; charset=UTF-8`, allowing a remote authenticated user to inject arbitrary web script and exfiltrate session cookies via Cross-Site scripting. It is possible for a malicious authenticated user to inject arbitrary Javascript in configuration files using a POST request to the /edit endpoint, the configuration parameter allows to specify the file to write. To trigger the XSS vulnerability, the victim must visit the page` /edit?configuration=[xss file]`. Abusing this vulnerability a malicious actor could perform operations on the dashboard on the behalf of a logged user, access sensitive information, create, edit and delete configuration files and flash firmware on managed boards. In addition to this, cookies are not correctly secured, allowing the exfiltration of session cookie values. Version 2024.2.2 contains a patch for this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-27287">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>98af55805385d19566f4abc70c0dd3e6</td>
+       <td>CVE-2024-25111</td>
+       <td>2024-03-06 19:15:07 <img src="imgs/new.gif" /></td>
+       <td>Squid is a web proxy cache. Starting in version 3.5.27 and prior to version 6.8, Squid may be vulnerable to a Denial of Service attack against HTTP Chunked decoder due to an uncontrolled recursion bug. This problem allows a remote attacker to cause Denial of Service when sending a crafted, chunked, encoded HTTP Message. This bug is fixed in Squid version 6.8. In addition, patches addressing this problem for the stable releases can be found in Squid's patch archives. There is no workaround for this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-25111">详情</a></td>
+      </tr>
+
+      <tr>
        <td>76fe749e528b0e0ba03347d2879ef0d0</td>
        <td>CVE-2024-25858</td>
        <td>2024-03-05 21:15:09 <img src="imgs/new.gif" /></td>
@@ -344,86 +424,6 @@
        <td>2024-03-05 12:15:47 <img src="imgs/new.gif" /></td>
        <td>A CWE-862 “Missing Authorization” vulnerability in the “measure” functionality of the web application allows a remote unauthenticated attacker to access confidential measure information. This issue affects: AiLux imx6 bundle below version imx6_1.0.7-2.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-45598">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>647110526d2142de6ced38a4a72ee32a</td>
-       <td>CVE-2023-45597</td>
-       <td>2024-03-05 12:15:47 <img src="imgs/new.gif" /></td>
-       <td>A CWE-1236 “Improper Neutralization of Formula Elements in a CSV File” vulnerability in the “file_configuration” functionality of the web application (concerning the function “export_file”) allows a remote authenticated attacker to inject arbitrary formulas inside generated CSV files. This issue affects: AiLux imx6 bundle below version imx6_1.0.7-2.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-45597">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f78b306978ef587c235655f4c807b83e</td>
-       <td>CVE-2023-45596</td>
-       <td>2024-03-05 12:15:46 <img src="imgs/new.gif" /></td>
-       <td>A CWE-862 “Missing Authorization” vulnerability in the “file_configuration” functionality of the web application allows a remote unauthenticated attacker to access confidential configuration files. This issue affects: AiLux imx6 bundle below version imx6_1.0.7-2.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-45596">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b1c82b48c669f3e2e25e48e768272111</td>
-       <td>CVE-2023-45595</td>
-       <td>2024-03-05 12:15:46 <img src="imgs/new.gif" /></td>
-       <td>A CWE-434 “Unrestricted Upload of File with Dangerous Type” vulnerability in the “file_configuration” functionality of the web application allows a remote authenticated attacker to upload any arbitrary type of file into the device. This issue affects: AiLux imx6 bundle below version imx6_1.0.7-2.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-45595">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>85e7e8d532909dbb900575fabb8ee748</td>
-       <td>CVE-2023-45594</td>
-       <td>2024-03-05 12:15:46 <img src="imgs/new.gif" /></td>
-       <td>A CWE-552 “Files or Directories Accessible to External Parties” vulnerability in the embedded Chromium browser allows a physical attacker to arbitrarily download/upload files to/from the file system, with unspecified impacts to the confidentiality, integrity, and availability of the device. This issue affects: AiLux imx6 bundle below version imx6_1.0.7-2.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-45594">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1d55e3514d3305e66045c69f9c12a2e0</td>
-       <td>CVE-2023-45593</td>
-       <td>2024-03-05 12:15:46 <img src="imgs/new.gif" /></td>
-       <td>A CWE-693 “Protection Mechanism Failure” vulnerability in the embedded Chromium browser (concerning the handling of alternative URLs, other than “ http://localhost” http://localhost” ) allows a physical attacker to read arbitrary files on the file system, alter the configuration of the embedded browser, and have other unspecified impacts to the confidentiality, integrity, and availability of the device. This issue affects: AiLux imx6 bundle below version imx6_1.0.7-2.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-45593">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ef3b5fb8c7a2242fd818ce0e611f1911</td>
-       <td>CVE-2023-45592</td>
-       <td>2024-03-05 12:15:46 <img src="imgs/new.gif" /></td>
-       <td>A CWE-250 “Execution with Unnecessary Privileges” vulnerability in the embedded Chromium browser (due to the binary being executed with the “--no-sandbox” option and with root privileges) exacerbates the impacts of successful attacks executed against the browser. This issue affects: AiLux imx6 bundle below version imx6_1.0.7-2.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-45592">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1d25dc9028a2fb002cee371183e64d48</td>
-       <td>CVE-2024-2168</td>
-       <td>2024-03-04 21:15:07</td>
-       <td>A vulnerability was found in SourceCodester Online Tours & Travels Management System 1.0. It has been classified as critical. Affected is an unknown function of the file /admin/operations/expense_category.php of the component HTTP POST Request Handler. The manipulation of the argument status leads to sql injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. VDB-255678 is the identifier assigned to this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-2168">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d9562e267e1dc49a83468ecca80b53ab</td>
-       <td>CVE-2024-1319</td>
-       <td>2024-03-04 21:15:07</td>
-       <td>The Events Tickets Plus WordPress plugin before 5.9.1 does not prevent users with at least the contributor role from leaking the attendees list on any post type regardless of status. (e.g. draft, private, pending review, password-protected, and trashed posts).</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-1319">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2c3d89d53a7c97a25463dccbc6237918</td>
-       <td>CVE-2024-1316</td>
-       <td>2024-03-04 21:15:07</td>
-       <td>The Event Tickets and Registration WordPress plugin before 5.8.1, Events Tickets Plus WordPress plugin before 5.9.1 does not prevent users with at least the contributor role from leaking the existence of certain events they shouldn't have access to. (e.g. draft, private, pending review, pw-protected, and trashed events).</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-1316">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>96e31c0c4bf945562ebf093e6dd9367a</td>
-       <td>CVE-2024-27889</td>
-       <td>2024-03-04 20:15:50</td>
-       <td>Multiple SQL Injection vulnerabilities exist in the reporting application of the Arista Edge Threat Management - Arista NG Firewall (NGFW). A user with advanced report application access rights can exploit the SQL injection, allowing them to execute commands on the underlying operating system with elevated privileges.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-27889">详情</a></td>
       </tr>
 
      </tbody>
