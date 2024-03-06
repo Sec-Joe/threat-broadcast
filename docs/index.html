@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2024-03-06 21:23:26 -->
+<!-- RELEASE TIME : 2024-03-06 23:24:06 -->
 <html lang="zh-cn">
 
  <head>
@@ -235,6 +235,46 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>bcf056f6392e9c7a9510f8294a383740</td>
+       <td>CVE-2024-27917</td>
+       <td>2024-03-06 20:15:48 <img src="imgs/new.gif" /></td>
+       <td>Shopware is an open commerce platform based on Symfony Framework and Vue. The Symfony Session Handler pops the Session Cookie and assigns it to the Response. Since Shopware 6.5.8.0, the 404 pages are cached to improve the performance of 404 pages. So the cached Response which contains a Session Cookie when the Browser accessing the 404 page, has no cookies yet. The Symfony Session Handler is in use, when no explicit Session configuration has been done. When Redis is in use for Sessions using the PHP Redis extension, this exploiting code is not used. Shopware version 6.5.8.7 contains a patch for this issue. As a workaround, use Redis for Sessions, as this does not trigger the exploit code.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-27917">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4c1a2fe45d699bbdc3e6c767e1c5f594</td>
+       <td>CVE-2024-27915</td>
+       <td>2024-03-06 20:15:47 <img src="imgs/new.gif" /></td>
+       <td>Sulu is a PHP content management system. Starting in verson 2.2.0 and prior to version 2.4.17 and 2.5.13, access to pages is granted regardless of role permissions for webspaces which have a security system configured and permission check enabled. Webspaces without do not have this issue. The problem is patched in versions 2.4.17 and 2.5.13. Some workarounds are available. One may apply the patch to `vendor/symfony/security-http/HttpUtils.php` manually or avoid installing `symfony/security-http` versions greater equal than `v5.4.30` or `v6.3.6`.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-27915">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d0d79cab92c1436582e965179cd50c1e</td>
+       <td>CVE-2024-27308</td>
+       <td>2024-03-06 20:15:47 <img src="imgs/new.gif" /></td>
+       <td>Mio is a Metal I/O library for Rust. When using named pipes on Windows, mio will under some circumstances return invalid tokens that correspond to named pipes that have already been deregistered from the mio registry. The impact of this vulnerability depends on how mio is used. For some applications, invalid tokens may be ignored or cause a warning or a crash. On the other hand, for applications that store pointers in the tokens, this vulnerability may result in a use-after-free. For users of Tokio, this vulnerability is serious and can result in a use-after-free in Tokio. The vulnerability is Windows-specific, and can only happen if you are using named pipes. Other IO resources are not affected. This vulnerability has been fixed in mio v0.8.11. All versions of mio between v0.7.2 and v0.8.10 are vulnerable. Tokio is vulnerable when you are using a vulnerable version of mio AND you are using at least Tokio v1.30.0. Versions of Tokio prior to v1.30.0 will ignore invalid tokens, so they are not vulnerable. Vulnerable libraries that use mio can work around this issue by detecting and ignoring invalid tokens.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-27308">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c07e9b9b6b9acb10667975fa4aa693e3</td>
+       <td>CVE-2024-27307</td>
+       <td>2024-03-06 20:15:47 <img src="imgs/new.gif" /></td>
+       <td>JSONata is a JSON query and transformation language. Starting in version 1.4.0 and prior to version 1.8.7 and 2.0.4, a malicious expression can use the transform operator to override properties on the `Object` constructor and prototype. This may lead to denial of service, remote code execution or other unexpected behavior in applications that evaluate user-provided JSONata expressions. This issue has been fixed in JSONata versions 1.8.7 and 2.0.4. Applications that evaluate user-provided expressions should update ASAP to prevent exploitation. As a workaround, one may apply the patch manually.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-27307">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f49e911f7e0cc4a3986461bc64f5d427</td>
+       <td>CVE-2023-48703</td>
+       <td>2024-03-06 20:15:47 <img src="imgs/new.gif" /></td>
+       <td>RobotsAndPencils go-saml, a SAML client library written in Go, contains an authentication bypass vulnerability in all known versions. This is due to how the `xmlsec1` command line tool is called internally to verify the signature of SAML assertions. When `xmlsec1` is used without defining the enabled key data, the origin of the public key for the signature verification is, unfortunately, not restricted. That means an attacker can sign the SAML assertions themselves and provide the required public key (e.g. an RSA key) directly embedded in the SAML token. Projects still using RobotsAndPencils/go-saml should move to another SAML library or alternatively remove support for SAML from their projects. The vulnerability can likely temporarily be fixed by forking the go-saml project and adding the command line argument `--enabled-key-data` and specifying a value such as `x509` or `raw-x509-cert` when calling the `xmlsec1` binary in the verify function. Please note that this workaround must be carefully tested before it can be used.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-48703">详情</a></td>
+      </tr>
+
+      <tr>
        <td>ea95d9e88f5b6c26b5612f223c42e3a5</td>
        <td>CVE-2024-2176</td>
        <td>2024-03-06 19:15:09 <img src="imgs/new.gif" /></td>
@@ -384,46 +424,6 @@
        <td>2024-03-05 21:15:07 <img src="imgs/new.gif" /></td>
        <td>Authenticated command injection vulnerabilities exist in the ArubaOS command line interface. Successful exploitation of these vulnerabilities result in the ability to execute arbitrary commands as a privileged user on the underlying operating system.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-1356">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cfaced957e458a6bb6cf534426fd3853</td>
-       <td>CVE-2024-23296</td>
-       <td>2024-03-05 20:16:01 <img src="imgs/new.gif" /></td>
-       <td>A memory corruption issue was addressed with improved validation. This issue is fixed in iOS 17.4 and iPadOS 17.4. An attacker with arbitrary kernel read and write capability may be able to bypass kernel memory protections. Apple is aware of a report that this issue may have been exploited.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-23296">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1873223624a39db8a7f22136ac03b74f</td>
-       <td>CVE-2023-5457</td>
-       <td>2024-03-05 12:15:47 <img src="imgs/new.gif" /></td>
-       <td>A CWE-1269 “Product Released in Non-Release Configuration” vulnerability in the Django web framework used by the web application (due to the “debug” configuration parameter set to “True”) allows a remote unauthenticated attacker to access critical information and have other unspecified impacts to the confidentiality, integrity, and availability of the application. This issue affects: AiLux imx6 bundle below version imx6_1.0.7-2.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5457">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>14f1c64c3610663195a17c8238fb1ca2</td>
-       <td>CVE-2023-45600</td>
-       <td>2024-03-05 12:15:47 <img src="imgs/new.gif" /></td>
-       <td>A CWE-613 “Insufficient Session Expiration” vulnerability in the web application, due to the session cookie “sessionid” lasting two weeks, facilitates session hijacking attacks against victims. This issue affects: AiLux imx6 bundle below version imx6_1.0.7-2.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-45600">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>aee793937be7d1f0b77643b9d8f48ad5</td>
-       <td>CVE-2023-45599</td>
-       <td>2024-03-05 12:15:47 <img src="imgs/new.gif" /></td>
-       <td>A CWE-646 “Reliance on File Name or Extension of Externally-Supplied File” vulnerability in the “iec61850” functionality of the web application allows a remote authenticated attacker to upload any arbitrary type of file into the device. This issue affects: AiLux imx6 bundle below version imx6_1.0.7-2.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-45599">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>71725617b66d3572ec2cf45a3e29b93a</td>
-       <td>CVE-2023-45598</td>
-       <td>2024-03-05 12:15:47 <img src="imgs/new.gif" /></td>
-       <td>A CWE-862 “Missing Authorization” vulnerability in the “measure” functionality of the web application allows a remote unauthenticated attacker to access confidential measure information. This issue affects: AiLux imx6 bundle below version imx6_1.0.7-2.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-45598">详情</a></td>
       </tr>
 
      </tbody>
