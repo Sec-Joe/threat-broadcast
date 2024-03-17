@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2024-03-17 11:23:52 -->
+<!-- RELEASE TIME : 2024-03-17 16:29:41 -->
 <html lang="zh-cn">
 
  <head>
@@ -235,6 +235,46 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>fcae5b119674eb2aff4fd261b9711854</td>
+       <td>CVE-2024-2563</td>
+       <td>2024-03-17 12:15:07 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability has been found in PandaXGO PandaX up to 20240310 and classified as critical. This vulnerability affects the function DeleteImage of the file /apps/system/router/upload.go. The manipulation of the argument fileName with the input ../../../../../../../../../tmp/1.txt leads to path traversal: '../filedir'. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. VDB-257062 is the identifier assigned to this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-2563">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>912c32ad46717530ce4693872e5a4ffb</td>
+       <td>CVE-2024-2562</td>
+       <td>2024-03-17 12:15:07 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability, which was classified as critical, was found in PandaXGO PandaX up to 20240310. This affects the function InsertRole of the file /apps/system/services/role_menu.go. The manipulation of the argument roleKey leads to sql injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-257061 was assigned to this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-2562">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2546e77053aca1381e4f8e1c02a9ac12</td>
+       <td>CVE-2024-2561</td>
+       <td>2024-03-17 11:15:06 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability, which was classified as critical, has been found in 74CMS 3.28.0. Affected by this issue is the function sendCompanyLogo of the file /controller/company/Index.php#sendCompanyLogo of the component Company Logo Handler. The manipulation of the argument imgBase64 leads to unrestricted upload. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-257060.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-2561">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>24e1240bba15b530c86a9dbbd5c5e521</td>
+       <td>CVE-2024-2560</td>
+       <td>2024-03-17 11:15:06 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability classified as problematic was found in Tenda AC18 15.03.05.05. Affected by this vulnerability is the function fromSysToolRestoreSet of the file /goform/SysToolRestoreSet. The manipulation leads to cross-site request forgery. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-257059. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-2560">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c5bd9f87b016138b84b027d763ca773e</td>
+       <td>CVE-2024-2559</td>
+       <td>2024-03-17 10:15:06 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability classified as problematic has been found in Tenda AC18 15.03.05.05. Affected is the function fromSysToolReboot of the file /goform/SysToolReboot. The manipulation leads to cross-site request forgery. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. VDB-257058 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-2559">详情</a></td>
+      </tr>
+
+      <tr>
        <td>596bb03b8ab6841a19998ef63cc59b7f</td>
        <td>CVE-2024-2558</td>
        <td>2024-03-17 09:15:07 <img src="imgs/new.gif" /></td>
@@ -384,46 +424,6 @@
        <td>2024-03-16 06:15:13 <img src="imgs/new.gif" /></td>
        <td>The Word Replacer Pro plugin for WordPress is vulnerable to unauthorized modification of data due to a missing capability check on the word_replacer_ultra() function in all versions up to, and including, 1.0. This makes it possible for unauthenticated attackers to update arbitrary content on the affected WordPress site.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-1733">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b9fd954d0e683d3fb7f23c2cdaf8dac0</td>
-       <td>CVE-2024-1685</td>
-       <td>2024-03-16 06:15:10 <img src="imgs/new.gif" /></td>
-       <td>The Social Media Share Buttons plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 2.1.0 via deserialization of untrusted input through the attachmentUrl parameter. This makes it possible for authenticated attackers, with subscriber-level access and above, to inject a PHP Object. No known POP chain is present in the vulnerable plugin. If a POP chain is present via an additional plugin or theme installed on the target system, it could allow the attacker to delete arbitrary files, retrieve sensitive data, or execute code.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-1685">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>10c1fc9b10da23342155ee46451e8cfd</td>
-       <td>CVE-2024-28752</td>
-       <td>2024-03-15 11:15:09</td>
-       <td>A SSRF vulnerability using the Aegis DataBinding in versions of Apache CXF before 4.0.4, 3.6.3 and 3.5.8 allows an attacker to perform SSRF style attacks on webservices that take at least one parameter of any type. Users of other data bindings (including the default databinding) are not impacted.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-28752">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a55e4c496f575ed112fec96ad7f64595</td>
-       <td>CVE-2024-27987</td>
-       <td>2024-03-15 11:15:09</td>
-       <td>Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in GiveWP Give allows Reflected XSS.This issue affects Give: from n/a through 3.3.1.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-27987">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>502a91f591da2c8f4ce77d118e05854b</td>
-       <td>CVE-2024-23944</td>
-       <td>2024-03-15 11:15:08</td>
-       <td>Information disclosure in persistent watchers handling in Apache ZooKeeper due to missing ACL check. It allows an attacker to monitor child znodes by attaching a persistent watcher (addWatch command) to a parent which the attacker has already access to. ZooKeeper server doesn't do ACL check when the persistent watcher is triggered and as a consequence, the full path of znodes that a watch event gets triggered upon is exposed to the owner of the watcher. It's important to note that only the path is exposed by this vulnerability, not the data of znode, but since znode path can contain sensitive information like user name or login ID, this issue is potentially critical. Users are recommended to upgrade to version 3.9.2, 3.8.4 which fixes the issue.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-23944">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5ad7e505f4273bfc12030988514fef4c</td>
-       <td>CVE-2024-2490</td>
-       <td>2024-03-15 10:15:08</td>
-       <td>A vulnerability classified as critical was found in Tenda AC18 15.03.05.05. Affected by this vulnerability is the function setSchedWifi of the file /goform/openSchedWifi. The manipulation of the argument schedStartTime/schedEndTime leads to stack-based buffer overflow. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-256897 was assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-2490">详情</a></td>
       </tr>
 
      </tbody>
