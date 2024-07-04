@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2024-07-04 09:33:01 -->
+<!-- RELEASE TIME : 2024-07-04 15:28:36 -->
 <html lang="zh-cn">
 
  <head>
@@ -235,6 +235,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>c868b3e5e84d93cd46a2745b336f5d87</td>
+       <td>CVE-2024-32754</td>
+       <td>2024-07-04 11:15:10 <img src="imgs/new.gif" /></td>
+       <td>Under certain circumstances, when the controller is in factory reset mode waiting for initial setup, it will broadcast its MAC address, serial number, and firmware version. Once configured, the controller will no longer broadcast this information.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-32754">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>cf645c1829d1fc3c11864460d54edd60</td>
+       <td>CVE-2024-6434</td>
+       <td>2024-07-04 09:15:05 <img src="imgs/new.gif" /></td>
+       <td>The Premium Addons for Elementor plugin for WordPress is vulnerable to Regular Expression Denial of Service (ReDoS) in all versions up to, and including, 4.10.35. This is due to processing user-supplied input as a regular expression. This makes it possible for authenticated attackers, with Author-level access and above, to create and query a malicious post title, resulting in slowing server resources.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6434">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>07c1cc9c02de00146662a1343efca653</td>
+       <td>CVE-2024-6319</td>
+       <td>2024-07-04 09:15:05 <img src="imgs/new.gif" /></td>
+       <td>The IMGspider plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'upload' function in all versions up to, and including, 2.3.10. This makes it possible for authenticated attackers, with contributor-level and above permissions, to upload arbitrary files on the affected site's server which may make remote code execution possible.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6319">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>69aba7fb2b964cbbc4378eed4af97975</td>
+       <td>CVE-2024-6318</td>
+       <td>2024-07-04 09:15:04 <img src="imgs/new.gif" /></td>
+       <td>The IMGspider plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'upload_img_file' function in all versions up to, and including, 2.3.10. This makes it possible for authenticated attackers, with contributor-level and above permissions, to upload arbitrary files on the affected site's server which may make remote code execution possible.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6318">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0f74a744c49c0f852083d193b06db28f</td>
+       <td>CVE-2024-39884</td>
+       <td>2024-07-04 09:15:04 <img src="imgs/new.gif" /></td>
+       <td>A regression in the core of Apache HTTP Server 2.4.60 ignores some use of the legacy content-type based configuration of handlers. "AddType" and similar configuration, under some circumstances where files are requested indirectly, result in source code disclosure of local content. For example, PHP scripts may be served instead of interpreted. Users are recommended to upgrade to version 2.4.61, which fixes this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-39884">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1ccf4b4ab9d0d5fe34ada8f0055e37f3</td>
+       <td>CVE-2024-3904</td>
+       <td>2024-07-04 09:15:04 <img src="imgs/new.gif" /></td>
+       <td>Incorrect Default Permissions vulnerability in Smart Device Communication Gateway preinstalled on MELIPC Series MI5122-VW firmware versions "05" to "07" allows a local attacker to execute arbitrary code by saving a malicious file to a specific folder. As a result, the attacker may disclose, tamper with, destroy or delete information in the product, or cause a denial-of-service (DoS) condition on the product.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-3904">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7710813ae322944216a6703fba85d33f</td>
+       <td>CVE-2024-1574</td>
+       <td>2024-07-04 09:15:03 <img src="imgs/new.gif" /></td>
+       <td>Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection') vulnerability in the licensing feature of ICONICS GENESIS64 versions 10.97 to 10.97.2, Mitsubishi Electric GENESIS64 versions 10.97 to 10.97.2 and Mitsubishi Electric MC Works64 all versions allows a local attacker to execute a malicious code with administrative privileges by tampering with a specific file that is not protected by the system.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-1574">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7bce6b2d67a1bf98b9af818f7b160cad</td>
+       <td>CVE-2024-1573</td>
+       <td>2024-07-04 09:15:03 <img src="imgs/new.gif" /></td>
+       <td>Improper Authentication vulnerability in the mobile monitoring feature of ICONICS GENESIS64 versions 10.97 to 10.97.2, Mitsubishi Electric GENESIS64 versions 10.97 to 10.97.2 and Mitsubishi Electric MC Works64 all versions allows a remote unauthenticated attacker to bypass proper authentication and log in to the system when all of the following conditions are met: * Active Directory is used in the security setting. * “Automatic log in” option is enabled in the security setting. * The IcoAnyGlass IIS Application Pool is running under an Active Directory Domain Account. * The IcoAnyGlass IIS Application Pool account is included in GENESIS64TM and MC Works64 Security and has permission to log in.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-1573">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a2a0900e380f304de9fdabf702b074f2</td>
+       <td>CVE-2024-1182</td>
+       <td>2024-07-04 09:15:02 <img src="imgs/new.gif" /></td>
+       <td>Uncontrolled Search Path Element vulnerability in ICONICS GENESIS64 all versions, Mitsubishi Electric GENESIS64 all versions and Mitsubishi Electric MC Works64 all versions allows a local attacker to execute a malicious code by storing a specially crafted DLL in a specific folder when GENESIS64 and MC Works64 are installed with the Pager agent in the alarm multi-agent notification feature.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-1182">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>914190ea9ed66c1089707147479800af</td>
+       <td>CVE-2024-5641</td>
+       <td>2024-07-04 08:15:01 <img src="imgs/new.gif" /></td>
+       <td>The One Click Order Re-Order plugin for WordPress is vulnerable to unauthorized modification of data due to a missing capability check on the 'ced_ocor_save_general_setting' function in all versions up to, and including, 1.1.9. This makes it possible for authenticated attackers, with Subscriber-level access and above, to change the plugin settings, including adding stored cross-site scripting.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-5641">详情</a></td>
+      </tr>
+
+      <tr>
        <td>5ab87198afdda372a76a80a58f7a4a68</td>
        <td>CVE-2024-6469</td>
        <td>2024-07-03 11:15:04 <img src="imgs/new.gif" /></td>
@@ -344,86 +424,6 @@
        <td>2024-07-02 11:15:10</td>
        <td>The Post Meta Data Manager plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the ‘$meta_key’ parameter in all versions up to, and including, 1.2.3 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6264">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6658648ff9198ec6d891b6a637c62123</td>
-       <td>CVE-2024-6099</td>
-       <td>2024-07-02 11:15:10</td>
-       <td>The LearnPress – WordPress LMS Plugin plugin for WordPress is vulnerable to unauthenticated bypass to user registration in versions up to, and including, 4.2.6.8.1. This is due to missing checks in the 'check_validate_fields' function in the checkout. This makes it possible for unauthenticated attackers to register as the default role on the site, even if registration is disabled.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6099">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a5391a80592b737bd7731fa734f7193e</td>
-       <td>CVE-2024-6088</td>
-       <td>2024-07-02 11:15:10</td>
-       <td>The LearnPress – WordPress LMS Plugin plugin for WordPress is vulnerable to unauthorized user registration due to a missing capability check on the 'register' function in all versions up to, and including, 4.2.6.8.1. This makes it possible for unauthenticated attackers to bypass disabled user registration to create a new account with the default role.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6088">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d92b3366a3521445bb7e53fcc0451a1b</td>
-       <td>CVE-2024-4268</td>
-       <td>2024-07-02 11:15:10</td>
-       <td>The Ultimate Blocks – WordPress Blocks Plugin plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's blocks in all versions up to, and including, 3.1.9 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-4268">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5dac148e832cc8129bd25e8805a70571</td>
-       <td>CVE-2024-6012</td>
-       <td>2024-07-02 10:15:09</td>
-       <td>The Cost Calculator Builder plugin for WordPress is vulnerable to unauthorized modification of data due to a missing capability check on the 'embed-create-page' and 'embed-insert-pages' functions in all versions up to, and including, 3.2.12. This makes it possible for authenticated attackers, with Subscriber-level access and above, to create arbitrary posts and append arbitrary content to existing posts.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6012">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0c6d3931567571b09f0e78b05be5775f</td>
-       <td>CVE-2024-6011</td>
-       <td>2024-07-02 10:15:09</td>
-       <td>The Cost Calculator Builder plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the ‘textarea.description’ parameter in all versions up to, and including, 3.2.12 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Administrator-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6011">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ad927e1c87132d3c28ea9e92e3582f46</td>
-       <td>CVE-2024-34601</td>
-       <td>2024-07-02 10:15:08</td>
-       <td>Improper verification of intent by broadcast receiver vulnerability in GalaxyStore prior to version 4.5.81.0 allows local attackers to launch unexported activities of GalaxyStore.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-34601">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>10ae49f825561628f931cfd2f9788c1d</td>
-       <td>CVE-2024-6130</td>
-       <td>2024-07-01 06:15:23</td>
-       <td>The Form Maker by 10Web WordPress plugin before 1.15.26 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup)</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6130">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>167cd3016c5774e579f67b89153efe1b</td>
-       <td>CVE-2024-4934</td>
-       <td>2024-07-01 06:15:23</td>
-       <td>The Quiz and Survey Master (QSM) WordPress plugin before 9.0.2 does not validate and escape some of its Quiz fields before outputting them back in a page/post where the Quiz is embed, which could allow users with the contributor role and above to perform Stored Cross-Site Scripting attacks</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-4934">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0fc0a7f9491cb0f3c4305e3404a54abf</td>
-       <td>CVE-2024-38480</td>
-       <td>2024-07-01 05:15:04</td>
-       <td>"Piccoma" App for Android and iOS versions prior to 6.20.0 uses a hard-coded API key for an external service, which may allow a local attacker to obtain the API key. Note that the users of the app are not directly affected by this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-38480">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>04d6a531b01893a272b5dc92840ccba7</td>
-       <td>CVE-2024-3123</td>
-       <td>2024-07-01 05:15:04</td>
-       <td>CHANGING Mobile One Time Password's uploading function in a hidden page does not filter file type properly. Remote attackers with administrator privilege can exploit this vulnerability to upload and run malicious file to execute system commands.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-3123">详情</a></td>
       </tr>
 
      </tbody>
