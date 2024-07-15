@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2024-07-15 07:26:19 -->
+<!-- RELEASE TIME : 2024-07-15 15:32:10 -->
 <html lang="zh-cn">
 
  <head>
@@ -235,6 +235,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>9519075dd88dc6692b7a32f79cf22ec6</td>
+       <td>CVE-2024-6745</td>
+       <td>2024-07-15 11:15:02 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability classified as critical has been found in code-projects Simple Ticket Booking 1.0. Affected is an unknown function of the file adminauthenticate.php of the component Login. The manipulation of the argument email/password leads to sql injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-271476.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6745">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>27ea46ec394400bf9c216d987b0028bd</td>
+       <td>CVE-2024-6741</td>
+       <td>2024-07-15 09:15:03 <img src="imgs/new.gif" /></td>
+       <td>Openfind's Mail2000 has a vulnerability that allows the HttpOnly flag to be bypassed. Unauthenticated remote attackers can exploit this vulnerability using specific JavaScript code to obtain the session cookie with the HttpOnly flag enabled.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6741">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f7f23f4bc7e465e09de41679392fcf10</td>
+       <td>CVE-2024-6398</td>
+       <td>2024-07-15 09:15:02 <img src="imgs/new.gif" /></td>
+       <td>An information disclosure vulnerability in SWG in versions 12.x prior to 12.2.10 and 11.x prior to 11.2.24 allows information stored in a customizable block page to be disclosed to third-party websites due to Same Origin Policy Bypass of browsers in certain scenarios. The risk is low, because other recommended default security policies such as URL categorization and GTI are in place in most policies to block access to uncategorized/high risk websites. Any information disclosed depends on how the customers have customized the block pages.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6398">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c33fc9e19fbfa4d4f486acd7e88a6d4f</td>
+       <td>CVE-2024-41007</td>
+       <td>2024-07-15 09:15:02 <img src="imgs/new.gif" /></td>
+       <td>In the Linux kernel, the following vulnerability has been resolved: tcp: avoid too many retransmit packets If a TCP socket is using TCP_USER_TIMEOUT, and the other peer retracted its window to zero, tcp_retransmit_timer() can retransmit a packet every two jiffies (2 ms for HZ=1000), for about 4 minutes after TCP_USER_TIMEOUT has 'expired'. The fix is to make sure tcp_rtx_probe0_timed_out() takes icsk->icsk_user_timeout into account. Before blamed commit, the socket would not timeout after icsk->icsk_user_timeout, but would use standard exponential backoff for the retransmits. Also worth noting that before commit e89688e3e978 ("net: tcp: fix unexcepted socket die when snd_wnd is 0"), the issue would last 2 minutes instead of 4.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-41007">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>895ee46f9625fa355bb208aadbecfe29</td>
+       <td>CVE-2024-39767</td>
+       <td>2024-07-15 09:15:02 <img src="imgs/new.gif" /></td>
+       <td>Mattermost Mobile Apps versions <=2.16.0 fail to validate that the push notifications received for a server actually came from this serve that which allows a malicious server to send push notifications with another server’s diagnostic ID or server URL and have them show up in mobile apps as that server’s push notifications.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-39767">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0040c80d5d61d3661d18fce3e102b364</td>
+       <td>CVE-2024-32945</td>
+       <td>2024-07-15 09:15:02 <img src="imgs/new.gif" /></td>
+       <td>Mattermost Mobile Apps versions <=2.16.0 fail to protect against abuse of a globally shared MathJax state which allows an attacker to change the contents of a LateX post, by creating another post with specific macro definitions.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-32945">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>38bdab60f58bcafb7feb69d9175a6cea</td>
+       <td>CVE-2024-6740</td>
+       <td>2024-07-15 08:15:03 <img src="imgs/new.gif" /></td>
+       <td>Openfind's Mail2000 does not properly validate email atachments, allowing unauthenticated remote attackers to inject JavaScript code within the attachment and perform Stored Cross-site scripting attacks.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6740">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d869b899ddd3e2df63bd64aa13308a43</td>
+       <td>CVE-2024-6540</td>
+       <td>2024-07-15 08:15:02 <img src="imgs/new.gif" /></td>
+       <td>Improper filtering of fields when using the export function in the ticket overview of the external interface in OTRS could allow an authorized user to download a list of tickets containing information about tickets of other customers. The problem only occurs if the TicketSearchLegacyEngine has been disabled by the administrator. This issue affects OTRS: 8.0.X, 2023.X, from 2024.X through 2024.4.x</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6540">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>28077d22fe4ceddd57aa94cc4ddba78e</td>
+       <td>CVE-2024-23794</td>
+       <td>2024-07-15 08:15:02 <img src="imgs/new.gif" /></td>
+       <td>An incorrect privilege assignment vulnerability in the inline editing functionality of OTRS can lead to privilege escalation. This flaw allows an agent with read-only permissions to gain full access to a ticket. This issue arises in very rare instances when an admin has previously enabled the setting 'RequiredLock' of 'AgentFrontend::Ticket::InlineEditing::Property###Watch' in the system configuration.This issue affects OTRS: * 8.0.X * 2023.X * from 2024.X through 2024.4.x</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-23794">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d5943a375da09472fffccab3171b32f7</td>
+       <td>CVE-2023-49566</td>
+       <td>2024-07-15 08:15:02 <img src="imgs/new.gif" /></td>
+       <td>In Apache Linkis <=1.5.0, due to the lack of effective filtering of parameters, an attacker configuring malicious db2 parameters in the DataSource Manager Module will result in jndi injection. Therefore, the parameters in the DB2 URL should be blacklisted. This attack requires the attacker to obtain an authorized account from Linkis before it can be carried out. Versions of Apache Linkis <=1.5.0 will be affected. We recommend users upgrade the version of Linkis to version 1.6.0.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-49566">详情</a></td>
+      </tr>
+
+      <tr>
        <td>6d0983a97d0c492b804c34ee9bbc3a8a</td>
        <td>CVE-2023-52885</td>
        <td>2024-07-14 08:15:01 <img src="imgs/new.gif" /></td>
@@ -344,86 +424,6 @@
        <td>2024-07-13 06:15:05</td>
        <td>The WP QuickLaTeX WordPress plugin before 3.8.7 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup).</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-5472">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>418a586199861ee595d189d3febabc41</td>
-       <td>CVE-2024-5450</td>
-       <td>2024-07-13 06:15:04</td>
-       <td>The Bug Library WordPress plugin before 2.1.1 does not check the file type on user-submitted bug reports, allowing an unauthenticated user to upload PHP files</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-5450">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ff1114fe327561f3df831e77435e1bad</td>
-       <td>CVE-2024-6328</td>
-       <td>2024-07-12 11:15:11</td>
-       <td>The MStore API – Create Native Android & iOS Apps On The Cloud plugin for WordPress is vulnerable to authentication bypass in all versions up to, and including, 4.14.7. This is due to insufficient verification on the 'phone' parameter of the 'firebase_sms_login' and 'firebase_sms_login_v2' functions. This makes it possible for unauthenticated attackers to log in as any existing user on the site, such as an administrator, if they have access to the email address or phone number. Additionally, if a new email address is supplied, a new user account is created with the default role, even if registration is disabled.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6328">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>777177d21260da3e1c77bb1b18176149</td>
-       <td>CVE-2024-6353</td>
-       <td>2024-07-12 09:15:02</td>
-       <td>The Wallet for WooCommerce plugin for WordPress is vulnerable to SQL Injection via the 'search[value]' parameter in all versions up to, and including, 1.5.4 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for authenticated attackers, with Subscriber-level access and above, to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6353">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0204574662d9e5ba0170e0608cd17306</td>
-       <td>CVE-2024-6625</td>
-       <td>2024-07-12 08:15:12</td>
-       <td>The WP Total Branding – Complete branding solution for WordPress plugin for WordPress is vulnerable to Stored Cross-Site Scripting via admin settings in all versions up to, and including, 1.2 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with administrator-level permissions and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. This only affects multi-site installations and installations where unfiltered_html has been disabled.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6625">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>76664447839834f7e014a642a050d0ed</td>
-       <td>CVE-2024-6588</td>
-       <td>2024-07-12 07:15:02</td>
-       <td>The PowerPress Podcasting plugin by Blubrry plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via the ‘media_url’ parameter in all versions up to, and including, 11.9.10 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that execute if they can successfully trick a user into performing an action such as clicking on a link.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6588">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>722e7507692bfa055afb528a5c4aaecf</td>
-       <td>CVE-2024-6555</td>
-       <td>2024-07-12 06:15:05</td>
-       <td>The WP Popups – WordPress Popup builder plugin for WordPress is vulnerable to Full Path Disclosure in all versions up to, and including, 2.2.0.1. This is due the plugin utilizing mobiledetect without preventing direct access to the files. This makes it possible for unauthenticated attackers to retrieve the full path of the web application, which can be used to aid other attacks. The information displayed is not useful on its own, and requires another vulnerability to be present for damage to an affected website.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6555">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0242fe19f5f423fc845ec6b78f1f6b49</td>
-       <td>CVE-2024-6024</td>
-       <td>2024-07-12 06:15:05</td>
-       <td>The ContentLock WordPress plugin through 1.0.3 does not have CSRF check in place when deleting groups or emails, which could allow attackers to make a logged in admin remove them via a CSRF attack</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6024">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7241b1a6a0b327288eaf04b0171f7077</td>
-       <td>CVE-2024-6023</td>
-       <td>2024-07-12 06:15:05</td>
-       <td>The ContentLock WordPress plugin through 1.0.3 does not have CSRF check in place when adding emails, which could allow attackers to make a logged in admin perform such action via a CSRF attack</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6023">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e5772a99a635671b3554ccf4af7551fe</td>
-       <td>CVE-2024-6022</td>
-       <td>2024-07-12 06:15:04</td>
-       <td>The ContentLock WordPress plugin through 1.0.3 does not have CSRF check in place when updating its settings, which could allow attackers to make a logged in admin change them via a CSRF attack</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6022">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9d5d21d2868e9ab9114bdba4c5f7b74c</td>
-       <td>CVE-2024-5811</td>
-       <td>2024-07-12 06:15:04</td>
-       <td>The Simple Video Directory WordPress plugin before 1.4.4 does not sanitise and escape some of its settings, which could allow contributors and higher to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup)</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-5811">详情</a></td>
       </tr>
 
      </tbody>
