@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2024-07-18 07:27:05 -->
+<!-- RELEASE TIME : 2024-07-18 15:30:30 -->
 <html lang="zh-cn">
 
  <head>
@@ -235,6 +235,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>a37befc8ad1b09a59d9ea4f0396ae71e</td>
+       <td>CVE-2024-6504</td>
+       <td>2024-07-18 10:15:03 <img src="imgs/new.gif" /></td>
+       <td>Rapid7 InsightVM Console versions below 6.6.260 suffer from a protection mechanism failure whereby an attacker with network access to the InsightVM Console can cause it to overload or crash by sending repeated invalid REST requests in a short timeframe, to the Console's port 443 causing the console to enter an exception handling logging loop, exhausting the CPU. There is no indication that an attacker can use this method to escalate privilege, acquire unauthorized access to data, or gain control of protected resources. This issue is fixed in version 6.6.261.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6504">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>da3ade9725e275c1e44ba4bf12197eea</td>
+       <td>CVE-2024-40898</td>
+       <td>2024-07-18 10:15:03 <img src="imgs/new.gif" /></td>
+       <td>SSRF in Apache HTTP Server on Windows with mod_rewrite in server/vhost context, allows to potentially leak NTML hashes to a malicious server via SSRF and malicious requests. Users are recommended to upgrade to version 2.4.62 which fixes this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-40898">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c4bfd8392c7549a786585ceb55b2f03a</td>
+       <td>CVE-2024-40725</td>
+       <td>2024-07-18 10:15:02 <img src="imgs/new.gif" /></td>
+       <td>A partial fix for CVE-2024-39884 in the core of Apache HTTP Server 2.4.61 ignores some use of the legacy content-type based configuration of handlers. "AddType" and similar configuration, under some circumstances where files are requested indirectly, result in source code disclosure of local content. For example, PHP scripts may be served instead of interpreted. Users are recommended to upgrade to version 2.4.62, which fixes this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-40725">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7cda5cda80f750b85810ccfb6c821a57</td>
+       <td>CVE-2024-5555</td>
+       <td>2024-07-18 09:15:02 <img src="imgs/new.gif" /></td>
+       <td>The Element Pack Elementor Addons (Header Footer, Template Library, Dynamic Grid & Carousel, Remote Arrows) plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the ‘social-link-title’ parameter in all versions up to, and including, 5.6.5 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-5555">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bd5a087a547b6462cd17a5ae0c41afd0</td>
+       <td>CVE-2024-5554</td>
+       <td>2024-07-18 09:15:02 <img src="imgs/new.gif" /></td>
+       <td>The Element Pack Elementor Addons (Header Footer, Template Library, Dynamic Grid & Carousel, Remote Arrows) plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the ‘onclick_event’ parameter in all versions up to, and including, 5.6.11 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-5554">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a6fe6f44bdd5878c808445e60d41bdaa</td>
+       <td>CVE-2024-3242</td>
+       <td>2024-07-18 09:15:02 <img src="imgs/new.gif" /></td>
+       <td>The Brizy – Page Builder plugin for WordPress is vulnerable to arbitrary file uploads due to missing file extension validation in the validateImageContent function called via storeImages in all versions up to, and including, 2.4.43. This makes it possible for authenticated attackers, with contributor access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible. Version 2.4.44 prevents the upload of files ending in .sh and .php. Version 2.4.45 fully patches the issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-3242">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2d2646953351d322b3a78e723ccb7a86</td>
+       <td>CVE-2024-40764</td>
+       <td>2024-07-18 08:15:02 <img src="imgs/new.gif" /></td>
+       <td>Heap-based buffer overflow vulnerability in the SonicOS IPSec VPN allows an unauthenticated remote attacker to cause Denial of Service (DoS).</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-40764">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e4bf1147f4b96197fb7cf94e54b10118</td>
+       <td>CVE-2024-29014</td>
+       <td>2024-07-18 08:15:02 <img src="imgs/new.gif" /></td>
+       <td>Vulnerability in SonicWall NetExtender Windows (32 and 64-bit) client 10.2.339 and earlier versions allows an attacker to arbitrary code execution when processing an EPC Client update.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-29014">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>abafc00e8b67fbb4228043582dc4e583</td>
+       <td>CVE-2024-41011</td>
+       <td>2024-07-18 07:15:02 <img src="imgs/new.gif" /></td>
+       <td>In the Linux kernel, the following vulnerability has been resolved: drm/amdkfd: don't allow mapping the MMIO HDP page with large pages We don't get the right offset in that case. The GPU has an unused 4K area of the register BAR space into which you can remap registers. We remap the HDP flush registers into this space to allow userspace (CPU or GPU) to flush the HDP when it updates VRAM. However, on systems with >4K pages, we end up exposing PAGE_SIZE of MMIO space.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-41011">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>dcb21759791193759dd93f22f4325524</td>
+       <td>CVE-2024-6164</td>
+       <td>2024-07-18 06:15:02 <img src="imgs/new.gif" /></td>
+       <td>The Filter & Grids WordPress plugin before 2.8.33 is vulnerable to Local File Inclusion via the post_layout parameter. This makes it possible for an unauthenticated attacker to include and execute PHP files on the server, allowing the execution of any PHP code in those files.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6164">详情</a></td>
+      </tr>
+
+      <tr>
        <td>403c0e14a2494c9bd74202624b90e78a</td>
        <td>CVE-2024-5471</td>
        <td>2024-07-17 11:15:10 <img src="imgs/new.gif" /></td>
@@ -344,86 +424,6 @@
        <td>2024-07-16 10:15:03</td>
        <td>An SQL Injection vulnerability in Apache Superset exists due to improper neutralization of special elements used in SQL commands. Specifically, certain engine-specific functions are not checked, which allows attackers to bypass Apache Superset's SQL authorization. To mitigate this, a new configuration key named DISALLOWED_SQL_FUNCTIONS has been introduced. This key disallows the use of the following PostgreSQL functions: version, query_to_xml, inet_server_addr, and inet_client_addr. Additional functions can be added to this list for increased protection. This issue affects Apache Superset: before 4.0.2. Users are recommended to upgrade to version 4.0.2, which fixes the issue.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-39887">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cec48a1283ae095d37bd0f71655025fc</td>
-       <td>CVE-2023-52886</td>
-       <td>2024-07-16 10:15:02</td>
-       <td>In the Linux kernel, the following vulnerability has been resolved: USB: core: Fix race by not overwriting udev->descriptor in hub_port_init() Syzbot reported an out-of-bounds read in sysfs.c:read_descriptors(): BUG: KASAN: slab-out-of-bounds in read_descriptors+0x263/0x280 drivers/usb/core/sysfs.c:883 Read of size 8 at addr ffff88801e78b8c8 by task udevd/5011 CPU: 0 PID: 5011 Comm: udevd Not tainted 6.4.0-rc6-syzkaller-00195-g40f71e7cd3c6 #0 Hardware name: Google Google Compute Engine/Google Compute Engine, BIOS Google 05/27/2023 Call Trace: <TASK> __dump_stack lib/dump_stack.c:88 [inline] dump_stack_lvl+0xd9/0x150 lib/dump_stack.c:106 print_address_description.constprop.0+0x2c/0x3c0 mm/kasan/report.c:351 print_report mm/kasan/report.c:462 [inline] kasan_report+0x11c/0x130 mm/kasan/report.c:572 read_descriptors+0x263/0x280 drivers/usb/core/sysfs.c:883 ... Allocated by task 758: ... __do_kmalloc_node mm/slab_common.c:966 [inline] __kmalloc+0x5e/0x190 mm/slab_common.c:979 kmalloc include/linux/slab.h:563 [inline] kzalloc include/linux/slab.h:680 [inline] usb_get_configuration+0x1f7/0x5170 drivers/usb/core/config.c:887 usb_enumerate_device drivers/usb/core/hub.c:2407 [inline] usb_new_device+0x12b0/0x19d0 drivers/usb/core/hub.c:2545 As analyzed by Khazhy Kumykov, the cause of this bug is a race between read_descriptors() and hub_port_init(): The first routine uses a field in udev->descriptor, not expecting it to change, while the second overwrites it. Prior to commit 45bf39f8df7f ("USB: core: Don't hold device lock while reading the "descriptors" sysfs file") this race couldn't occur, because the routines were mutually exclusive thanks to the device locking. Removing that locking from read_descriptors() exposed it to the race. The best way to fix the bug is to keep hub_port_init() from changing udev->descriptor once udev has been initialized and registered. Drivers expect the descriptors stored in the kernel to be immutable; we should not undermine this expectation. In fact, this change should have been made long ago. So now hub_port_init() will take an additional argument, specifying a buffer in which to store the device descriptor it reads. (If udev has not yet been initialized, the buffer pointer will be NULL and then hub_port_init() will store the device descriptor in udev as before.) This eliminates the data race responsible for the out-of-bounds read. The changes to hub_port_init() appear more extensive than they really are, because of indentation changes resulting from an attempt to avoid writing to other parts of the usb_device structure after it has been initialized. Similar changes should be made to the code that reads the BOS descriptor, but that can be handled in a separate patch later on. This patch is sufficient to fix the bug found by syzbot.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-52886">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2afe9bdb18843573cef96648d376c365</td>
-       <td>CVE-2024-6570</td>
-       <td>2024-07-16 09:15:03</td>
-       <td>The Glossary plugin for WordPress is vulnerable to Full Path Disclosure in all versions up to, and including, 2.2.26. This is due the plugin utilizing wpdesk and not preventing direct access to the test files along with display_errors being enabled. This makes it possible for unauthenticated attackers to retrieve the full path of the web application, which can be used to aid other attacks. The information displayed is not useful on its own, and requires another vulnerability to be present for damage to an affected website.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6570">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f8574bc245dd0a05b55b5951a38fa3eb</td>
-       <td>CVE-2024-6565</td>
-       <td>2024-07-16 09:15:03</td>
-       <td>The AForms — Form Builder for Price Calculator & Cost Estimation plugin for WordPress is vulnerable to Full Path Disclosure in all versions up to, and including, 2.2.6. This is due to the plugin utilizing the aura library and allowing direct access to the phpunit test files. This makes it possible for unauthenticated attackers to retrieve the full path of the web application, which can be used to aid other attacks. The information displayed is not useful on its own, and requires another vulnerability to be present for damage to an affected website.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6565">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8b0aceba47526d936001a60b7f9b3ba6</td>
-       <td>CVE-2024-5852</td>
-       <td>2024-07-16 09:15:03</td>
-       <td>The WordPress File Upload plugin for WordPress is vulnerable to Directory Traversal in all versions up to, and including, 4.24.7 via the 'uploadpath' parameter of the wordpress_file_upload shortcode. This makes it possible for authenticated attackers, with Contributor-level access and above, to upload limited files to arbitrary locations on the web server.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-5852">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c8825b85fe6c15b7feb3f4d5be677845</td>
-       <td>CVE-2024-3779</td>
-       <td>2024-07-16 09:15:02</td>
-       <td>Denial of service vulnerability present shortly after product installation or upgrade, potentially allowed an attacker to render ESET’s security product inoperable, provided non-default preconditions were met.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-3779">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0dc649c43ea5439b744a205c32ae33fb</td>
-       <td>CVE-2024-3587</td>
-       <td>2024-07-16 09:15:02</td>
-       <td>The Premium Portfolio Features for Phlox theme plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's Grid Portfolios Widget in all versions up to, and including, 2.3.2 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-3587">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9519075dd88dc6692b7a32f79cf22ec6</td>
-       <td>CVE-2024-6745</td>
-       <td>2024-07-15 11:15:02</td>
-       <td>A vulnerability classified as critical has been found in code-projects Simple Ticket Booking 1.0. Affected is an unknown function of the file adminauthenticate.php of the component Login. The manipulation of the argument email/password leads to sql injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-271476.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6745">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>27ea46ec394400bf9c216d987b0028bd</td>
-       <td>CVE-2024-6741</td>
-       <td>2024-07-15 09:15:03</td>
-       <td>Openfind's Mail2000 has a vulnerability that allows the HttpOnly flag to be bypassed. Unauthenticated remote attackers can exploit this vulnerability using specific JavaScript code to obtain the session cookie with the HttpOnly flag enabled.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6741">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f7f23f4bc7e465e09de41679392fcf10</td>
-       <td>CVE-2024-6398</td>
-       <td>2024-07-15 09:15:02</td>
-       <td>An information disclosure vulnerability in SWG in versions 12.x prior to 12.2.10 and 11.x prior to 11.2.24 allows information stored in a customizable block page to be disclosed to third-party websites due to Same Origin Policy Bypass of browsers in certain scenarios. The risk is low, because other recommended default security policies such as URL categorization and GTI are in place in most policies to block access to uncategorized/high risk websites. Any information disclosed depends on how the customers have customized the block pages.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6398">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c33fc9e19fbfa4d4f486acd7e88a6d4f</td>
-       <td>CVE-2024-41007</td>
-       <td>2024-07-15 09:15:02</td>
-       <td>In the Linux kernel, the following vulnerability has been resolved: tcp: avoid too many retransmit packets If a TCP socket is using TCP_USER_TIMEOUT, and the other peer retracted its window to zero, tcp_retransmit_timer() can retransmit a packet every two jiffies (2 ms for HZ=1000), for about 4 minutes after TCP_USER_TIMEOUT has 'expired'. The fix is to make sure tcp_rtx_probe0_timed_out() takes icsk->icsk_user_timeout into account. Before blamed commit, the socket would not timeout after icsk->icsk_user_timeout, but would use standard exponential backoff for the retransmits. Also worth noting that before commit e89688e3e978 ("net: tcp: fix unexcepted socket die when snd_wnd is 0"), the issue would last 2 minutes instead of 4.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-41007">详情</a></td>
       </tr>
 
      </tbody>
