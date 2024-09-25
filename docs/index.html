@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2024-09-25 11:27:41 -->
+<!-- RELEASE TIME : 2024-09-25 14:34:49 -->
 <html lang="zh-cn">
 
  <head>
@@ -235,6 +235,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>cb4a266a4203b354953e8dd6f35f06d3</td>
+       <td>CVE-2024-8942</td>
+       <td>2024-09-24 11:51:49 <img src="imgs/new.gif" /></td>
+       <td>Vulnerability in Scriptcase version 9.4.019 that consists of a Cross-Site Scripting (XSS), due to the lack of input validation, affecting the “id_form_msg_title” parameter, among others. This vulnerability could allow a remote user to send a specially crafted URL to a victim and retrieve their credentials.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-8942">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d586aafdb48aa180d364ce934f8f6611</td>
+       <td>CVE-2024-8941</td>
+       <td>2024-09-24 11:50:58 <img src="imgs/new.gif" /></td>
+       <td>Path traversal vulnerability in Scriptcase version 9.4.019, in /scriptcase/devel/compat/nm_edit_php_edit.php (in the “subpage” parameter), which allows unauthenticated remote users to bypass SecurityManager's intended restrictions and list and/or read a parent directory via a “/...” or directly into a path used in the POST parameter “field_file” by a web application.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-8941">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>de6a1eb21c679bb4242106067f162b13</td>
+       <td>CVE-2024-8940</td>
+       <td>2024-09-24 11:48:36 <img src="imgs/new.gif" /></td>
+       <td>Vulnerability in the Scriptcase application version 9.4.019, which involves the arbitrary upload of a file via /scriptcase/devel/lib/third/jquery_plugin/jQuery-File-Upload/server/php/ via a POST request. An attacker could upload malicious files to the server due to the application not properly verifying user input.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-8940">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ef7216cbfcf12e1e25435c88e8d29eb1</td>
+       <td>CVE-2024-8801</td>
+       <td>2024-09-24 11:00:45 <img src="imgs/new.gif" /></td>
+       <td>The Happy Addons for Elementor plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 3.12.2 via the Content Switcher widget. This makes it possible for authenticated attackers, with Contributor-level access and above, to extract sensitive data including private, draft, and pending Elementor templates.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-8801">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>648c6ca74eabfb861677e1d05fc69227</td>
+       <td>CVE-2024-9141</td>
+       <td>2024-09-24 10:50:25 <img src="imgs/new.gif" /></td>
+       <td>Cross-Site Scripting (XSS) vulnerability in the Oct8ne system. This flaw could allow an attacker to embed harmful JavaScript code into the body of a chat message. This manipulation occurs when the chat content is intercepted and altered, leading to the execution of the JavaScript payload.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-9141">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2800ad516cea8008688a6e278e8ba939</td>
+       <td>CVE-2024-38324</td>
+       <td>2024-09-24 10:24:43 <img src="imgs/new.gif" /></td>
+       <td>IBM Storage Defender 2.0.0 through 2.0.7 on-prem defender-sensor-cmd CLI does not validate server name during registration and unregistration operations which could expose sensitive information to an attacker with access to the system.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-38324">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c554c2552fb0751135556e07cace2ebd</td>
+       <td>CVE-2024-9142</td>
+       <td>2024-09-24 08:47:05 <img src="imgs/new.gif" /></td>
+       <td>External Control of File Name or Path, : Incorrect Permission Assignment for Critical Resource vulnerability in Olgu Computer Systems e-Belediye allows Manipulating Web Input to File System Calls.This issue affects e-Belediye: before 2.0.642.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-9142">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ff2458d88815b9c325b6ba0219aa4b35</td>
+       <td>CVE-2024-8436</td>
+       <td>2024-09-24 07:30:46 <img src="imgs/new.gif" /></td>
+       <td>The WP Easy Gallery – WordPress Gallery Plugin plugin for WordPress is vulnerable to SQL Injection via the 'edit_imageId' and 'edit_imageDelete' parameters in all versions up to, and including, 4.8.5 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for authenticated attackers, with subscriber-level access and above, to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-8436">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8e4f8785f0b10a512ed39eaa8824e7fb</td>
+       <td>CVE-2024-8437</td>
+       <td>2024-09-24 07:30:45 <img src="imgs/new.gif" /></td>
+       <td>The WP Easy Gallery – WordPress Gallery Plugin plugin for WordPress is vulnerable to unauthorized access due to a missing capability check on several functions hooked via AJAX like wpeg_settings and wpeg_add_gallery in all versions up to, and including, 4.8.5. This makes it possible for authenticated attackers, with subscriber-level access and above, to modify galleries.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-8437">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>751e37859fc07200503fe96ccad8a928</td>
+       <td>CVE-2023-5359</td>
+       <td>2024-09-24 07:30:45 <img src="imgs/new.gif" /></td>
+       <td>The W3 Total Cache plugin for WordPress is vulnerable to Sensitive Information Exposure in versions up to, and including, 2.7.5 via Google OAuth API secrets stored in plaintext in the publicly visible plugin source. This can allow unauthenticated attackers to impersonate W3 Total Cache and gain access to user account information in successful conditions. This would not impact the WordPress users site in any way.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5359">详情</a></td>
+      </tr>
+
+      <tr>
        <td>5c08373e8588e7b26e11ca5924d29519</td>
        <td>CVE-2024-7024</td>
        <td>2024-09-23 23:15:10</td>
@@ -344,86 +424,6 @@
        <td>2024-09-22 13:15:10</td>
        <td>IBM Cognos Analytics 11.2.0, 11.2.1, 11.2.2, 11.2.3, 11.2.4, 12.0.0, 12.0.1, 12.0.2, 12.0.3, and IBM Cognos Analytics Reports for iOS 11.0.0.7 could allow a local attacker to obtain sensitive information in the form of an API key. An attacker could use this information to launch further attacks against affected applications.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-40703">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>866c94648e6307c1c1f187fe2765c7f5</td>
-       <td>CVE-2024-9084</td>
-       <td>2024-09-22 09:15:03</td>
-       <td>A vulnerability classified as problematic was found in code-projects Blood Bank System 1.0. This vulnerability affects unknown code of the file bbms.php. The manipulation of the argument fullname/age/bloodgroup/city/phno/gender as part of String leads to cross site scripting. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-9084">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b043849b7d4cf83dc49084cf3e8d118a</td>
-       <td>CVE-2024-9083</td>
-       <td>2024-09-22 09:15:02</td>
-       <td>A vulnerability classified as problematic has been found in SourceCodester Employee Management System 1.0. This affects an unknown part of the file /Admin/add-admin.php. The manipulation of the argument txtfullname leads to cross site scripting. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-9083">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>80b45712f0a8e34c29b90602dc24356d</td>
-       <td>CVE-2024-9085</td>
-       <td>2024-09-22 08:15:02</td>
-       <td>A vulnerability was found in code-projects Restaurant Reservation System 1.0. It has been rated as critical. This issue affects some unknown processing of the file index.php. The manipulation of the argument date leads to sql injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The initial researcher advisory mentions sid as affected paramater which is incorrect.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-9085">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>054fd2be8405d36ad11fb0becb1f2077</td>
-       <td>CVE-2024-9082</td>
-       <td>2024-09-22 08:15:02</td>
-       <td>A vulnerability was found in SourceCodester Online Eyewear Shop 1.0. It has been rated as critical. Affected by this issue is some unknown functionality of the file /Users.phpf=save of the component User Creation Handler. The manipulation of the argument type with the input 1 leads to improper authorization. The attack may be launched remotely. The exploit has been disclosed to the public and may be used.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-9082">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>97fe8e79f8e7caba8f3a23df8d4dd021</td>
-       <td>CVE-2024-9081</td>
-       <td>2024-09-22 07:15:11</td>
-       <td>A vulnerability was found in SourceCodester Online Eyewear Shop 1.0. It has been declared as critical. Affected by this vulnerability is an unknown functionality of the file view_category.php. The manipulation of the argument id leads to sql injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-9081">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5a063a479a26242c9463b1a803a1297c</td>
-       <td>CVE-2024-9080</td>
-       <td>2024-09-22 07:15:10</td>
-       <td>A vulnerability was found in code-projects Student Record System 1.0. It has been classified as critical. Affected is an unknown function of the file /pincode-verification.php. The manipulation of the argument pincode leads to sql injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-9080">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>42b5759f8bfca0fd78f52838e5a683e4</td>
-       <td>CVE-2024-9075</td>
-       <td>2024-09-21 23:15:14</td>
-       <td>A vulnerability was found in Stirling-Tools Stirling-PDF up to 0.28.3. It has been declared as problematic. This vulnerability affects unknown code of the component Markdown-to-PDF. The manipulation leads to cross site scripting. The attack can be initiated remotely. The complexity of an attack is rather high. The exploitation appears to be difficult. The vendor was contacted early about this disclosure but did not respond in any way.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-9075">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3e7b5a27c8b6fa27a56d3d579269c933</td>
-       <td>CVE-2024-47210</td>
-       <td>2024-09-21 23:15:14</td>
-       <td>Gladys Assistant before 4.45.1 allows Privilege Escalation (a user changing their own role) because req.body.role can be used in updateMySelf in server/api/controllers/user.controller.js.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-47210">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>103db436067cfc59db2f95c97246bb69</td>
-       <td>CVE-2024-42323</td>
-       <td>2024-09-21 10:15:06</td>
-       <td>SnakeYaml Deser Load Malicious xml rce vulnerability in Apache HertzBeat (incubating). This vulnerability can only be exploited by authorized attackers. This issue affects Apache HertzBeat (incubating): before 1.6.0. Users are recommended to upgrade to version 1.6.0, which fixes the issue.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-42323">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6b18386d3ddfb89df3dc9a46b5e81fc4</td>
-       <td>CVE-2024-9048</td>
-       <td>2024-09-21 09:15:04</td>
-       <td>A vulnerability was found in y_project RuoYi up to 4.7.9. It has been declared as problematic. Affected by this vulnerability is the function SysUserServiceImpl of the file ruoyi-system/src/main/java/com/ruoyi/system/service/impl/SysUserServiceImpl.java of the component Backend User Import. The manipulation of the argument loginName leads to cross site scripting. The attack can be launched remotely. The complexity of an attack is rather high. The exploitation appears to be difficult. The exploit has been disclosed to the public and may be used. The patch is named 9b68013b2af87b9c809c4637299abd929bc73510. It is recommended to apply a patch to fix this issue.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-9048">详情</a></td>
       </tr>
 
      </tbody>
