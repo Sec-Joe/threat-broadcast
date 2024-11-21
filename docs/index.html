@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2024-11-21 09:33:24 -->
+<!-- RELEASE TIME : 2024-11-21 10:37:45 -->
 <html lang="zh-cn">
 
  <head>
@@ -235,6 +235,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>6e68e27ef79434c6b9439a3ca0ba97bd</td>
+       <td>CVE-2024-52739</td>
+       <td>2024-11-20 18:15:23 <img src="imgs/new.gif" /></td>
+       <td>D-LINK DI-8400 v16.07.26A1 was discovered to contain multiple remote command execution (RCE) vulnerabilities in the msp_info_htm function via the flag and cmd parameters.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-52739">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0c4a3a3bf82bdfff2ad6957d25558983</td>
+       <td>CVE-2018-9487</td>
+       <td>2024-11-20 18:15:20 <img src="imgs/new.gif" /></td>
+       <td>In setVpnForcedLocked of Vpn.java, there is a possible blocking of internet traffic through vpn due to a bad uid check. This could lead to local denial of service with no additional execution privileges needed. User interaction is needed for exploitation.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2018-9487">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5e54a071f6c9a53c61bd319a71490491</td>
+       <td>CVE-2018-9485</td>
+       <td>2024-11-20 18:15:20 <img src="imgs/new.gif" /></td>
+       <td>In l2cble_process_sig_cmd of l2c_ble.cc, there is a possible out of bounds read due to a missing bounds check. This could lead to remote information disclosure over bluetooth with no additional execution privileges needed. User interaction is not needed for exploitation.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2018-9485">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>97e90f03dc834eb7df79458199e0ca5b</td>
+       <td>CVE-2018-9483</td>
+       <td>2024-11-20 18:15:20 <img src="imgs/new.gif" /></td>
+       <td>In bta_dm_remove_sec_dev_entry of bta_dm_act.cc, there is a possible out of bounds read due to a use after free. This could lead to remote information disclosure over bluetooth with no additional execution privileges needed. User interaction is not needed for exploitation.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2018-9483">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>89d1b148bdf959cc21fa3c114d999686</td>
+       <td>CVE-2018-9477</td>
+       <td>2024-11-20 18:15:19 <img src="imgs/new.gif" /></td>
+       <td>In the development options section of the Settings app, there is a possible authentication bypass due to a missing permission check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is needed for exploitation.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2018-9477">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9829273871b1660ec7f34592d9cd92c9</td>
+       <td>CVE-2018-9472</td>
+       <td>2024-11-20 18:15:19 <img src="imgs/new.gif" /></td>
+       <td>In xmlMemStrdupLoc of xmlmemory.c, there is a possible out-of-bounds write due to an integer overflow. This could lead to remote code execution in an unprivileged process with no additional execution privileges needed. User interaction is needed for exploitation.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2018-9472">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2a0733b7070f3e5ad3ad2df91603d7e9</td>
+       <td>CVE-2018-9470</td>
+       <td>2024-11-20 18:15:19 <img src="imgs/new.gif" /></td>
+       <td>In bff_Scanner_addOutPos of Scanner.c, there is a possible out-of-bounds write due to an incorrect bounds check. This could lead to remote escalation of privilege in an unprivileged app with no additional execution privileges needed. User interaction is needed for exploitation.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2018-9470">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>41b4b7db2f0e1c8eac6ea1fc294b3149</td>
+       <td>CVE-2024-11492</td>
+       <td>2024-11-20 17:31:03 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability classified as problematic has been found in 115cms up to 20240807. This affects an unknown part of the file /index.php/admin/web/appurladd.html. The manipulation of the argument tid leads to cross site scripting. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-11492">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5375b6cbbadca5a471e7305ec46378fe</td>
+       <td>CVE-2024-52796</td>
+       <td>2024-11-20 17:15:20 <img src="imgs/new.gif" /></td>
+       <td>Password Pusher, an open source application to communicate sensitive information over the web, comes with a configurable rate limiter. In versions prior to v1.49.0, the rate limiter could be bypassed by forging proxy headers allowing bad actors to send unlimited traffic to the site potentially causing a denial of service. In v1.49.0, a fix was implemented to only authorize proxies on local IPs which resolves this issue. As a workaround, one may add rules to one's proxy and/or firewall to not accept external proxy headers such as `X-Forwarded-*` from clients.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-52796">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fda5241e09994d5f558b0373062642b9</td>
+       <td>CVE-2024-52770</td>
+       <td>2024-11-20 17:15:20 <img src="imgs/new.gif" /></td>
+       <td>An arbitrary file upload vulnerability in the component /admin/file_manage_control of DedeBIZ v6.3.0 allows attackers to execute arbitrary code via uploading a crafted file.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-52770">详情</a></td>
+      </tr>
+
+      <tr>
        <td>374766989f3fed02fcb066ebcda0aadb</td>
        <td>CVE-2024-44309</td>
        <td>2024-11-20 00:15:17 <img src="imgs/new.gif" /></td>
@@ -344,86 +424,6 @@
        <td>2024-11-19 02:16:32</td>
        <td>In the Linux kernel, the following vulnerability has been resolved: HID: core: zero-initialize the report buffer Since the report buffer is used by all kinds of drivers in various ways, let's zero-initialize it during allocation to make sure that it can't be ever used to leak kernel memory via specially-crafted report.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-50302">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f4985a0c0bc7213a58a8401136570131</td>
-       <td>CVE-2024-50301</td>
-       <td>2024-11-19 02:16:32</td>
-       <td>In the Linux kernel, the following vulnerability has been resolved: security/keys: fix slab-out-of-bounds in key_task_permission KASAN reports an out of bounds read: BUG: KASAN: slab-out-of-bounds in __kuid_val include/linux/uidgid.h:36 BUG: KASAN: slab-out-of-bounds in uid_eq include/linux/uidgid.h:63 [inline] BUG: KASAN: slab-out-of-bounds in key_task_permission+0x394/0x410 security/keys/permission.c:54 Read of size 4 at addr ffff88813c3ab618 by task stress-ng/4362 CPU: 2 PID: 4362 Comm: stress-ng Not tainted 5.10.0-14930-gafbffd6c3ede #15 Call Trace: __dump_stack lib/dump_stack.c:82 [inline] dump_stack+0x107/0x167 lib/dump_stack.c:123 print_address_description.constprop.0+0x19/0x170 mm/kasan/report.c:400 __kasan_report.cold+0x6c/0x84 mm/kasan/report.c:560 kasan_report+0x3a/0x50 mm/kasan/report.c:585 __kuid_val include/linux/uidgid.h:36 [inline] uid_eq include/linux/uidgid.h:63 [inline] key_task_permission+0x394/0x410 security/keys/permission.c:54 search_nested_keyrings+0x90e/0xe90 security/keys/keyring.c:793 This issue was also reported by syzbot. It can be reproduced by following these steps(more details [1]): 1. Obtain more than 32 inputs that have similar hashes, which ends with the pattern '0xxxxxxxe6'. 2. Reboot and add the keys obtained in step 1. The reproducer demonstrates how this issue happened: 1. In the search_nested_keyrings function, when it iterates through the slots in a node(below tag ascend_to_node), if the slot pointer is meta and node->back_pointer != NULL(it means a root), it will proceed to descend_to_node. However, there is an exception. If node is the root, and one of the slots points to a shortcut, it will be treated as a keyring. 2. Whether the ptr is keyring decided by keyring_ptr_is_keyring function. However, KEYRING_PTR_SUBTYPE is 0x2UL, the same as ASSOC_ARRAY_PTR_SUBTYPE_MASK. 3. When 32 keys with the similar hashes are added to the tree, the ROOT has keys with hashes that are not similar (e.g. slot 0) and it splits NODE A without using a shortcut. When NODE A is filled with keys that all hashes are xxe6, the keys are similar, NODE A will split with a shortcut. Finally, it forms the tree as shown below, where slot 6 points to a shortcut. NODE A +------>+---+ ROOT | | 0 | xxe6 +---+ | +---+ xxxx | 0 | shortcut : : xxe6 +---+ | +---+ xxe6 : : | | | xxe6 +---+ | +---+ | 6 |---+ : : xxe6 +---+ +---+ xxe6 : : | f | xxe6 +---+ +---+ xxe6 | f | +---+ 4. As mentioned above, If a slot(slot 6) of the root points to a shortcut, it may be mistakenly transferred to a key*, leading to a read out-of-bounds read. To fix this issue, one should jump to descend_to_node if the ptr is a shortcut, regardless of whether the node is root or not. [1] https://lore.kernel.org/linux-kernel/1cfa878e-8c7b-4570-8606-21daf5e13ce7@huaweicloud.com/ [jarkko: tweaked the commit message a bit to have an appropriate closes tag.]</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-50301">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d5ec95d194deb1a9211d5bb46eec6d44</td>
-       <td>CVE-2024-50300</td>
-       <td>2024-11-19 02:16:32</td>
-       <td>In the Linux kernel, the following vulnerability has been resolved: regulator: rtq2208: Fix uninitialized use of regulator_config Fix rtq2208 driver uninitialized use to cause kernel error.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-50300">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4fa2330b69373be63ec81fa7308639bb</td>
-       <td>CVE-2024-50299</td>
-       <td>2024-11-19 02:16:32</td>
-       <td>In the Linux kernel, the following vulnerability has been resolved: sctp: properly validate chunk size in sctp_sf_ootb() A size validation fix similar to that in Commit 50619dbf8db7 ("sctp: add size validation when walking chunks") is also required in sctp_sf_ootb() to address a crash reported by syzbot: BUG: KMSAN: uninit-value in sctp_sf_ootb+0x7f5/0xce0 net/sctp/sm_statefuns.c:3712 sctp_sf_ootb+0x7f5/0xce0 net/sctp/sm_statefuns.c:3712 sctp_do_sm+0x181/0x93d0 net/sctp/sm_sideeffect.c:1166 sctp_endpoint_bh_rcv+0xc38/0xf90 net/sctp/endpointola.c:407 sctp_inq_push+0x2ef/0x380 net/sctp/inqueue.c:88 sctp_rcv+0x3831/0x3b20 net/sctp/input.c:243 sctp4_rcv+0x42/0x50 net/sctp/protocol.c:1159 ip_protocol_deliver_rcu+0xb51/0x13d0 net/ipv4/ip_input.c:205 ip_local_deliver_finish+0x336/0x500 net/ipv4/ip_input.c:233</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-50299">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>07038f2daf1c507be2d790bf369691a8</td>
-       <td>CVE-2024-50298</td>
-       <td>2024-11-19 02:16:31</td>
-       <td>In the Linux kernel, the following vulnerability has been resolved: net: enetc: allocate vf_state during PF probes In the previous implementation, vf_state is allocated memory only when VF is enabled. However, net_device_ops::ndo_set_vf_mac() may be called before VF is enabled to configure the MAC address of VF. If this is the case, enetc_pf_set_vf_mac() will access vf_state, resulting in access to a null pointer. The simplified error log is as follows. root@ls1028ardb:~# ip link set eno0 vf 1 mac 00:0c:e7:66:77:89 [ 173.543315] Unable to handle kernel NULL pointer dereference at virtual address 0000000000000004 [ 173.637254] pc : enetc_pf_set_vf_mac+0x3c/0x80 Message from sy [ 173.641973] lr : do_setlink+0x4a8/0xec8 [ 173.732292] Call trace: [ 173.734740] enetc_pf_set_vf_mac+0x3c/0x80 [ 173.738847] __rtnl_newlink+0x530/0x89c [ 173.742692] rtnl_newlink+0x50/0x7c [ 173.746189] rtnetlink_rcv_msg+0x128/0x390 [ 173.750298] netlink_rcv_skb+0x60/0x130 [ 173.754145] rtnetlink_rcv+0x18/0x24 [ 173.757731] netlink_unicast+0x318/0x380 [ 173.761665] netlink_sendmsg+0x17c/0x3c8</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-50298">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>815c048fa3e5b9aaebbfd7dd86bcda6c</td>
-       <td>CVE-2024-50297</td>
-       <td>2024-11-19 02:16:31</td>
-       <td>In the Linux kernel, the following vulnerability has been resolved: net: xilinx: axienet: Enqueue Tx packets in dql before dmaengine starts Enqueue packets in dql after dma engine starts causes race condition. Tx transfer starts once dma engine is started and may execute dql dequeue in completion before it gets queued. It results in following kernel crash while running iperf stress test: kernel BUG at lib/dynamic_queue_limits.c:99! <snip> Internal error: Oops - BUG: 00000000f2000800 [#1] SMP pc : dql_completed+0x238/0x248 lr : dql_completed+0x3c/0x248 Call trace: dql_completed+0x238/0x248 axienet_dma_tx_cb+0xa0/0x170 xilinx_dma_do_tasklet+0xdc/0x290 tasklet_action_common+0xf8/0x11c tasklet_action+0x30/0x3c handle_softirqs+0xf8/0x230 <snip> Start dmaengine after enqueue in dql fixes the crash.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-50297">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>41d78ba4d9fcf42d722237f0db2a154c</td>
-       <td>CVE-2024-50296</td>
-       <td>2024-11-19 02:16:31</td>
-       <td>In the Linux kernel, the following vulnerability has been resolved: net: hns3: fix kernel crash when uninstalling driver When the driver is uninstalled and the VF is disabled concurrently, a kernel crash occurs. The reason is that the two actions call function pci_disable_sriov(). The num_VFs is checked to determine whether to release the corresponding resources. During the second calling, num_VFs is not 0 and the resource release function is called. However, the corresponding resource has been released during the first invoking. Therefore, the problem occurs: [15277.839633][T50670] Unable to handle kernel NULL pointer dereference at virtual address 0000000000000020 ... [15278.131557][T50670] Call trace: [15278.134686][T50670] klist_put+0x28/0x12c [15278.138682][T50670] klist_del+0x14/0x20 [15278.142592][T50670] device_del+0xbc/0x3c0 [15278.146676][T50670] pci_remove_bus_device+0x84/0x120 [15278.151714][T50670] pci_stop_and_remove_bus_device+0x6c/0x80 [15278.157447][T50670] pci_iov_remove_virtfn+0xb4/0x12c [15278.162485][T50670] sriov_disable+0x50/0x11c [15278.166829][T50670] pci_disable_sriov+0x24/0x30 [15278.171433][T50670] hnae3_unregister_ae_algo_prepare+0x60/0x90 [hnae3] [15278.178039][T50670] hclge_exit+0x28/0xd0 [hclge] [15278.182730][T50670] __se_sys_delete_module.isra.0+0x164/0x230 [15278.188550][T50670] __arm64_sys_delete_module+0x1c/0x30 [15278.193848][T50670] invoke_syscall+0x50/0x11c [15278.198278][T50670] el0_svc_common.constprop.0+0x158/0x164 [15278.203837][T50670] do_el0_svc+0x34/0xcc [15278.207834][T50670] el0_svc+0x20/0x30 For details, see the following figure. rmmod hclge disable VFs ---------------------------------------------------- hclge_exit() sriov_numvfs_store() ... device_lock() pci_disable_sriov() hns3_pci_sriov_configure() pci_disable_sriov() sriov_disable() sriov_disable() if !num_VFs : if !num_VFs : return; return; sriov_del_vfs() sriov_del_vfs() ... ... klist_put() klist_put() ... ... num_VFs = 0; num_VFs = 0; device_unlock(); In this patch, when driver is removing, we get the device_lock() to protect num_VFs, just like sriov_numvfs_store().</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-50296">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f13c6a916fc4f8ce3a727003ebd2686e</td>
-       <td>CVE-2024-52947</td>
-       <td>2024-11-18 06:15:06</td>
-       <td>A cross-site scripting (XSS) vulnerability in LemonLDAP::NG before 2.20.1 allows remote attackers to inject arbitrary web script or HTML via the url parameter of the upgrade session confirmation page (upgradeSession / forceUpgrade) if the "Upgrade session" plugin has been enabled by an admin</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-52947">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ba628a8d8472f4c353f47ef83e960b8d</td>
-       <td>CVE-2024-52946</td>
-       <td>2024-11-18 06:15:06</td>
-       <td>An issue was discovered in LemonLDAP::NG before 2.20.1. An Improper Check during session refresh allows an authenticated user to raise their authentication level if the admin configured an "Adaptative authentication rule" with an increment instead of an absolute value.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-52946">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d3f83be9ee03917142048d5c05d07b7c</td>
-       <td>CVE-2024-52945</td>
-       <td>2024-11-18 06:15:06</td>
-       <td>An issue was discovered in Veritas NetBackup before 10.5. This only applies to NetBackup components running on a Windows Operating System. If a user executes specific NetBackup commands or an attacker uses social engineering techniques to impel the user to execute the commands, a malicious DLL could be loaded, resulting in execution of the attacker's code in the user's security context.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-52945">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>91159c2cf2c5a60a2840888dd0cc4ccf</td>
-       <td>CVE-2024-52944</td>
-       <td>2024-11-18 06:15:06</td>
-       <td>An issue was discovered in Veritas Enterprise Vault before 15.1 UPD882911, ZDI-CAN-24698. It allows an authenticated remote attacker to inject a parameter into an HTTP request, allowing for Cross-Site Scripting while viewing archived content. This could reflect back to an authenticated user without sanitization if executed by that user.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-52944">详情</a></td>
       </tr>
 
      </tbody>
