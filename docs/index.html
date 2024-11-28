@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2024-11-28 09:34:34 -->
+<!-- RELEASE TIME : 2024-11-28 13:39:24 -->
 <html lang="zh-cn">
 
  <head>
@@ -235,6 +235,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>801f710aae50552eeaed4132fc3ebbf5</td>
+       <td>CVE-2024-11082</td>
+       <td>2024-11-28 09:47:12 <img src="imgs/new.gif" /></td>
+       <td>The Tumult Hype Animations plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the hypeanimations_panel() function in all versions up to, and including, 1.9.15. This makes it possible for authenticated attackers, with Author-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-11082">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5cb5098dd477194b7d5f52c902dbe0f6</td>
+       <td>CVE-2024-10780</td>
+       <td>2024-11-28 09:47:12 <img src="imgs/new.gif" /></td>
+       <td>The Restaurant & Cafe Addon for Elementor plugin for WordPress is vulnerable to Information Exposure in all versions up to, and including, 1.5.9 via the 'narestaurant_elementor_template' shortcode due to insufficient restrictions on which posts can be included. This makes it possible for authenticated attackers, with Contributor-level access and above, to extract data from private or draft posts created by Elementor that they should not have access to.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-10780">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>df7f5c827572d2c561e1c206a0a77b0f</td>
+       <td>CVE-2024-8672</td>
+       <td>2024-11-28 09:47:11 <img src="imgs/new.gif" /></td>
+       <td>The Widget Options – The #1 WordPress Widget & Block Control Plugin plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 4.0.7 via the display logic functionality that extends several page builders. This is due to the plugin allowing users to supply input that will be passed through eval() without any filtering or capability checks. This makes it possible for authenticated attackers, with contributor-level access and above, to execute code on the server. Special note: We suggested the vendor implement an allowlist of functions and limit the ability to execute commands to just administrators, however, they did not take our advice. We are considering this patched, however, we believe it could still be further hardened and there may be residual risk with how the issue is currently patched.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-8672">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b785d7b15d5ef67f24e37119ecdb20c3</td>
+       <td>CVE-2024-10670</td>
+       <td>2024-11-28 09:47:11 <img src="imgs/new.gif" /></td>
+       <td>The Primary Addon for Elementor plugin for WordPress is vulnerable to Information Exposure in all versions up to, and including, 1.6.2 via the [prim_elementor_template] shortcode due to insufficient restrictions on which posts can be included. This makes it possible for authenticated attackers, with Contributor-level access and above, to extract data from private or draft posts created with Elementor that they should not have access to.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-10670">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e63781e2ab03c94a69292c2027453e55</td>
+       <td>CVE-2024-10798</td>
+       <td>2024-11-28 09:47:10 <img src="imgs/new.gif" /></td>
+       <td>The Royal Elementor Addons and Templates plugin for WordPress is vulnerable to Information Exposure in all versions up to, and including, 1.7.1003 via the 'wpr-template' shortcode due to insufficient restrictions on which posts can be included. This makes it possible for authenticated attackers, with Contributor-level access and above, to extract data from private or draft posts created via Elementor that they should not have access to.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-10798">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fe915a3342b1dd27be99c924a01adf1e</td>
+       <td>CVE-2024-11103</td>
+       <td>2024-11-28 09:47:09 <img src="imgs/new.gif" /></td>
+       <td>The Contest Gallery plugin for WordPress is vulnerable to privilege escalation via account takeover in all versions up to, and including, 24.0.7. This is due to the plugin not properly validating a user's identity prior to updating their password. This makes it possible for unauthenticated attackers to change arbitrary user's passwords, including administrators, and leverage that to gain access to their account.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-11103">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ad1e6237c7e5ef6847dcc04b891b2353</td>
+       <td>CVE-2024-22037</td>
+       <td>2024-11-28 09:46:07 <img src="imgs/new.gif" /></td>
+       <td>The uyuni-server-attestation systemd service needs a database_password environment variable. This file has 640 permission, and cannot be shown users, but the environment is still exposed by systemd to non-privileged users.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-22037">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5a6922c25dabba5a31bb1f87b6f08f1f</td>
+       <td>CVE-2024-11599</td>
+       <td>2024-11-28 09:42:48 <img src="imgs/new.gif" /></td>
+       <td>Mattermost versions 10.0.x <= 10.0.1, 10.1.x <= 10.1.1, 9.11.x <= 9.11.3, 9.5.x <= 9.5.11 fail to properly validate email addresses which allows an unauthenticated user to bypass email domain restrictions via carefully crafted input on email registration.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-11599">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>afabc5c7a751dc754a0f7ef3d0f27a33</td>
+       <td>CVE-2024-22038</td>
+       <td>2024-11-28 09:38:03 <img src="imgs/new.gif" /></td>
+       <td>Various problems in obs-scm-bridge allows attackers that create specially crafted git repositories to leak information of cause denial of service.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-22038">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>698ae292edfc1233afd5d0e9f9a0b3eb</td>
+       <td>CVE-2024-49502</td>
+       <td>2024-11-28 09:26:38 <img src="imgs/new.gif" /></td>
+       <td>A Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in the Setup Wizard, HTTP Proxy credentials pane in spacewalk-web allows attackers to attack users by providing specially crafted URLs to click. This issue affects Container suse/manager/5.0/x86_64/server:5.0.2.7.8.1: before 5.0.15-150600.3.10.2; SUSE Manager Server Module 4.3: before 4.3.42-150400.3.52.1.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-49502">详情</a></td>
+      </tr>
+
+      <tr>
        <td>2f727bde471b13c1ae2e14076ab3a4c8</td>
        <td>CVE-2024-52323</td>
        <td>2024-11-27 09:54:07 <img src="imgs/new.gif" /></td>
@@ -344,86 +424,6 @@
        <td>2024-11-26 09:15:05</td>
        <td>The Spotify Play Button for WordPress plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's spotifyplaybutton shortcode in all versions up to, and including, 2.11 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-11192">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>25b6e1ecc2f120e85785390214eba906</td>
-       <td>CVE-2024-11119</td>
-       <td>2024-11-26 09:15:05</td>
-       <td>The BNE Gallery Extended plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's 'gallery' shortcode in all versions up to, and including, 1.2.1 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-11119">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5dd2f482d3ede5362382de392681caca</td>
-       <td>CVE-2024-11091</td>
-       <td>2024-11-26 09:15:05</td>
-       <td>The Support SVG – Upload svg files in wordpress without hassle plugin for WordPress is vulnerable to Stored Cross-Site Scripting via REST API SVG File uploads in all versions up to, and including, 1.1.0 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Author-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses the SVG file.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-11091">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5849da7925ade5f046eccdc526525b2c</td>
-       <td>CVE-2018-11952</td>
-       <td>2024-11-26 09:15:05</td>
-       <td>An image with a version lower than the fuse version may potentially be booted lead to improper authentication.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2018-11952">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2e766aad63d0f28e7b9fbe42a63d0639</td>
-       <td>CVE-2018-11922</td>
-       <td>2024-11-26 09:15:04</td>
-       <td>Wrong configuration in Touch Pal application can collect user behavior data without awareness by the user.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2018-11922">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1a5fb770f0614bca096124ac0b950cf9</td>
-       <td>CVE-2017-18153</td>
-       <td>2024-11-26 09:15:04</td>
-       <td>A race condition exists in a driver potentially leading to a use-after-free condition.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2017-18153">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4c211ecdf45a307f58e3f6b0ec8afc3b</td>
-       <td>CVE-2017-17772</td>
-       <td>2024-11-26 09:15:04</td>
-       <td>In multiple functions that process 802.11 frames, out-of-bounds reads can occur due to insufficient validation.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2017-17772">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e07bc2c33b3c45eb1fe555e936e1f44f</td>
-       <td>CVE-2024-11664</td>
-       <td>2024-11-25 09:15:06</td>
-       <td>A vulnerability, which was classified as critical, has been found in eNMS up to 4.2. Affected by this issue is the function multiselect_filtering of the file eNMS/controller.py of the component TGZ File Handler. The manipulation leads to path traversal. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The patch is identified as 22b0b443acca740fc83b5544165c1f53eff3f529. It is recommended to apply a patch to fix this issue.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-11664">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d2aaafa108cdeddab6eab316968d3f28</td>
-       <td>CVE-2024-11663</td>
-       <td>2024-11-25 09:15:06</td>
-       <td>A vulnerability classified as critical was found in Codezips E-Commerce Site 1.0. Affected by this vulnerability is an unknown functionality of the file search.php. The manipulation of the argument keywords leads to sql injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-11663">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>17400c831ef3066f86e7e8c3813a506b</td>
-       <td>CVE-2022-33862</td>
-       <td>2024-11-25 08:54:39</td>
-       <td>IPP software prior to v1.71 is vulnerable to default credential vulnerability. This could lead attackers to identify and access vulnerable systems.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-33862">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9c4fcb1bac12f13476b88489e06bea12</td>
-       <td>CVE-2024-11661</td>
-       <td>2024-11-25 08:15:09</td>
-       <td>A vulnerability was found in Codezips Free Exam Hall Seating Management System 1.0. It has been declared as problematic. This vulnerability affects unknown code of the file profile.php of the component Profile Image Handler. The manipulation of the argument image leads to unrestricted upload. The attack can be initiated remotely. The researcher submit confuses the vulnerability class of this issue.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-11661">详情</a></td>
       </tr>
 
      </tbody>
