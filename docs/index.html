@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2025-01-20 11:26:29 -->
+<!-- RELEASE TIME : 2025-01-20 17:30:10 -->
 <html lang="zh-cn">
 
  <head>
@@ -235,6 +235,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>041117659363a3a7f8cc73c363c3dc0c</td>
+       <td>CVE-2025-24337</td>
+       <td>2025-01-20 14:15:27 <img src="imgs/new.gif" /></td>
+       <td>WriteFreely through 0.15.1, when MySQL is used, allows local users to discover credentials by reading config.ini.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-24337">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9f813f3f046f9dcd3a893f2aa24fea2c</td>
+       <td>CVE-2025-21655</td>
+       <td>2025-01-20 14:15:27 <img src="imgs/new.gif" /></td>
+       <td>In the Linux kernel, the following vulnerability has been resolved: io_uring/eventfd: ensure io_eventfd_signal() defers another RCU period io_eventfd_do_signal() is invoked from an RCU callback, but when dropping the reference to the io_ev_fd, it calls io_eventfd_free() directly if the refcount drops to zero. This isn't correct, as any potential freeing of the io_ev_fd should be deferred another RCU grace period. Just call io_eventfd_put() rather than open-code the dec-and-test and free, which will correctly defer it another RCU grace period.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-21655">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>884c68164dc181cae44b67d30e9ed9db</td>
+       <td>CVE-2024-13176</td>
+       <td>2025-01-20 14:15:26 <img src="imgs/new.gif" /></td>
+       <td>Issue summary: A timing side-channel which could potentially allow recovering the private key exists in the ECDSA signature computation. Impact summary: A timing side-channel in ECDSA signature computations could allow recovering the private key by an attacker. However, measuring the timing would require either local access to the signing application or a very fast network connection with low latency. There is a timing signal of around 300 nanoseconds when the top word of the inverted ECDSA nonce value is zero. This can happen with significant probability only for some of the supported elliptic curves. In particular the NIST P-521 curve is affected. To be able to measure this leak, the attacker process must either be located in the same physical computer or must have a very fast network connection with low latency. For that reason the severity of this vulnerability is Low.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-13176">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1a8fc5b6ad4053fc025224dc2e070c95</td>
+       <td>CVE-2023-52923</td>
+       <td>2025-01-20 10:48:13 <img src="imgs/new.gif" /></td>
+       <td>In the Linux kernel, the following vulnerability has been resolved: netfilter: nf_tables: adapt set backend to use GC transaction API Use the GC transaction API to replace the old and buggy gc API and the busy mark approach. No set elements are removed from async garbage collection anymore, instead the _DEAD bit is set on so the set element is not visible from lookup path anymore. Async GC enqueues transaction work that might be aborted and retried later. rbtree and pipapo set backends does not set on the _DEAD bit from the sync GC path since this runs in control plane path where mutex is held. In this case, set elements are deactivated, removed and then released via RCU callback, sync GC never fails.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-52923">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1f4000f198b297d781340dc3dfdbc6a6</td>
+       <td>CVE-2025-0590</td>
+       <td>2025-01-20 07:17:10 <img src="imgs/new.gif" /></td>
+       <td>Improper permission settings for mobile applications (com.transsion.carlcare) may lead to information leakage risk.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-0590">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c4df16c25f8484681234c90fb51aa38d</td>
+       <td>CVE-2025-0586</td>
+       <td>2025-01-20 03:15:09 <img src="imgs/new.gif" /></td>
+       <td>The a+HRD from aEnrich Technology has an Insecure Deserialization vulnerability, allowing remote attackers with database modification privileges and regular system privileges to perform arbitrary code execution.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-0586">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>57c64641138b9e0a14974ba0ceaae4b3</td>
+       <td>CVE-2025-0585</td>
+       <td>2025-01-20 03:15:09 <img src="imgs/new.gif" /></td>
+       <td>The a+HRD from aEnrich Technology has a SQL Injection vulnerability, allowing unauthenticated remote attackers to inject arbitrary SQL commands to read, modify, and delete database contents.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-0585">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d54818cca93ccf4c67cf428ff157990f</td>
+       <td>CVE-2025-0584</td>
+       <td>2025-01-20 03:15:09 <img src="imgs/new.gif" /></td>
+       <td>The a+HRD from aEnrich Technology has a Server-side Request Forgery, allowing unauthenticated remote attackers to exploit this vulnerability to probe internal network.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-0584">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5cd84b3f052ac13a6fe560b0047fc444</td>
+       <td>CVE-2025-0582</td>
+       <td>2025-01-20 03:15:08 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability classified as critical was found in itsourcecode Farm Management System up to 1.0. This vulnerability affects unknown code of the file /add-pig.php. The manipulation of the argument pigphoto leads to unrestricted upload. The attack can be initiated remotely.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-0582">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6cf94fbff9b3a77ea94e58b699285f0e</td>
+       <td>CVE-2025-0581</td>
+       <td>2025-01-20 03:15:08 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability classified as problematic has been found in CampCodes School Management Software 1.0. This affects an unknown part of the file /chat/group/send of the component Chat History. The manipulation of the argument message leads to cross site scripting. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-0581">详情</a></td>
+      </tr>
+
+      <tr>
        <td>de48939a638f970caa51f9ec709ba4c2</td>
        <td>CVE-2024-41783</td>
        <td>2025-01-19 15:15:21 <img src="imgs/new.gif" /></td>
@@ -344,86 +424,6 @@
        <td>2025-01-18 16:15:37</td>
        <td>IBM Jazz for Service Management 1.1.3 through 1.1.3.22 could allow a remote attacker to obtain sensitive information from improper access restrictions that could aid in further attacks against the system.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-47106">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>24655eb68e907c2ab4e616bced34225c</td>
-       <td>CVE-2025-0560</td>
-       <td>2025-01-18 15:15:08</td>
-       <td>A vulnerability, which was classified as problematic, was found in CampCodes School Management Software 1.0. Affected is an unknown function of the file /photo-gallery of the component Photo Gallery Page. The manipulation of the argument Description leads to cross site scripting. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-0560">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>260efc91222177947d0e04405fcb1093</td>
-       <td>CVE-2024-51448</td>
-       <td>2025-01-18 15:15:08</td>
-       <td>IBM Robotic Process Automation 21.0.0 through 21.0.7.17 and 23.0.0 through 23.0.18 could allow a local user to escalate their privileges. All files in the install inherit the file permissions of the parent directory and therefore a non-privileged user can substitute any executable for the nssm.exe service. A subsequent service or server restart will then run that binary with administrator privilege.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-51448">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>73d358785bbbfb6e5bb9d20a56dc2544</td>
-       <td>CVE-2024-49338</td>
-       <td>2025-01-18 15:15:07</td>
-       <td>IBM App Connect Enterprise 12.0.1.0 through 12.0.7.0and 13.0.1.0 under certain configurations could allow a privileged user to obtain JMS credentials.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-49338">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ba152c1a95a163a0e897deb2f6e7c1ce</td>
-       <td>CVE-2025-0559</td>
-       <td>2025-01-18 14:15:25</td>
-       <td>A vulnerability, which was classified as problematic, has been found in Campcodes School Management Software 1.0. This issue affects some unknown processing of the file /create-id-card of the component Create Id Card Page. The manipulation of the argument ID Card Title leads to cross site scripting. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-0559">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0e244ec80570db9f55102c4b4eeee792</td>
-       <td>CVE-2025-0558</td>
-       <td>2025-01-18 13:15:20</td>
-       <td>A vulnerability classified as critical was found in TDuckCloud tduck-platform up to 4.0. This vulnerability affects the function QueryProThemeRequest of the file src/main/java/com/tduck/cloud/form/request/QueryProThemeRequest.java. The manipulation of the argument color leads to sql injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-0558">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>597e7555e74218599a8643664d7fceb9</td>
-       <td>CVE-2025-0557</td>
-       <td>2025-01-18 09:15:07</td>
-       <td>A vulnerability classified as problematic has been found in Hyland Alfresco Community Edition and Alfresco Enterprise Edition up to 6.2.2. This affects an unknown part of the file /share/s/ of the component URL Handler. The manipulation leads to cross site scripting. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. Upgrading to version 7.0 is able to address this issue. It is recommended to upgrade the affected component.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-0557">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>16b31889acd50e434356127a54b28321</td>
-       <td>CVE-2025-0527</td>
-       <td>2025-01-17 14:15:32</td>
-       <td>A vulnerability classified as critical was found in code-projects Admission Management System 1.0. Affected by this vulnerability is an unknown functionality of the file /signupconfirm.php. The manipulation of the argument in_eml leads to sql injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. Other parameters might be affected as well.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-0527">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3ef1bc6ac6e47dbd152f3c8a2c2ab67f</td>
-       <td>CVE-2024-13503</td>
-       <td>2025-01-17 14:15:31</td>
-       <td>Buffer Copy without Checking Size of Input ('Classic Buffer Overflow') vulnerability in Newtec NTC2218, NTC2250, NTC2299 on Linux, PowerPC, ARM (Updating signaling process in the swdownload binary modules) allows Local Execution of Code, Remote Code Inclusion. This issue affects NTC2218, NTC2250, NTC2299: from 1.0.1.1 through 2.2.6.19. The issue is both present on the PowerPC versions of the modem and the ARM versions. A stack buffer buffer overflow in the swdownload binary allows attackers to execute arbitrary code. The parse_INFO function uses an unrestricted `sscanf` to read a string of an incoming network packet into a statically sized buffer.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-13503">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1fbf411fee195e2b4ecffccbda13ed61</td>
-       <td>CVE-2024-13502</td>
-       <td>2025-01-17 14:15:31</td>
-       <td>Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability in Newtec/iDirect NTC2218, NTC2250, NTC2299 on Linux, PowerPC, ARM allows Local Code Inclusion.This issue affects NTC2218, NTC2250, NTC2299: from 1.0.1.1 through 2.2.6.19. The `commit_multicast` page used to configure multicasts in the modem's web administration interface uses improperly parses incoming data from the request before passing it to an `eval` statement in a bash script. This allows attackers to inject arbitrary shell commands.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-13502">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a8b0402d75178a92228b4aecf41a4f10</td>
-       <td>CVE-2024-12703</td>
-       <td>2025-01-17 11:15:08</td>
-       <td>CWE-502: Deserialization of untrusted data vulnerability exists that could lead to loss of confidentiality, integrity and potential remote code execution on workstation when a non-admin authenticated user opens a malicious project file.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-12703">详情</a></td>
       </tr>
 
      </tbody>
