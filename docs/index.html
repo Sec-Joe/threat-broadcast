@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2025-01-22 11:26:39 -->
+<!-- RELEASE TIME : 2025-01-22 23:28:27 -->
 <html lang="zh-cn">
 
  <head>
@@ -235,6 +235,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>f75be8a4fe1c1c94dc5ca210328d3b41</td>
+       <td>CVE-2024-12477</td>
+       <td>2025-01-22 22:15:08 <img src="imgs/new.gif" /></td>
+       <td>The Avada Builder plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's shortcodes in all versions up to, and including, 3.11.11 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-12477">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bf4249ed8ba53a9ce613e8ed379ad81d</td>
+       <td>CVE-2024-56924</td>
+       <td>2025-01-22 21:15:09 <img src="imgs/new.gif" /></td>
+       <td>A Cross Site Request Forgery (CSRF) vulnerability in Code Astro Internet banking system 2.0.0 allows remote attackers to execute arbitrary JavaScript on the admin page (pages_account), potentially leading to unauthorized actions such as changing account settings or stealing sensitive user information. This vulnerability occurs due to improper validation of user requests, which enables attackers to exploit the system by tricking the admin user into executing malicious scripts.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-56924">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4158116a442802fc312ee7711fa714a6</td>
+       <td>CVE-2024-56923</td>
+       <td>2025-01-22 21:15:09 <img src="imgs/new.gif" /></td>
+       <td>Stored Cross-Site Scripting (XSS) in the Categorization Option of My Subscriptions Functionality in Silverpeas Core 6.4.1 allows a remote attacker to execute arbitrary JavaScript code. This is achieved by injecting a malicious payload into the Name field of a subscription. The attack can lead to session hijacking, data theft, or unauthorized actions when an admin user views the affected subscription.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-56923">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7d2618ca01be2de284ad7336e2386e13</td>
+       <td>CVE-2025-0612</td>
+       <td>2025-01-22 20:15:30 <img src="imgs/new.gif" /></td>
+       <td>Out of bounds memory access in V8 in Google Chrome prior to 132.0.6834.110 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-0612">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>568466286e486853cba26b5dd9b68507</td>
+       <td>CVE-2025-0611</td>
+       <td>2025-01-22 20:15:30 <img src="imgs/new.gif" /></td>
+       <td>Object corruption in V8 in Google Chrome prior to 132.0.6834.110 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-0611">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2b947928f1a260d186ff161954e8728c</td>
+       <td>CVE-2024-56914</td>
+       <td>2025-01-22 20:15:30 <img src="imgs/new.gif" /></td>
+       <td>D-Link DSL-3782 v1.01 is vulnerable to Buffer Overflow in /New_GUI/ParentalControl.asp.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-56914">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4dba914504714dcdac4799913cbc03f0</td>
+       <td>CVE-2024-9310</td>
+       <td>2025-01-22 19:15:10 <img src="imgs/new.gif" /></td>
+       <td>By utilizing software-defined radios and a custom low-latency processing pipeline, RF signals with spoofed location data can be transmitted to aircraft targets. This can lead to the appearance of fake aircraft on displays and potentially trigger undesired Resolution Advisories (RAs).</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-9310">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>35f61893fb031435c309c89c00a6d21c</td>
+       <td>CVE-2024-11166</td>
+       <td>2025-01-22 19:15:09 <img src="imgs/new.gif" /></td>
+       <td>For TCAS II systems using transponders compliant with MOPS earlier than RTCA DO-181F, an attacker can impersonate a ground station and issue a Comm-A Identity Request. This action can set the Sensitivity Level Control (SLC) to the lowest setting and disable the Resolution Advisory (RA), leading to a denial-of-service condition.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-11166">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4a9b83f69127e80f7585e563ef435341</td>
+       <td>CVE-2025-23047</td>
+       <td>2025-01-22 18:15:21 <img src="imgs/new.gif" /></td>
+       <td>Cilium is a networking, observability, and security solution with an eBPF-based dataplane. An insecure default `Access-Control-Allow-Origin` header value could lead to sensitive data exposure for users of Cilium versions 1.14.0 through 1.14.7, 1.15.0 through 1.15.11, and 1.16.0 through 1.16.4 who deploy Hubble UI using either Cilium CLI or via the Cilium Helm chart. A user with access to a Hubble UI instance affected by this issue could leak configuration details about the Kubernetes cluster which Hubble UI is monitoring, including node names, IP addresses, and other metadata about workloads and the cluster networking configuration. In order for this vulnerability to be exploited, a victim would have to first visit a malicious page. This issue is fixed in Cilium v1.14.18, v1.15.12, and v1.16.5. As a workaround, users who deploy Hubble UI using the Cilium Helm chart directly can remove the CORS headers from the Helm template as shown in the patch from commit a3489f190ba6e87b5336ee685fb6c80b1270d06d.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-23047">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f30a170098402fa76628646f4d010ca8</td>
+       <td>CVE-2025-0651</td>
+       <td>2025-01-22 18:15:20 <img src="imgs/new.gif" /></td>
+       <td>Improper Privilege Management vulnerability in Cloudflare WARP on Windows allows File Manipulation. User with a low system privileges can create a set of symlinks inside the C:\ProgramData\Cloudflare\warp-diag-partials folder. After triggering the 'Reset all settings" option the WARP service will delete the files that the symlink was pointing to. Given the WARP service operates with System privileges this might lead to deleting files owned by the System user. This issue affects WARP: before 2024.12.492.0.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-0651">详情</a></td>
+      </tr>
+
+      <tr>
        <td>c879811c36e647f10b142d3f25e1be27</td>
        <td>CVE-2025-24024</td>
        <td>2025-01-21 20:15:46 <img src="imgs/new.gif" /></td>
@@ -344,86 +424,6 @@
        <td>2025-01-20 10:48:13</td>
        <td>In the Linux kernel, the following vulnerability has been resolved: netfilter: nf_tables: adapt set backend to use GC transaction API Use the GC transaction API to replace the old and buggy gc API and the busy mark approach. No set elements are removed from async garbage collection anymore, instead the _DEAD bit is set on so the set element is not visible from lookup path anymore. Async GC enqueues transaction work that might be aborted and retried later. rbtree and pipapo set backends does not set on the _DEAD bit from the sync GC path since this runs in control plane path where mutex is held. In this case, set elements are deactivated, removed and then released via RCU callback, sync GC never fails.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-52923">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1f4000f198b297d781340dc3dfdbc6a6</td>
-       <td>CVE-2025-0590</td>
-       <td>2025-01-20 07:17:10</td>
-       <td>Improper permission settings for mobile applications (com.transsion.carlcare) may lead to information leakage risk.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-0590">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c4df16c25f8484681234c90fb51aa38d</td>
-       <td>CVE-2025-0586</td>
-       <td>2025-01-20 03:15:09</td>
-       <td>The a+HRD from aEnrich Technology has an Insecure Deserialization vulnerability, allowing remote attackers with database modification privileges and regular system privileges to perform arbitrary code execution.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-0586">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>57c64641138b9e0a14974ba0ceaae4b3</td>
-       <td>CVE-2025-0585</td>
-       <td>2025-01-20 03:15:09</td>
-       <td>The a+HRD from aEnrich Technology has a SQL Injection vulnerability, allowing unauthenticated remote attackers to inject arbitrary SQL commands to read, modify, and delete database contents.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-0585">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d54818cca93ccf4c67cf428ff157990f</td>
-       <td>CVE-2025-0584</td>
-       <td>2025-01-20 03:15:09</td>
-       <td>The a+HRD from aEnrich Technology has a Server-side Request Forgery, allowing unauthenticated remote attackers to exploit this vulnerability to probe internal network.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-0584">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5cd84b3f052ac13a6fe560b0047fc444</td>
-       <td>CVE-2025-0582</td>
-       <td>2025-01-20 03:15:08</td>
-       <td>A vulnerability classified as critical was found in itsourcecode Farm Management System up to 1.0. This vulnerability affects unknown code of the file /add-pig.php. The manipulation of the argument pigphoto leads to unrestricted upload. The attack can be initiated remotely.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-0582">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6cf94fbff9b3a77ea94e58b699285f0e</td>
-       <td>CVE-2025-0581</td>
-       <td>2025-01-20 03:15:08</td>
-       <td>A vulnerability classified as problematic has been found in CampCodes School Management Software 1.0. This affects an unknown part of the file /chat/group/send of the component Chat History. The manipulation of the argument message leads to cross site scripting. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-0581">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>de48939a638f970caa51f9ec709ba4c2</td>
-       <td>CVE-2024-41783</td>
-       <td>2025-01-19 15:15:21</td>
-       <td>IBM Sterling Secure Proxy 6.0.0.0, 6.0.0.1, 6.0.0.2, 6.0.0.3, 6.1.0.0, and 6.2.0.0 could allow a privileged user to inject commands into the underlying operating system due to improper validation of a specified type of input.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-41783">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d359dcd7a6132f7e4843a87239679d6c</td>
-       <td>CVE-2024-41743</td>
-       <td>2025-01-19 15:15:20</td>
-       <td>IBM TXSeries for Multiplatforms 10.1 could allow a remote attacker to cause a denial of service using persistent connections due to improper allocation of resources.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-41743">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9a53550bdd172293c92317f3bd7972a3</td>
-       <td>CVE-2024-41742</td>
-       <td>2025-01-19 15:15:20</td>
-       <td>IBM TXSeries for Multiplatforms 10.1 is vulnerable to a denial of service, caused by improper enforcement of the timeout on individual read operations. By conducting a slowloris-type attacks, a remote attacker could exploit this vulnerability to cause a denial of service.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-41742">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>eec34ac8336beb9ed80725fdf951be59</td>
-       <td>CVE-2024-38337</td>
-       <td>2025-01-19 15:15:19</td>
-       <td>IBM Sterling Secure Proxy 6.0.0.0, 6.0.0.1, 6.0.0.2, 6.0.0.3, 6.1.0.0, and 6.2.0.0 could allow an unauthorized attacker to retrieve or alter sensitive information contents due to incorrect permission assignments.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-38337">详情</a></td>
       </tr>
 
      </tbody>
