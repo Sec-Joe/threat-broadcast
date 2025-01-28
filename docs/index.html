@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2025-01-27 03:33:48 -->
+<!-- RELEASE TIME : 2025-01-28 05:32:08 -->
 <html lang="zh-cn">
 
  <head>
@@ -235,6 +235,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>e70775c5400c56ec2696912397deb270</td>
+       <td>CVE-2024-53881</td>
+       <td>2025-01-28 04:15:10 <img src="imgs/new.gif" /></td>
+       <td>NVIDIA vGPU software contains a vulnerability in the host driver, where it can allow a guest to cause an interrupt storm on the host, which may lead to denial of service.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-53881">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a358cd97f5f6610fcd47d502b7f79351</td>
+       <td>CVE-2024-53869</td>
+       <td>2025-01-28 04:15:10 <img src="imgs/new.gif" /></td>
+       <td>NVIDIA Unified Memory driver for Linux contains a vulnerability where an attacker could leak uninitialized memory. A successful exploit of this vulnerability might lead to information disclosure.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-53869">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>75cd186877a73df391994b10fcf71849</td>
+       <td>CVE-2024-0150</td>
+       <td>2025-01-28 04:15:09 <img src="imgs/new.gif" /></td>
+       <td>NVIDIA GPU display driver for Windows and Linux contains a vulnerability where data is written past the end or before the beginning of a buffer. A successful exploit of this vulnerability might lead to information disclosure, denial of service, or data tampering.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0150">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d0d78ffc6e073d6af7b2165b4c0f8645</td>
+       <td>CVE-2024-0149</td>
+       <td>2025-01-28 04:15:09 <img src="imgs/new.gif" /></td>
+       <td>NVIDIA GPU Display Driver for Linux contains a vulnerability which could allow an attacker unauthorized access to files. A successful exploit of this vulnerability might lead to limited information disclosure.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0149">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>dffe4fa2b7709d60703890ca848c48c0</td>
+       <td>CVE-2024-0147</td>
+       <td>2025-01-28 04:15:09 <img src="imgs/new.gif" /></td>
+       <td>NVIDIA GPU display driver for Windows and Linux contains a vulnerability where referencing memory after it has been freed can lead to denial of service or data tampering.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0147">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>045fb6a08e18d9e4a46b5f6d1c3649ba</td>
+       <td>CVE-2024-0146</td>
+       <td>2025-01-28 04:15:09 <img src="imgs/new.gif" /></td>
+       <td>NVIDIA vGPU software contains a vulnerability in the Virtual GPU Manager, where a malicious guest could cause memory corruption. A successful exploit of this vulnerability might lead to code execution, denial of service, information disclosure, or data tampering.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0146">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3bfab115ee475890e74e0a462a6ee00f</td>
+       <td>CVE-2024-0140</td>
+       <td>2025-01-28 04:15:08 <img src="imgs/new.gif" /></td>
+       <td>NVIDIA RAPIDS contains a vulnerability in cuDF and cuML, where a user could cause a deserialization of untrusted data issue. A successful exploit of this vulnerability might lead to code execution, data tampering, denial of service, and information disclosure.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0140">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0c6411dabc3e7799ca7b24bd9408650d</td>
+       <td>CVE-2024-0137</td>
+       <td>2025-01-28 03:15:07 <img src="imgs/new.gif" /></td>
+       <td>NVIDIA Container Toolkit contains an improper isolation vulnerability where a specially crafted container image could lead to untrusted code running in the host’s network namespace. This vulnerability is present only when the NVIDIA Container Toolkit is configured in a nondefault way. A successful exploit of this vulnerability may lead to denial of service and escalation of privileges.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0137">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6f07134437130cd8f100b038a1811ee6</td>
+       <td>CVE-2024-0136</td>
+       <td>2025-01-28 03:15:07 <img src="imgs/new.gif" /></td>
+       <td>NVIDIA Container Toolkit contains an improper isolation vulnerability where a specially crafted container image could lead to untrusted code obtaining read and write access to host devices. This vulnerability is present only when the NVIDIA Container Toolkit is configured in a nondefault way. A successful exploit of this vulnerability may lead to code execution, denial of service, escalation of privileges, information disclosure, and data tampering.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0136">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1cf21763e7f8f94e271cffc855277062</td>
+       <td>CVE-2024-0135</td>
+       <td>2025-01-28 03:15:07 <img src="imgs/new.gif" /></td>
+       <td>NVIDIA Container Toolkit contains an improper isolation vulnerability where a specially crafted container image could lead to modification of a host binary. A successful exploit of this vulnerability may lead to code execution, denial of service, escalation of privileges, information disclosure, and data tampering.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0135">详情</a></td>
+      </tr>
+
+      <tr>
        <td>3ea15887f79aa89dee457c0044404ade</td>
        <td>CVE-2023-46187</td>
        <td>2025-01-27 01:45:34 <img src="imgs/new.gif" /></td>
@@ -261,7 +341,7 @@
       <tr>
        <td>ccd227fb37073d72abf26615d5e6b7b7</td>
        <td>CVE-2025-0720</td>
-       <td>2025-01-26 23:15:21 <img src="imgs/new.gif" /></td>
+       <td>2025-01-26 23:15:21</td>
        <td>A vulnerability was found in Microword eScan Antivirus 7.0.32 on Linux. It has been rated as problematic. Affected by this issue is the function removeExtraSlashes of the file /opt/MicroWorld/sbin/rtscanner of the component Folder Watch List Handler. The manipulation leads to stack-based buffer overflow. The attack needs to be approached locally. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-0720">详情</a></td>
       </tr>
@@ -269,7 +349,7 @@
       <tr>
        <td>43f8fb2e388cde14b6a7294733586e5a</td>
        <td>CVE-2017-20196</td>
-       <td>2025-01-26 18:15:27 <img src="imgs/new.gif" /></td>
+       <td>2025-01-26 18:15:27</td>
        <td>A vulnerability was found in Itechscripts School Management Software 2.75. It has been classified as critical. This affects an unknown part of the file /notice-edit.php. The manipulation of the argument aid leads to sql injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2017-20196">详情</a></td>
       </tr>
@@ -277,7 +357,7 @@
       <tr>
        <td>9cf345068f875f44ed68fe3f66bcd5cd</td>
        <td>CVE-2023-50946</td>
-       <td>2025-01-26 16:15:30 <img src="imgs/new.gif" /></td>
+       <td>2025-01-26 16:15:30</td>
        <td>IBM Common Licensing 9.0 could allow an authenticated user to modify a configuration file that they should not have access to due to a broken authorization mechanism.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-50946">详情</a></td>
       </tr>
@@ -285,7 +365,7 @@
       <tr>
        <td>117b9f40dd4302c356ddeb53a3ed0a44</td>
        <td>CVE-2023-50945</td>
-       <td>2025-01-26 16:15:30 <img src="imgs/new.gif" /></td>
+       <td>2025-01-26 16:15:30</td>
        <td>IBM Common Licensing 9.0 stores user credentials in plain clear text which can be read by a local user.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-50945">详情</a></td>
       </tr>
@@ -293,7 +373,7 @@
       <tr>
        <td>7a22bd141a385c65d03784f256714df4</td>
        <td>CVE-2023-38009</td>
-       <td>2025-01-26 16:15:30 <img src="imgs/new.gif" /></td>
+       <td>2025-01-26 16:15:30</td>
        <td>IBM Cognos Mobile Client 1.1 iOS may be vulnerable to information disclosure through man in the middle techniques due to the lack of certificate pinning.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-38009">详情</a></td>
       </tr>
@@ -301,7 +381,7 @@
       <tr>
        <td>889358fdb71a619f8ed4bbbb7e638f51</td>
        <td>CVE-2024-31906</td>
-       <td>2025-01-26 15:15:22 <img src="imgs/new.gif" /></td>
+       <td>2025-01-26 15:15:22</td>
        <td>IBM Automation Decision Services 23.0.2 allows web pages to be stored locally which can be read by another user on the system.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-31906">详情</a></td>
       </tr>
@@ -309,7 +389,7 @@
       <tr>
        <td>9b0eaa529de70405c616b33e6e19f738</td>
        <td>CVE-2024-13505</td>
-       <td>2025-01-26 12:15:28 <img src="imgs/new.gif" /></td>
+       <td>2025-01-26 12:15:28</td>
        <td>The Survey Maker plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the ‘ays_sections[5][questions][8][title]’ parameter in all versions up to, and including, 5.1.3.3 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with administrator-level access, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. This only affects multi-site installations and installations where unfiltered_html has been disabled.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-13505">详情</a></td>
       </tr>
@@ -344,86 +424,6 @@
        <td>2025-01-25 15:15:08</td>
        <td>IBM Maximo Application Suite 8.10.10, 8.11.7, and 9.0 - Monitor Component is vulnerable to SQL injection. A remote attacker could send specially crafted SQL statements, which could allow the attacker to view, add, modify or delete information in the back-end database.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-35148">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>60bb654d6ec7d77ca492e40622a8cd49</td>
-       <td>CVE-2024-35145</td>
-       <td>2025-01-25 15:15:08</td>
-       <td>IBM Maximo Application Suite 9.0.0 - Monitor Component is vulnerable to cross-site scripting. This vulnerability allows an unauthenticated attacker to embed arbitrary JavaScript code in the Web UI thus altering the intended functionality potentially leading to credentials disclosure within a trusted session.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-35145">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>480146a5c16f2be34300d468fe920150</td>
-       <td>CVE-2024-35144</td>
-       <td>2025-01-25 15:15:07</td>
-       <td>IBM Maximo Application Suite 8.10, 8.11, and 9.0 - Monitor Component stores source code on the web server that could aid in further attacks against the system.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-35144">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ac6756e69c5899aac6505b09c0a26e75</td>
-       <td>CVE-2024-39750</td>
-       <td>2025-01-25 14:15:29</td>
-       <td>IBM Analytics Content Hub 2.0 is vulnerable to a buffer overflow due to improper return length checking. A remote authenticated attacker could overflow a buffer and execute arbitrary code on the system or cause the server to crash.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-39750">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5467de14d5f481a9de234c5d94ceb211</td>
-       <td>CVE-2024-35134</td>
-       <td>2025-01-25 14:15:29</td>
-       <td>IBM Analytics Content Hub 2.0 could allow a remote attacker to obtain sensitive information when a detailed technical error message is returned in the browser. This information could be used in further attacks against the system.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-35134">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>405bbd0c7df519085d4e3e71b13fbb50</td>
-       <td>CVE-2024-35114</td>
-       <td>2025-01-25 14:15:29</td>
-       <td>IBM Control Center 6.2.1 and 6.3.1 could allow a remote attacker to enumerate usernames due to an observable discrepancy between login attempts.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-35114">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3d1dbe68cc08b42a53b731db92cdb0da</td>
-       <td>CVE-2024-35113</td>
-       <td>2025-01-25 14:15:29</td>
-       <td>IBM Control Center 6.2.1 and 6.3.1 could allow an authenticated user to obtain sensitive information exposed through a directory listing.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-35113">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e6fd6f21e816100de917a7e8f09bccb1</td>
-       <td>CVE-2024-50698</td>
-       <td>2025-01-24 23:15:09</td>
-       <td>SunGrow WiNet-SV200.001.00.P027 and earlier versions is vulnerable to heap-based buffer overflow due to bounds checks of the MQTT message content.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-50698">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1cff5b2038a407211c35568ad30c1ec4</td>
-       <td>CVE-2024-50697</td>
-       <td>2025-01-24 23:15:09</td>
-       <td>In SunGrow WiNet-SV200.001.00.P027 and earlier versions, when decrypting MQTT messages, the code that parses specific TLV fields does not have sufficient bounds checks. This may result in a stack-based buffer overflow.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-50697">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b12f9a601de96873b859b352b774397e</td>
-       <td>CVE-2024-50695</td>
-       <td>2025-01-24 23:15:09</td>
-       <td>SunGrow WiNet-SV200.001.00.P027 and earlier versions is vulnerable to stack-based buffer overflow when parsing MQTT messages, due to missing MQTT topic bounds checks.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-50695">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7eecf262e71a556e70e77ed76e30bf00</td>
-       <td>CVE-2024-50694</td>
-       <td>2025-01-24 23:15:09</td>
-       <td>In SunGrow WiNet-SV200.001.00.P027 and earlier versions, when copying the timestamp read from an MQTT message, the underlying code does not check the bounds of the buffer that is used to store the message. This may lead to a stack-based buffer overflow.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-50694">详情</a></td>
       </tr>
 
      </tbody>
