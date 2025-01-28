@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2025-01-28 05:32:08 -->
+<!-- RELEASE TIME : 2025-01-28 09:31:11 -->
 <html lang="zh-cn">
 
  <head>
@@ -235,6 +235,30 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>a0530c4d6b854ffa6c517a084fa1783a</td>
+       <td>CVE-2025-24810</td>
+       <td>2025-01-28 05:15:11 <img src="imgs/new.gif" /></td>
+       <td>Cross-site scripting vulnerability exists in Simple Image Sizes 3.2.3 and earlier. If this vulnerability is exploited, an arbitrary script may be executed on the web browser of the user who is logging in to the product with the administrative privilege and accessing the settings screen.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-24810">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f1b1405a34dfd8ca3b58cf2faefc5e66</td>
+       <td>CVE-2025-23084</td>
+       <td>2025-01-28 05:15:11 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability has been identified in Node.js, specifically affecting the handling of drive names in the Windows environment. Certain Node.js functions do not treat drive names as special on Windows. As a result, although Node.js assumes a relative path, it actually refers to the root directory. On Windows, a path that does not start with the file separator is treated as relative to the current directory. This vulnerability affects Windows users of `path.join` API.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-23084">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9ba585da1caf9eed676352ebed3d1c90</td>
+       <td>CVE-2024-11135</td>
+       <td>2025-01-28 05:15:09 <img src="imgs/new.gif" /></td>
+       <td>The Eventer plugin for WordPress is vulnerable to SQL Injection via the 'event' parameter in the 'eventer_get_attendees' function in all versions up to, and including, 3.9.8 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-11135">详情</a></td>
+      </tr>
+
+      <tr>
        <td>e70775c5400c56ec2696912397deb270</td>
        <td>CVE-2024-53881</td>
        <td>2025-01-28 04:15:10 <img src="imgs/new.gif" /></td>
@@ -400,30 +424,6 @@
        <td>2025-01-25 17:15:21</td>
        <td>Local privilege escalation in G DATA Security Client due to incorrect assignment of privileges to directories. This vulnerability allows a local, unprivileged attacker to escalate privileges on affected installations by placing an arbitrary executable in a globally writable directory resulting in execution by the SetupSVC.exe service in the context of SYSTEM.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-0543">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ce90ba0698d06a82a9df8edf50635833</td>
-       <td>CVE-2025-0542</td>
-       <td>2025-01-25 17:15:21</td>
-       <td>Local privilege escalation due to incorrect assignment of privileges of temporary files in the update mechanism of G DATA Management Server. This vulnerability allows a local, unprivileged attacker to escalate privileges on affected installations by placing a crafted ZIP archive in a globally writable directory, which gets unpacked in the context of SYSTEM and results in arbitrary file write.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-0542">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>89f583ffe8bdb968983d0bec1bf727b2</td>
-       <td>CVE-2024-35150</td>
-       <td>2025-01-25 15:15:08</td>
-       <td>IBM Maximo Application Suite 8.10.12, 8.11.0, 9.0.1, and 9.1.0 - Monitor Component does not neutralize output that is written to logs, which could allow an attacker to inject false log entries.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-35150">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5046579cbd5daa22f5c0d5914345ba7e</td>
-       <td>CVE-2024-35148</td>
-       <td>2025-01-25 15:15:08</td>
-       <td>IBM Maximo Application Suite 8.10.10, 8.11.7, and 9.0 - Monitor Component is vulnerable to SQL injection. A remote attacker could send specially crafted SQL statements, which could allow the attacker to view, add, modify or delete information in the back-end database.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-35148">详情</a></td>
       </tr>
 
      </tbody>
